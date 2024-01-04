@@ -1,25 +1,54 @@
 {
-  "question": "An organization needs to migrate specialized workloads to the cloud while maintaining their existing complex licensing and architecture. What Google Cloud solution should the organization use?",
-  "alternatives": {
-    "A": {
-      "answer": "Compute Engine",
-      "correct": false,
-      "why": ""
+  "exam": [
+    {
+      "question": "An organization needs to migrate specialized workloads to the cloud while maintaining their existing complex licensing and architecture. What Google Cloud solution should the organization use?",
+      "alternatives": {
+        "A": {
+          "answer": "Compute Engine",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Bare Metal Solution",
+          "correct": true,
+          "why": ""
+        },
+        "C": {
+          "answer": "Cloud Run",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Cloud Function",
+          "correct": false,
+          "why": ""
+        }
+      }
     },
-    "B": {
-      "answer": "Bare Metal Solution",
-      "correct": true,
-      "why": ""
+    {
+      "question": "A travel agency wants to seamlessy share their social media content with partners. What should the organization use?",
+      "alternatives": {
+        "A": {
+          "answer": "A NoSQL database",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Anthos Config Management",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "The App Engine standart environment",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "An application programming interface (API)",
+          "correct": true,
+          "why": ""
+        }
+      }
     },
-    "C": {
-      "answer": "Cloud Run",
-      "correct": false,
-      "why": ""
-    },
-    "D": {
-      "answer": "Cloud Function",
-      "correct": false,
-      "why": ""
-    }
-  }
+  ]
 }
