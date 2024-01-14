@@ -24,6 +24,10 @@ header h1 {
   color: #ffffff;
 }
 
+.title {
+  text-decoration: none;
+}
+
 .container {
   width: 100%;
   height: 100%;

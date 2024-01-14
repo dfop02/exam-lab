@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+.title {
+  text-decoration: none;
+}
+
 .exam-simulation {
   height: 90%;
   display: flex;
@@ -25,11 +29,13 @@
 }
 
 .exam-simulation .alternative {
-  padding: 0.3rem;
+  padding: 0.3rem 1rem;
+  cursor: pointer;
 }
 
 .exam-simulation .alternative:hover {
-  background-color: gray;
+  background-color: #cccccc;
+  border-radius: 1rem;
 }
 
 .exam-simulation .alternative > span.alternative-letter.selected {
@@ -45,6 +51,18 @@
 
 .exam-simulation .actions {
   padding: 0.5rem;
+}
+
+.exam-resume {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  flex-direction: column;
+}
+
+.exam-resume-answer {
+  cursor: pointer;
 }
 
 .action-button {
@@ -93,4 +111,11 @@
 
 .action-button:hover {
   box-shadow: rgba(39, 174, 96, .2) 0 6px 12px;
+}
+
+.review-btn, .finish-btn {
+  display: none;
+  position: absolute;
+  bottom: 3rem;
+  right: -4rem;
 }
