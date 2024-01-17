@@ -41,14 +41,15 @@ header h1 {
   margin: 1rem;
 }
 
+.exams a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 1rem 0;
+}
+
 span.exam {
   background-color: #000000;
   padding: 1rem;
-}
-
-span.exam a {
-  color: #ffffff;
-  text-decoration: none;
 }
 
 footer {

@@ -4,8 +4,14 @@
   text-decoration: none;
 }
 
+#countdown {
+  margin: 1rem;
+  text-align: center;
+  height: 1rem;
+}
+
 .exam-simulation {
-  height: 90%;
+  height: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,13 +21,23 @@
 }
 
 .exam-simulation .question-number {
+  display: contents;
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+.exam-simulation .question-number img {
+  display: none;
+  position: absolute;
+  top: 26%;
+  width: 30px;
+  height: 30px;
 }
 
 .exam-simulation .question {
   width: 90%;
   padding: 1rem;
+  text-align: center;
 }
 
 .exam-simulation .alternatives {
@@ -59,10 +75,21 @@
   align-items: center;
   vertical-align: middle;
   flex-direction: column;
+  flex-flow: wrap column;
+  max-height: 500px;
 }
 
 .exam-resume-answer {
+  width: 130px;
   cursor: pointer;
+  padding: 0.2rem 1rem;
+  transition: all .3s;
+}
+
+.exam-resume-answer:hover {
+  background-color: #cccccc;
+  border-radius: 1rem;
+  transition-duration: .35s;
 }
 
 .action-button {
@@ -97,19 +124,23 @@
   margin: 0 6rem;
 }
 
-.action-button:hover {
+.action-button:enabled:hover {
   background-color: #1e8449;
   opacity: 1;
   transform: translateY(0);
   transition-duration: .35s;
 }
 
-.action-button:active {
+.action-button:disabled {
+  background-color: #cacaca;
+}
+
+.action-button:enabled:active {
   transform: translateY(2px);
   transition-duration: .35s;
 }
 
-.action-button:hover {
+.action-button:enabled:hover {
   box-shadow: rgba(39, 174, 96, .2) 0 6px 12px;
 }
 

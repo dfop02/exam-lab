@@ -15,8 +15,11 @@ $(document).ready(function(){
     // Generate user answers card
     user_exam = new Array(max_questions).fill('');
     // Build first question
-    buildQuestion(original_exam[current_question]);
+    buildQuestion();
   });
+
+  $('.review-btn').show();
+  generateCountdown();
 });
 
 // Alert progress lose before leave page
@@ -26,14 +29,16 @@ window.onbeforeunload = function(e){
   return event.returnValue = 'If you leave now, will lose the progress of current exam. Are you sure you want to leave?';
 };
 
-function buildQuestion(question) {
-  var question = original_exam[current_question]
+function buildQuestion() {
+  let question = original_exam[current_question]
+  let has_mark = user_exam[current_question].includes('?')
   // Before empty previous question if exists
   $('.exam-simulation').empty();
   // Build question element
   $('.exam-simulation').append(
     `
     <div class="question-number">
+      <img id="red-flag" src="assets/icons/red-flag.svg" alt="Marked Question"/>
       Question ${current_question+1}
     </div>
     <div class="question">
@@ -48,14 +53,14 @@ function buildQuestion(question) {
     `
   );
 
-  if (checkIfFinishedExam()) {
-    $('.review-btn').show();
+  if (user_exam[current_question].includes('?')) {
+    $('#red-flag').show();
   }
 }
 
 function buildSelectedQuestion(selected_question) {
-  current_question = selected_question
-  buildQuestion(original_exam[current_question]);
+  current_question = selected_question;
+  buildQuestion();
 
   $('.review-btn').show();
   $('.finish-btn').hide();
@@ -74,11 +79,14 @@ function buildReview() {
   );
 
   $('.review-btn').hide();
-  $('.finish-btn').show();
+
+  if (checkIfFinishedExam()) {
+    $('.finish-btn').show();
+  }
 }
 
 function buildQuestionResume() {
-  resume = '';
+  let resume = '';
   for (let i = 0; i <= user_exam.length - 1; i++) {
     resume += `<span class="exam-resume-answer" onclick="buildSelectedQuestion(${i})">Question ${i+1}: ${user_exam[i]}</span>`
   };
@@ -101,14 +109,18 @@ function buildFinishResults() {
 }
 
 function buildFinishStatistics() {
-  corrects = 0;
+  let body = '';
+  let corrects = 0;
   for (let i = 0; i <= user_exam.length - 1; i++) {
-    var correct_answer = Object.fromEntries(Object.entries(original_exam[i].alternatives).filter(([k,v]) => v.correct));
-    if (user_exam[i] == Object.keys(correct_answer)[0]) {
-      corrects += 1
+    let correct_answer = Object.fromEntries(Object.entries(original_exam[i].alternatives).filter(([k,v]) => v.correct));
+    if (user_exam[i].replace(/[^A-Z]+/g, '') == Object.keys(correct_answer)[0]) {
+      corrects += 1;
     }
-  };
-  return `<span class="exam-result-statics">You got ${(corrects/max_questions)*100}% score.</span>`;
+  }
+  let correct_percent = ((corrects/max_questions)*100).toFixed(2);
+  body += `<span class="exam-result-statics">You got ${corrects} questions out of ${max_questions} questions correct.</span>`
+  body += `<span class="exam-result-statics">You got ${correct_percent}% score.</span>`
+  return body;
 }
 
 function buildAlternatives(alternatives) {
@@ -124,16 +136,13 @@ function buildAlternatives(alternatives) {
 }
 
 function buildActionButtons() {
-  actions = ''
-  if (current_question > 0) {
-    actions += `<button class="action-button" role="button" onclick="previousQuestion()">Previous</button>`
-  }
+  let actions = '';
 
-  if (current_question < max_questions-1) {
-    actions += `<button class="action-button" role="button" onclick="nextQuestion()">Next</button>`
-  }
+  actions += `<button class="action-button" role="button" onclick="previousQuestion()" ${current_question > 0 ? '' : 'disabled'}>Previous</button>`;
+  actions += `<button class="action-button" role="button" onclick="markQuestionToggle()">?</button>`;
+  actions += `<button class="action-button" role="button" onclick="nextQuestion()" ${current_question < max_questions-1 ? '' : 'disabled'}>Next</button>`;
 
-  return actions
+  return actions;
 }
 
 function selectAlternative(event) {
@@ -141,30 +150,40 @@ function selectAlternative(event) {
   if (!span.hasClass('selected')) {
     $('.alternatives').find('span').removeClass('selected');
     span.addClass('selected');
-    user_exam[current_question] = span.text().replace('.', '')
+    has_mark = user_exam[current_question].includes('?');
+    user_exam[current_question] = span.text().replace(/[^A-Z]+/g, '');
+    if (has_mark) {
+      user_exam[current_question] += '?';
+    }
   }
+}
 
-  if (checkIfFinishedExam()) {
-    $('.review-btn').show();
+function markQuestionToggle() {
+  if (user_exam[current_question].includes('?')) {
+    user_exam[current_question] = user_exam[current_question].replace('?', '');
+    $('#red-flag').hide();
+  } else {
+    user_exam[current_question] += '?';
+    $('#red-flag').show();
   }
 }
 
 function previousQuestion() {
   if (current_question - 1 >= 0) {
     current_question -= 1;
-    buildQuestion(original_exam[current_question])
+    buildQuestion();
   }
 }
 
 function nextQuestion() {
   if (current_question + 1 <= max_questions) {
     current_question += 1;
-    buildQuestion(original_exam[current_question])
+    buildQuestion();
   }
 }
 
 function checkIfAlreadySelected(current_alternative) {
-  if (user_exam[current_question] != '' && user_exam[current_question] == current_alternative) {
+  if (user_exam[current_question] != '' && user_exam[current_question].replace(/[^A-Z]+/g, '') == current_alternative) {
     return ' selected';
   }
   return '';
@@ -172,10 +191,10 @@ function checkIfAlreadySelected(current_alternative) {
 
 function checkIfFinishedExam() {
   if (user_exam.some(el => el === '')) {
-    return false
+    return false;
   }
 
-  return true
+  return true;
 }
 
 function shuffle(array) {
@@ -185,3 +204,39 @@ function shuffle(array) {
   }
   return array;
 };
+
+// COUNTDOWN
+
+function generateCountdown(hours=1.5) {
+  // Define time of countdown in hours
+  let date = new Date();
+  date.setTime(date.getTime() + hours * 60 * 60 * 1000);
+
+  // Set the date we're counting down to
+  var countDownDate = date.getTime();
+
+  // Update the count down every 1 second
+  var x = setInterval(function() {
+
+    // Get today's date and time
+    var now = new Date().getTime();
+
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+
+    // Time calculations for days, hours, minutes and seconds
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Display the result in the element with id="demo"
+    document.getElementById("countdown").innerHTML = `${hours}H ${minutes}M ${seconds}S`;
+
+    // If the count down is finished, write some text
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("countdown").innerHTML = "EXPIRED";
+      alert('Your time is over =/');
+    }
+  }, 1000);
+}
