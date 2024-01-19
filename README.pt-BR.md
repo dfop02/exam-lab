@@ -11,6 +11,10 @@ Você pode acessar o site [aqui](https://dfop02.github.io/exam-lab/main.html) e 
 
 Por enquanto, apenas o simulado está disponível.
 
+## Provas disponíveis
+
+- Google Cloud Digital Leader (CDL) => 80 Questões
+
 ## Contribuir
 
 Você pode contribuir com este projeto de várias maneiras.

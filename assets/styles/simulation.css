@@ -54,6 +54,23 @@
   border-radius: 1rem;
 }
 
+.exam-simulation .alternative > span.alternative-choice {
+  width: 15px;
+  display: inline-block;
+  position: relative;
+  height: 15px;
+  top: -14px;
+  font-size: 0;
+  border: 1px solid black;
+  margin: 0 0.5rem;
+}
+
+.exam-simulation .alternative > span.alternative-choice.selected {
+  background:
+    linear-gradient(45deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 43%,#fff 45%,#fff 55%,rgba(0,0,0,0) 57%,rgba(0,0,0,0) 100%),
+    linear-gradient(135deg, #147771 0%,#147771 43%,#fff 45%,#fff 55%,#147771 57%,#147771 100%);
+}
+
 .exam-simulation .alternative > span.alternative-letter.selected {
   height: 1.5rem;
   width: 1.5rem;
@@ -90,6 +107,18 @@
   background-color: #cccccc;
   border-radius: 1rem;
   transition-duration: .35s;
+}
+
+.exam-finish-results {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  flex-direction: column;
+}
+
+.exam-finish-results > span.exam-result-statics {
+  margin: 1rem 0;
 }
 
 .action-button {

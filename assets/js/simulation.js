@@ -1,7 +1,10 @@
 let original_exam;
 let user_exam = [];
 let current_question = 0;
-const max_questions = 30;
+let countDown;
+let countDownStart;
+let countDownFinish;
+const max_questions = 60;
 
 $(document).ready(function(){
   const exams_path = 'https://raw.githubusercontent.com/dfop02/exam-lab/main/assets/exams/';
@@ -45,7 +48,7 @@ function buildQuestion() {
       ${question.question}
     </div>
     <div class="alternatives">
-      ${buildAlternatives(question.alternatives)}
+      ${question.multichoice ? buildMultichoiceAlternatives(question.alternatives) : buildAlternatives(question.alternatives)}
     </div>
     <div class="actions">
       ${buildActionButtons()}
@@ -111,16 +114,46 @@ function buildFinishResults() {
 function buildFinishStatistics() {
   let body = '';
   let corrects = 0;
+
+  // Stops countdown
+  clearInterval(countDown);
+  countDownFinish = new Date().getTime();
+
   for (let i = 0; i <= user_exam.length - 1; i++) {
     let correct_answer = Object.fromEntries(Object.entries(original_exam[i].alternatives).filter(([k,v]) => v.correct));
-    if (user_exam[i].replace(/[^A-Z]+/g, '') == Object.keys(correct_answer)[0]) {
-      corrects += 1;
+    let selected_answers = user_exam[i].replace(/[^A-Z]+/g, '');
+    // If is a multichoice question
+    if (Object.keys(correct_answer).length > 1) {
+      correct_answers = Object.keys(correct_answer).join('');
+      if (selected_answers == correct_answers) {
+        corrects += 1;
+      }
+    }
+    // If is a single choice question
+    if (Object.keys(correct_answer).length == 1) {
+      if (selected_answers == Object.keys(correct_answer)[0]) {
+        corrects += 1;
+      }
     }
   }
+
   let correct_percent = ((corrects/max_questions)*100).toFixed(2);
+  body += `<span class="exam-result-statics">You finished the exam in ${getTimeToFinishExam()}.</span>`
   body += `<span class="exam-result-statics">You got ${corrects} questions out of ${max_questions} questions correct.</span>`
   body += `<span class="exam-result-statics">You got ${correct_percent}% score.</span>`
   return body;
+}
+
+function buildMultichoiceAlternatives(alternatives) {
+  let alts = '';
+  Object.keys(alternatives).forEach((alternative) => {
+    alts += `
+      <div class="alternative" onclick="selectMultiAlternative(this)">
+        <span class="alternative-choice${checkIfAlreadySelected(alternative)}">${alternative}</span> ${alternatives[alternative].answer}
+      </div>
+    `
+  });
+  return alts;
 }
 
 function buildAlternatives(alternatives) {
@@ -145,6 +178,17 @@ function buildActionButtons() {
   return actions;
 }
 
+function selectMultiAlternative(event) {
+  $(event).find('span').toggleClass('selected');
+  new_selecteds = $('.alternatives').find('.selected').toArray().map((i) => { return i.innerText }).join()
+  has_mark = user_exam[current_question].includes('?');
+  user_exam[current_question] = new_selecteds;
+
+  if (has_mark) {
+    user_exam[current_question] += '?';
+  }
+}
+
 function selectAlternative(event) {
   let span = $(event).find('span');
   if (!span.hasClass('selected')) {
@@ -156,6 +200,22 @@ function selectAlternative(event) {
       user_exam[current_question] += '?';
     }
   }
+}
+
+function getTimeToFinishExam(exam_hours=1.5) {
+  let difference = countDownFinish - countDownStart;
+  let hourDifference, minuteDifference, secondDifference;
+
+  difference = difference / 1000;
+  hourDifference = Math.floor(difference / 3600);
+
+  difference -= hourDifference * 3600;
+  minuteDifference = Math.floor(difference / 60);
+
+  difference -= minuteDifference * 60;
+  secondDifference = Math.floor(difference)
+
+  return `${hourDifference} hours, ${minuteDifference} minutes, ${secondDifference} seconds`;
 }
 
 function markQuestionToggle() {
@@ -215,8 +275,11 @@ function generateCountdown(hours=1.5) {
   // Set the date we're counting down to
   var countDownDate = date.getTime();
 
+  // Register when starts countdown
+  countDownStart = new Date().getTime();
+
   // Update the count down every 1 second
-  var x = setInterval(function() {
+  countDown = setInterval(function() {
 
     // Get today's date and time
     var now = new Date().getTime();
@@ -234,7 +297,7 @@ function generateCountdown(hours=1.5) {
 
     // If the count down is finished, write some text
     if (distance < 0) {
-      clearInterval(x);
+      clearInterval(countDown);
       document.getElementById("countdown").innerHTML = "EXPIRED";
       alert('Your time is over =/');
     }

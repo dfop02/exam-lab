@@ -50,6 +50,7 @@ header h1 {
 span.exam {
   background-color: #000000;
   padding: 1rem;
+  border-radius: 15px;
 }
 
 footer {
