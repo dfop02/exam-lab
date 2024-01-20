@@ -14,6 +14,8 @@ $(document).ready(function(){
       addExams(exams_available);
     }
   });
+
+  setLocale();
 });
 
 function removeExtension(filename){
@@ -33,5 +35,32 @@ function addExams(exams){
     $('.exams').append(
       `<a href="simulation.html?exam=${exam}"><span class='exam'>${removeExtension(snakeToCapitalize(exam))}</span><a>`
     );
+  }
+}
+
+function switchLanguage(language) {
+  document.documentElement.lang = language;
+  let lang = ':lang(' + language + ')';
+  let hide = '[lang]:not(' + lang + ')';
+  document.querySelectorAll(hide).forEach(function (node) {
+    node.style.display = 'none';
+  });
+  let show = '[lang]' + lang;
+  document.querySelectorAll(show).forEach(function (node) {
+    node.style.display = 'unset';
+  });
+}
+
+function setLocale() {
+  let selectElement = document.querySelector('[class=lang-select]');
+  let optionValues = [...selectElement.options].map(o => o.value);
+  let browser_lang = navigator.language;
+
+  // Check if browser lang is supported
+  // Else, by default the locale is en
+  if (optionValues.includes(browser_lang)) {
+    document.documentElement.lang = browser_lang;
+    selectElement.value = browser_lang;
+    switchLanguage(browser_lang);
   }
 }

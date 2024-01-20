@@ -4,6 +4,7 @@ let current_question = 0;
 let countDown;
 let countDownStart;
 let countDownFinish;
+let examFinished = false;
 const max_questions = 60;
 
 $(document).ready(function(){
@@ -91,7 +92,7 @@ function buildReview() {
 function buildQuestionResume() {
   let resume = '';
   for (let i = 0; i <= user_exam.length - 1; i++) {
-    resume += `<span class="exam-resume-answer" onclick="buildSelectedQuestion(${i})">Question ${i+1}: ${user_exam[i]}</span>`
+    resume += `<span class="exam-resume-answer${isQuestionCorrectMarked(i)}" onclick="buildSelectedQuestion(${i})">Question ${i+1}: ${user_exam[i]}</span>`
   };
   return resume;
 }
@@ -118,6 +119,7 @@ function buildFinishStatistics() {
   // Stops countdown
   clearInterval(countDown);
   countDownFinish = new Date().getTime();
+  examFinished = true;
 
   for (let i = 0; i <= user_exam.length - 1; i++) {
     let correct_answer = Object.fromEntries(Object.entries(original_exam[i].alternatives).filter(([k,v]) => v.correct));
@@ -141,6 +143,7 @@ function buildFinishStatistics() {
   body += `<span class="exam-result-statics">You finished the exam in ${getTimeToFinishExam()}.</span>`
   body += `<span class="exam-result-statics">You got ${corrects} questions out of ${max_questions} questions correct.</span>`
   body += `<span class="exam-result-statics">You got ${correct_percent}% score.</span>`
+  body += `<button class="action-button finished-review-btn" onclick="buildReview(true)">Review Finished Exam</button>`
   return body;
 }
 
@@ -148,7 +151,7 @@ function buildMultichoiceAlternatives(alternatives) {
   let alts = '';
   Object.keys(alternatives).forEach((alternative) => {
     alts += `
-      <div class="alternative" onclick="selectMultiAlternative(this)">
+      <div class="alternative${isCorrectAnswer(alternatives[alternative].correct)}" onclick="selectMultiAlternative(this)">
         <span class="alternative-choice${checkIfAlreadySelected(alternative)}">${alternative}</span> ${alternatives[alternative].answer}
       </div>
     `
@@ -159,13 +162,37 @@ function buildMultichoiceAlternatives(alternatives) {
 function buildAlternatives(alternatives) {
   let alts = '';
   Object.keys(alternatives).forEach((alternative) => {
+    let correct_answer = alternatives[alternative].correct;
     alts += `
-      <div class="alternative" onclick="selectAlternative(this)">
+      <div class="alternative${isCorrectAnswer(correct_answer)}" onclick="selectAlternative(this)">
         <span class="alternative-letter${checkIfAlreadySelected(alternative)}">${alternative}.</span> ${alternatives[alternative].answer}
       </div>
     `
   });
   return alts;
+}
+
+function isQuestionCorrectMarked(index) {
+  if (!examFinished) {
+    return ''
+  }
+
+  let correct_answer = Object.fromEntries(Object.entries(original_exam[index].alternatives).filter(([k,v]) => v.correct));
+  correct_answers = Object.keys(correct_answer).join('');
+
+  if (user_exam[index].replace(/[^A-Z]+/g, '').includes(correct_answers)) {
+    return ' question-correct-marked';
+  } else {
+    return ' question-wrong-marked';
+  }
+}
+
+function isCorrectAnswer(correct_answer) {
+  if (correct_answer && examFinished) {
+    return ' correct-alternative';
+  }
+
+  return '';
 }
 
 function buildActionButtons() {
@@ -179,6 +206,10 @@ function buildActionButtons() {
 }
 
 function selectMultiAlternative(event) {
+  if (examFinished) {
+    return
+  }
+
   $(event).find('span').toggleClass('selected');
   new_selecteds = $('.alternatives').find('.selected').toArray().map((i) => { return i.innerText }).join()
   has_mark = user_exam[current_question].includes('?');
@@ -190,6 +221,10 @@ function selectMultiAlternative(event) {
 }
 
 function selectAlternative(event) {
+  if (examFinished) {
+    return
+  }
+
   let span = $(event).find('span');
   if (!span.hasClass('selected')) {
     $('.alternatives').find('span').removeClass('selected');
@@ -219,6 +254,10 @@ function getTimeToFinishExam(exam_hours=1.5) {
 }
 
 function markQuestionToggle() {
+  if (examFinished) {
+    return
+  }
+
   if (user_exam[current_question].includes('?')) {
     user_exam[current_question] = user_exam[current_question].replace('?', '');
     $('#red-flag').hide();
@@ -243,7 +282,7 @@ function nextQuestion() {
 }
 
 function checkIfAlreadySelected(current_alternative) {
-  if (user_exam[current_question] != '' && user_exam[current_question].replace(/[^A-Z]+/g, '') == current_alternative) {
+  if (user_exam[current_question] != '' && user_exam[current_question].replace(/[^A-Z]+/g, '').includes(current_alternative)) {
     return ' selected';
   }
   return '';
@@ -293,7 +332,7 @@ function generateCountdown(hours=1.5) {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Display the result in the element with id="demo"
-    document.getElementById("countdown").innerHTML = `${hours}H ${minutes}M ${seconds}S`;
+    document.getElementById("countdown").innerHTML = `Remaining time ${hours}:${minutes}:${seconds}`;
 
     // If the count down is finished, write some text
     if (distance < 0) {
