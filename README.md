@@ -18,12 +18,13 @@ For now, only the simulate is available.
 ## Available Exams
 
 - Google Cloud Digital Leader (CDL) => 80 Questions
+- Google Professional Cloud Architech (PCA) => 184 Questions
 
 ## Contribute
 
-Please take a look on [contributing.md](CONTRIBUTING.md) for more details.
+Please take a look on [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
 
-## Authors
+## Author
 
 * [Diogo Fernandes](https://github.com/dfop02)
 

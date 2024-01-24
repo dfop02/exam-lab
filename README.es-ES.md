@@ -18,12 +18,13 @@ Por ahora, sólo está disponible la simulación.
 ## Exámenes disponibles
 
 - Google Cloud Digital Leader (CDL) => 80 Preguntas
+- Google Professional Cloud Architech (PCA) => 184 Preguntas
 
 ## Contribuir
 
-Eche un vistazo a [contributing.md](CONTRIBUTING.md) para obtener más detalles.
+Eche un vistazo a [CONTRIBUTING.md](CONTRIBUTING.md) para obtener más detalles.
 
-## Autores
+## Autor
 
 * [Diogo Fernandes](https://github.com/dfop02)
 
