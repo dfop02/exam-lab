@@ -17,36 +17,30 @@
             <a href="main.html" class="title">
                 <h1>Exam Lab</h1>
             </a>
-
-            <label class="label-select" for="lang-select">
-              <select id="lang-select" class="lang-select" onchange="switchLanguage(this.options[this.selectedIndex].value)">
-                <option value="en" selected>English</option>
-                <option value="pt-BR">Português</option>
-                <option value="es-ES">Español</option>
-              </select>
-              <svg>
-                <use xlink:href="#select-arrow-down"></use>
-              </svg>
-            </label>
-            <!-- SVG Sprites-->
-            <svg class="sprites">
-              <symbol id="select-arrow-down" viewbox="0 0 10 6">
-                <polyline points="1 1 5 5 9 1"></polyline>
-              </symbol>
-            </svg>
+            <div class="label-select">
+              <img src="./assets/images/bandeira_en.png" alt="English" width="20" height="15" title="English" onclick="switchLanguage('en')">
+              <img src="./assets/images/bandeira_pt.png" alt="Português" width="20" height="15" title="Português" onclick="switchLanguage('pt-BR')">
+              <img src="./assets/images/bandeira_es.png" alt="Español" width="20" height="15" title="Español" onclick="switchLanguage('es-ES')">
+          </div>
         </header>
 
         <content class='container'>
             <div class="infos">
-                <p lang="en">
-                    Welcome to Exam-Lab! A <u>FREE</u> site to study for your certified exam. You have multiple ways to study from here like answer random questions, do a exam simulate or get important links to improve your studies.
-                </p>
-                <p lang="pt-BR">
-                    Bem vindo a Exam-Lab! Um site <u>GRÁTIS</u> para estudar para as suas provas de certificações. Você tem multiplas formas de estudar aqui como responder a questões aleatórias da prova, realizar o simulado ou adquirir links importantes para impulsionar os seus estudos.
-                </p>
-                <p lang="es-ES">
-                    ¡Bienvenido al laboratorio de exámenes! Un sitio <u>GRATUITO</u> para estudiar para tu examen certificado. Tienes múltiples formas de estudiar desde aquí, como responder preguntas aleatorias, simular un examen u obtener enlaces importantes para mejorar tus estudios.
-                </p>
+                <div lang="en">
+                    Welcome to Exam-Lab! <br>
+                    A <b>FREE</b> site to study for your certified exam. <br>
+                    You have multiple ways to study from here like answer random questions, do a exam simulate or get important links to improve your studies.
+                </div>
+                <div lang="pt-BR">
+                    Bem vindo a Exam-Lab! <br>
+                    Um site <b>GRÁTIS</b> para estudar para as suas provas de certificações. <br>
+                    Você tem multiplas formas de estudar aqui como responder a questões aleatórias da prova, realizar o simulado ou adquirir links importantes para impulsionar os seus estudos.
+                </div>
+                <div lang="es-ES">
+                    ¡Bienvenido al Exam-lab! <br>
+                    Un sitio <b>GRATUITO</b> para estudiar para tu examen certificado. <br>
+                    Tienes múltiples formas de estudiar desde aquí, como responder preguntas aleatorias, simular un examen u obtener enlaces importantes para mejorar tus estudios.
+                </div>
             </div>
             <div class="exams">
                 <div class="exam-title">
@@ -68,7 +62,7 @@
                     mostra como e onde você pode contribuir com a comunidade e ajuda o crescimento do Exam Lab.
                 </p>
                 <p lang="es-ES">
-                    <a href="https://github.com/dfop02/exam-lab">La página de contribución del laboratorio de exámenes</a>
+                    <a href="https://github.com/dfop02/exam-lab">La página de contribución del Exam Lab</a>
                      muestra cómo y dónde puede contribuir a la comunidad y ayudar a que Exam Lab crezca.
                 </p>
             </small>

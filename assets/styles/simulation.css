@@ -1,41 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Exo');
 
 .title {
   text-decoration: none;
 }
 
 #countdown {
-  margin: 1rem;
+  bottom: 0;
+  left: 50%;
+  margin-top: 3rem;
+  font-family: 'Exo', 'Courier New', Courier, monospace;
   text-align: center;
   height: 1rem;
+  justify-content: center;
+  display: flex; 
 }
 
 .exam-simulation {
-  height: 80%;
   display: flex;
+  margin-top: 25vh;
   justify-content: center;
   align-items: center;
   vertical-align: middle;
   flex-direction: column;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Exo', sans-serif;
+}
+
+.question-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .exam-simulation .question-number {
-  display: contents;
+  display: flex;
+  background-color: lightgray;
+  width: 200px;
+  height: 50px;
+  border-radius: 8px;
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+.question-number {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .exam-simulation .question-number img {
   display: none;
   position: absolute;
-  top: 26%;
-  width: 30px;
-  height: 30px;
+  align-items: center;
+  justify-content: center;
+  top: 34vh;
+  margin-right: 150px;
+  width: 24px;
+  height: 24px;
 }
 
 .exam-simulation .question {
-  width: 90%;
+
+  width: 60%;
   padding: 1rem;
   text-align: center;
 }
@@ -68,12 +94,11 @@
   font-size: 0;
   border: 1px solid black;
   margin: 0 0.5rem;
+  border-radius: 4px;
 }
 
 .exam-simulation .alternative > span.alternative-choice.selected {
-  background:
-    linear-gradient(45deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 43%,#fff 45%,#fff 55%,rgba(0,0,0,0) 57%,rgba(0,0,0,0) 100%),
-    linear-gradient(135deg, #147771 0%,#147771 43%,#fff 45%,#fff 55%,#147771 57%,#147771 100%);
+  background: #147771;
 }
 
 .exam-simulation .alternative > span.alternative-letter.selected {
@@ -88,7 +113,7 @@
 }
 
 .exam-simulation .actions {
-  padding: 0.5rem;
+  padding-top: 3rem;
 }
 
 .exam-resume {
@@ -148,7 +173,7 @@
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-family: 'Exo', Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
   font-size: 16px;
   font-weight: 600;
   letter-spacing: normal;

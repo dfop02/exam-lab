@@ -327,18 +327,18 @@ function generateCountdown(hours=1.5) {
     var distance = countDownDate - now;
 
     // Time calculations for days, hours, minutes and seconds
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toString().padStart(2, '0');
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)).toString().padStart(2, '0');
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000).toString().padStart(2, '0');
 
     // Display the result in the element with id="demo"
-    document.getElementById("countdown").innerHTML = `Remaining time ${hours}:${minutes}:${seconds}`;
+    document.getElementById("countdown").innerHTML = `Remaining time: ${hours}:${minutes}:${seconds}`;
 
     // If the count down is finished, write some text
     if (distance < 0) {
       clearInterval(countDown);
       document.getElementById("countdown").innerHTML = "EXPIRED";
-      alert('Your time is over =/');
+      alert('Your time is over :(');
     }
   }, 1000);
 }
