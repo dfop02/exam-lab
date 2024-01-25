@@ -18,9 +18,9 @@
                 <h1>Exam Lab</h1>
             </a>
             <div class="label-select">
-              <img src="./assets/images/bandeira_en.png" alt="English" width="20" height="15" title="English" onclick="switchLanguage('en')">
-              <img src="./assets/images/bandeira_pt.png" alt="Português" width="20" height="15" title="Português" onclick="switchLanguage('pt-BR')">
-              <img src="./assets/images/bandeira_es.png" alt="Español" width="20" height="15" title="Español" onclick="switchLanguage('es-ES')">
+              <img src="./assets/images/bandeira_en.png" alt="en" width="20" height="15" title="English" onclick="switchLanguage('en')">
+              <img src="./assets/images/bandeira_pt.png" alt="pt-BR" width="20" height="15" title="Português" onclick="switchLanguage('pt-BR')">
+              <img src="./assets/images/bandeira_es.png" alt="es-ES" width="20" height="15" title="Español" onclick="switchLanguage('es-ES')">
           </div>
         </header>
 
@@ -49,6 +49,31 @@
                     <span lang="es-ES">Certificaciones</span>
                 </div>
             </div>
+
+            <section class="modal hidden">
+                <div class="close">
+                    <button class="btn-close">⨉</button>
+                </div>
+                <div class="title">
+                    <h3 lang="en">Select how you prefer study</h3>
+                    <h3 lang="pt-BR">Selecione como deseja estudar</h3>
+                    <h3 lang="es-ES">Selecciona cómo quieres estudiar</h3>
+                </div>
+
+                <div class="modal-actions">
+                    <a class="modal-btn random" href="#">
+                        <span lang="en">Random Mode</span>
+                        <span lang="pt-BR">Modo Aleatório</span>
+                        <span lang="es-ES">Modo aleatorio</span>
+                    </a>
+                    <a class="modal-btn simulation" href="#">
+                        <span lang="en">Simulator Mode</span>
+                        <span lang="pt-BR">Modo Simulador</span>
+                        <span lang="es-ES">Modo Simulador</span>
+                    </a>
+                </div>
+            </section>
+            <div class="overlay hidden"></div>
         </content>
 
         <footer>

@@ -26,6 +26,16 @@ $(document).ready(function(){
   generateCountdown();
 });
 
+$(document).keydown(function(event){
+  if (event.which == 37) {
+    previousQuestion();
+  }
+
+  if (event.which == 39) {
+    nextQuestion();
+  }
+});
+
 // Alert progress lose before leave page
 window.onbeforeunload = function(e){
   e.preventDefault();
@@ -302,7 +312,7 @@ function shuffle(array) {
     [array[i], array[j]] = [array[j], array[i]];
   }
   return array;
-};
+}
 
 // COUNTDOWN
 
