@@ -1,7 +1,18 @@
 # Change Log
 
 ## [Next](https://github.com/dfop02/exam-lab/tree/HEAD)
-[Full Changelog](https://github.com/dfop02/exam-lab/compare/0.3.0...HEAD)
+[Full Changelog](https://github.com/dfop02/exam-lab/compare/0.3.1...HEAD)
+
+## [0.3.1](https://github.com/dfop02/exam-lab/releases/tag/0.3.1)
+24 January 2024
+
+#### New Features
+
+* None
+
+#### Fixes
+
+* Fix bug that was not collecting all available exams data from `assets/exams/`
 
 ## [0.3.0](https://github.com/dfop02/exam-lab/releases/tag/0.3.0)
 24 January 2024

@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  let exams_path = 'https://api.github.com/repos/dfop02/exam-lab/git/trees/e48c8aef17aea807d500f8d23a546449961fc376'
+  let exams_path = 'https://api.github.com/repos/dfop02/exam-lab/git/trees/main?recursive=1'
   let exams_available = [];
 
   // Collect availables exams from assets/exams on the project's repo
@@ -7,10 +7,9 @@ $(document).ready(function(){
     url : exams_path,
     type : 'GET',
     success:function(res){
-      res.tree.forEach(function(file){
-        exams_available.push(file.path);
-      });
-
+      res.tree.filter(f => f.path.includes('assets/exams/'))
+              .map(f => f.path.split('/').pop())
+              .forEach(exam => exams_available.push(exam))
       addExams(exams_available);
     }
   });
