@@ -15,6 +15,18 @@ $(document).ready(function(){
     }
   });
 
+  $('.btn-close').click(function(e) {
+    e.preventDefault();
+    $('.modal').addClass('hidden');
+    $('.overlay').addClass('hidden');
+  });
+
+  $('.overlay').click(function(e) {
+    e.preventDefault();
+    $('.modal').addClass('hidden');
+    $('.overlay').addClass('hidden');
+  });
+
   setLocale();
 });
 
@@ -33,9 +45,17 @@ function snakeToCapitalize(str){
 function addExams(exams){
   for (exam of exams) {
     $('.exams').append(
-      `<a href="simulation.html?exam=${exam}"><span class='exam'>${removeExtension(snakeToCapitalize(exam))}</span><a>`
+      `<a class="exam-btn" href="#" onclick="updateModal('${exam}')"><span class='exam'>${removeExtension(snakeToCapitalize(exam))}</span><a>`
     );
   }
+}
+
+function updateModal(exam) {
+  $('.modal-actions > a.random').attr('href', `random.html?exam=${exam}`);
+  $('.modal-actions > a.simulation').attr('href', `simulation.html?exam=${exam}`);
+
+  $('.modal').removeClass('hidden');
+  $('.overlay').removeClass('hidden');
 }
 
 function switchLanguage(language) {
@@ -52,8 +72,7 @@ function switchLanguage(language) {
 }
 
 function setLocale() {
-  let selectElement = document.querySelector('[class=lang-select]');
-  let optionValues = [...selectElement.options].map(o => o.value);
+  let optionValues = $('.label-select img').map((i, o) => o.title).toArray()
   let browser_lang = navigator.language;
 
   // Check if browser lang is supported
