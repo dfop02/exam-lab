@@ -285,7 +285,7 @@ function previousQuestion() {
 }
 
 function nextQuestion() {
-  if (current_question + 1 <= max_questions) {
+  if (current_question + 1 < max_questions) {
     current_question += 1;
     buildQuestion();
   }

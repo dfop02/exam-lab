@@ -1,7 +1,22 @@
 # Change Log
 
 ## [Next](https://github.com/dfop02/exam-lab/tree/HEAD)
-[Full Changelog](https://github.com/dfop02/exam-lab/compare/0.3.1...HEAD)
+[Full Changelog](https://github.com/dfop02/exam-lab/compare/0.3.2...HEAD)
+
+## [0.3.2](https://github.com/dfop02/exam-lab/releases/tag/0.3.2)
+26 January 2024
+
+#### New Features
+
+* Add +30 questions to Google Cloud Digital Leader (CDL), currenctly 110 at total
+* Update README with details about each mode
+
+#### Fixes
+
+* Adjust question vertical align
+* Adjust huge answers to stay in the middle of screen
+* Fix grammar errors on few questions of Google Professional Cloud Architech
+* Adjust align to review page to match precisely columns of 15 questions
 
 ## [0.3.1](https://github.com/dfop02/exam-lab/releases/tag/0.3.1)
 24 January 2024
