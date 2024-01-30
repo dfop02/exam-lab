@@ -7,7 +7,7 @@ let countDownFinish;
 let examFinished = false;
 const max_questions = 60;
 
-$(document).ready(function(){
+$(document).ready(function() {
   const exams_path = 'https://raw.githubusercontent.com/dfop02/exam-lab/main/assets/exams/';
   const searchParams = new URLSearchParams(window.location.search);
   const exam_name = searchParams.get('exam');
@@ -26,7 +26,7 @@ $(document).ready(function(){
   generateCountdown();
 });
 
-$(document).keydown(function(event){
+$(document).keydown(function(event) {
   if (event.which == 37) {
     previousQuestion();
   }
@@ -37,7 +37,7 @@ $(document).keydown(function(event){
 });
 
 // Alert progress lose before leave page
-window.onbeforeunload = function(e){
+window.onbeforeunload = function(e) {
   e.preventDefault();
   // TO-DO: Currently the custom message is not working
   return event.returnValue = 'If you leave now, will lose the progress of current exam. Are you sure you want to leave?';
@@ -94,7 +94,7 @@ function buildReview() {
 
   $('.review-btn').hide();
 
-  if (checkIfFinishedExam()) {
+  if (checkIfMarkedAllQuestions()) {
     $('.finish-btn').show();
   }
 }
@@ -264,10 +264,6 @@ function getTimeToFinishExam(exam_hours=1.5) {
 }
 
 function markQuestionToggle() {
-  if (examFinished) {
-    return
-  }
-
   if (user_exam[current_question].includes('?')) {
     user_exam[current_question] = user_exam[current_question].replace('?', '');
     $('#red-flag').hide();
@@ -298,8 +294,8 @@ function checkIfAlreadySelected(current_alternative) {
   return '';
 }
 
-function checkIfFinishedExam() {
-  if (user_exam.some(el => el === '')) {
+function checkIfMarkedAllQuestions() {
+  if (examFinished || user_exam.some(el => el === '')) {
     return false;
   }
 

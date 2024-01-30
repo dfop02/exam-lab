@@ -9,17 +9,17 @@ Você pode acessar o Exam Lab clicando [aqui](https://dfop02.github.io/exam-lab/
 
 ## Como funciona
 
-Primeiramente, os exames devem ser em inglês porque a maioria deles não está disponível em muitos idiomas, então entendo que é importante estudar no mesmo idioma em que você fará o exame.
+Primeiramente, os exames devem ser em inglês porque a maioria deles não está disponível em muitos idiomas, então entendo que é importante estudar no mesmo idioma em que você fará a prova.
 
 Comece seus estudos gratuitamente onde e quando quiser. Todos os exames disponíveis são armazenados em `assets/exams`. Atualmente com 2 modos diferentes para atender às suas necessidades, você pode estudar respondendo as questões aleatoriamente sem se preocupar com o tempo e obter a resposta correta imediatamente ou pode estudar por simulação que tem 90 minutos para acertar 60 questões aleatórias do exame selecionado e você só obtém o resultado no final.
 
 #### Modo Aleatório
 
-Gere aleatoriamente uma lista de todas as questões e depois mostre uma por uma, selecione a melhor alternativa e ela lhe dará a correta imediatamente após a nota. Bom para quando você quer fazer um estudo rápido como flashcards.
+Gere aleatoriamente uma lista de todas as questões e depois mostre uma por uma, selecione a melhor alternativa e ela lhe dará a correta imediatamente. Bom para quando você quer fazer um estudo rápido como flashcards.
 
 #### Modo Simulador
 
-Gere um simulador para o exame, selecione aleatoriamente 60 questões e construa uma simulação de exame bem semelhante, depois de selecionar todas as questões e revisar, você poderá finalizar o exame, fornecendo as estatísticas da sua tentativa. Além disso, após o exame, você poderá verificar o que errou revisando o exame.
+Gera um simulador para o exame, selecionando aleatoriamente 60 questões e montando um prazo de 90 minutos para completa-lo. Após marcar todas as questões e revisar, você poderá finalizar a prova, onde será fornecido as estatísticas da sua tentativa. Além disso, após o exame, você poderá verificar o que errou revisando o exame.
 
 ## Provas disponíveis
 

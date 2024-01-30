@@ -2,7 +2,7 @@
 
 html, body {
   width: 100%;
-  height: 100%;
+  height: auto;
   margin: 0;
   padding: 0;
   background-color: #ededed;
@@ -61,7 +61,7 @@ img {
 
 .container {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .infos {
@@ -202,4 +202,45 @@ footer {
   padding: 5px;
   background-color: #abbaba;
   color: #000;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .label-select {
+    right: unset;
+    top: 9%;
+  }
+
+  .infos {
+    margin: 3rem 1rem;
+  }
+
+  .modal {
+    width: 90%;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+
+  footer small {
+    margin: auto 4px;
+  }
+}
+
+/* Tablet / iPad */
+
+@media (max-width: 1080px) {
+  .infos {
+    margin: 3rem 1rem;
+  }
+
+  .modal {
+    width: 50%;
+  }
+
+  footer {
+    font-size: 14px;
+  }
 }

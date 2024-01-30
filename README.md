@@ -19,7 +19,7 @@ Randomically generate a list of all questions then show one by one, select the b
 
 #### Simulator Mode
 
-Generate a simulator for de exam, select random 60 questions and build a very similar simulation of exam, then after select all questions and review, you'll be able to finish exam, giving you the statistics of your try. Also after the exam you'll be able to check what did you wrong by review the exam.
+Generate a simulator for de exam, selecting random 60 questions to complete in 90 minutes. Then, after answer all questions and review, you'll be able to finish exam, giving you the statistics of your try. Also, after the exam you'll be able to check what did you wrong by review the exam.
 
 ## Available Exams
 

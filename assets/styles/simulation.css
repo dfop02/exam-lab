@@ -7,7 +7,7 @@
 #countdown {
   bottom: 0;
   left: 50%;
-  margin-top: 3rem;
+  margin: 2rem 0;
   font-family: 'Exo', 'Courier New', Courier, monospace;
   text-align: center;
   height: 1rem;
@@ -162,7 +162,8 @@
 }
 
 .exam-finish-results > span.exam-result-statics {
-  margin: 1rem 0;
+  margin: 1rem;
+  text-align: center;
 }
 
 .action-button {
@@ -222,4 +223,59 @@
   position: absolute;
   bottom: 3rem;
   right: -4rem;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .container {
+    height: auto;
+  }
+
+  .exam-simulation {
+    margin-top: 1rem;
+  }
+
+  .exam-simulation .question {
+    width: 90%;
+  }
+
+  .exam-simulation .question-number img {
+    left: 28%;
+  }
+
+  .exam-resume {
+    flex-flow: wrap;
+    max-height: 700px;
+    overflow-y: auto;
+    font-size: 14px;
+  }
+
+  .action-button {
+    margin: 0 1rem;
+  }
+
+  .review-btn, .finish-btn {
+    position: relative;
+    margin: 1rem auto;
+    bottom: unset;
+    right: unset;
+  }
+
+  #countdown {
+    margin: 2rem 0;
+  }
+}
+
+/* Tablet / iPad */
+
+@media (max-width: 1080px) {
+  .action-button {
+    margin: 0 4rem;
+  }
+
+  .review-btn, .finish-btn {
+    bottom: unset;
+    right: -2rem;
+  }
 }

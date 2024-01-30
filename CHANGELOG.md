@@ -1,7 +1,21 @@
 # Change Log
 
 ## [Next](https://github.com/dfop02/exam-lab/tree/HEAD)
-[Full Changelog](https://github.com/dfop02/exam-lab/compare/0.3.2...HEAD)
+[Full Changelog](https://github.com/dfop02/exam-lab/compare/0.4.0...HEAD)
+
+## [0.4.0](https://github.com/dfop02/exam-lab/releases/tag/0.4.0)
+30 January 2024
+
+#### New Features
+
+* Support to mobile
+* Undo block "?" button after finish exam
+
+#### Fixes
+
+* Update README to fix few grammar issues
+* Fix "Finish Exam" button from show after finish exam
+* Fix bug in random mode for multichoice questions not showing correct after mark
 
 ## [0.3.2](https://github.com/dfop02/exam-lab/releases/tag/0.3.2)
 26 January 2024

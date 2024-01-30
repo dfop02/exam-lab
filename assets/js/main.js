@@ -4,9 +4,9 @@ $(document).ready(function(){
 
   // Collect availables exams from assets/exams on the project's repo
   $.ajax({
-    url : exams_path,
-    type : 'GET',
-    success:function(res){
+    url: exams_path,
+    type: 'GET',
+    success: function(res){
       res.tree.filter(f => f.path.includes('assets/exams/'))
               .map(f => f.path.split('/').pop())
               .forEach(exam => exams_available.push(exam))
@@ -59,13 +59,13 @@ function updateModal(exam) {
 
 function switchLanguage(language) {
   document.documentElement.lang = language;
-  let lang = ':lang(' + language + ')';
-  let hide = '[lang]:not(' + lang + ')';
-  document.querySelectorAll(hide).forEach(function (node) {
+  let lang = `:lang(${language})`;
+  let show = '[lang]' + lang;
+  let hide = `[lang]:not(${lang})`;
+  document.querySelectorAll(hide).forEach(function(node) {
     node.style.display = 'none';
   });
-  let show = '[lang]' + lang;
-  document.querySelectorAll(show).forEach(function (node) {
+  document.querySelectorAll(show).forEach(function(node) {
     node.style.display = 'unset';
   });
 }

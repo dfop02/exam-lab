@@ -165,3 +165,43 @@
 .action-button:enabled:hover {
   box-shadow: rgba(39, 174, 96, .2) 0 6px 12px;
 }
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .container {
+    overflow-y: auto;
+  }
+
+  .exam-random {
+    margin-top: 1rem;
+  }
+
+  .exam-random .question {
+    width: 90%;
+  }
+
+  .exam-random .question-number img {
+    left: 28%;
+  }
+
+  .actions {
+    padding: 1rem 0;
+  }
+
+  .action-button {
+    margin: 0 1rem;
+  }
+}
+
+/* Tablet / iPad */
+
+@media (max-width: 1080px) {
+  .exam-random .actions {
+    padding-top: 0;
+  }
+
+  .action-button {
+    margin: 2rem 0;
+  }
+}
