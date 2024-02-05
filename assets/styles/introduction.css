@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Exo');
+
+.intro {
+  flex-direction: column;
+  vertical-align: middle;
+}
+
+.intro .intro-title {
+  font-family: 'Exo', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  display: flex;  
+  justify-content: center;
+  margin: 1rem; 
+}
+
+.infos {
+  text-align: left;
+}
+
+.exam-start {
+  display: flex;
+  margin-top: 15vh;
+  flex-direction: column;
+}
+
+.start-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

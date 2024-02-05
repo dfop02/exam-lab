@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function () {
   let exams_path = 'https://api.github.com/repos/dfop02/exam-lab/git/trees/main?recursive=1'
   let exams_available = [];
 
@@ -6,21 +6,21 @@ $(document).ready(function(){
   $.ajax({
     url: exams_path,
     type: 'GET',
-    success: function(res){
+    success: function (res) {
       res.tree.filter(f => f.path.includes('assets/exams/'))
-              .map(f => f.path.split('/').pop())
-              .forEach(exam => exams_available.push(exam))
+        .map(f => f.path.split('/').pop())
+        .forEach(exam => exams_available.push(exam))
       addExams(exams_available);
     }
   });
 
-  $('.btn-close').click(function(e) {
+  $('.btn-close').click(function (e) {
     e.preventDefault();
     $('.modal').addClass('hidden');
     $('.overlay').addClass('hidden');
   });
 
-  $('.overlay').click(function(e) {
+  $('.overlay').click(function (e) {
     e.preventDefault();
     $('.modal').addClass('hidden');
     $('.overlay').addClass('hidden');
@@ -29,11 +29,11 @@ $(document).ready(function(){
   setLocale();
 });
 
-function removeExtension(filename){
+function removeExtension(filename) {
   return filename.substring(0, filename.lastIndexOf('.')) || filename;
 }
 
-function snakeToCapitalize(str){
+function snakeToCapitalize(str) {
   var arr = str.split('_');
   for (var i = 0; i < arr.length; i++) {
     arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
@@ -41,7 +41,7 @@ function snakeToCapitalize(str){
   return arr.join(' ');
 }
 
-function addExams(exams){
+function addExams(exams) {
   for (exam of exams) {
     $('.exams').append(
       `<a class="exam-btn" href="#" onclick="updateModal('${exam}')"><span class='exam'>${removeExtension(snakeToCapitalize(exam))}</span><a>`
@@ -51,7 +51,8 @@ function addExams(exams){
 
 function updateModal(exam) {
   $('.modal-actions > a.random').attr('href', `random.html?exam=${exam}`);
-  $('.modal-actions > a.simulation').attr('href', `simulation.html?exam=${exam}`);
+  $('.modal-actions > a.simulation').attr('href', `introduction.html?exam=${exam}`);
+  // $('.modal-actions > a.simulation').attr('href', `simulation.html?exam=${exam}`);
 
   $('.modal').removeClass('hidden');
   $('.overlay').removeClass('hidden');
@@ -62,10 +63,10 @@ function switchLanguage(language) {
   let lang = `:lang(${language})`;
   let show = '[lang]' + lang;
   let hide = `[lang]:not(${lang})`;
-  document.querySelectorAll(hide).forEach(function(node) {
+  document.querySelectorAll(hide).forEach(function (node) {
     node.style.display = 'none';
   });
-  document.querySelectorAll(show).forEach(function(node) {
+  document.querySelectorAll(show).forEach(function (node) {
     node.style.display = 'unset';
   });
 }
@@ -81,4 +82,12 @@ function setLocale() {
     selectElement.value = browser_lang;
     switchLanguage(browser_lang);
   }
+}
+
+function openSimulator() {
+  const searchParams = new URLSearchParams(window.location.search);
+  const exam_name = searchParams.get('exam');
+
+  window.location.href = `simulation.html?exam=${exam_name}`;
+
 }
