@@ -1,0 +1,292 @@
+[
+  {
+    "question": "Your organization has a 3-tier web application deployed in the same network on Google Cloud Platform. Each tier (web, API, and database) scales independently of the others. Network traffic should flow through the web to the API tier and then on to the database tier. Traffic should not flow between the web and the database tier. How should you configure the network?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Add each tier to a different subnetwork",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Set up software based firewalls on individual VMs",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Add tags to each tier and set up routes to allow the desired traffic flow",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Add tags to each tier and set up firewall rules to allow the desired traffic flow",
+        "correct": true,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "Your development team has installed a new Linux kernel module on the batch servers in Google Compute Engine (GCE) virtual machines (VMs) to speed up the nightly batch process. Two days after the installation, 50% of the batch servers failed the nightly batch run. You want to collect details on the failure to pass back to the development team. Which three actions should you take? (Choose 3)",
+    "code": "",
+    "multichoice": true,
+    "alternatives": {
+      "A": {
+        "answer": "Use Stackdriver Logging to search for the module log entries",
+        "correct": true,
+        "why": ""
+      },
+      "B": {
+        "answer": "Read the debug GCE Activity log using the API or Cloud Console",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Use gcloud or Cloud Console to connect to the serial console and observe the logs",
+        "correct": true,
+        "why": ""
+      },
+      "D": {
+        "answer": "Identify whether a live migration event of the failed server occurred, using in the activity log",
+        "correct": false,
+        "why": ""
+      },
+      "E": {
+        "answer": "Adjust the Google Stackdriver timeline to match the failure time, and observe the batch server metrics",
+        "correct": true,
+        "why": ""
+      },
+      "F": {
+        "answer": "Export a debug VM into an image, and run the image on a local server where kernel log messages will be displayed on the native screen",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "Your company wants to try out the cloud with low risk. They want to archive approximately 100 TB of their log data to the cloud and test the analytics features available to them there, while also retaining that data as a long-term disaster recovery backup. Which two steps should you take? (Choose 2)",
+    "code": "",
+    "multichoice": true,
+    "alternatives": {
+      "A": {
+        "answer": "Load logs into Google BigQuery",
+        "correct": true,
+        "why": ""
+      },
+      "B": {
+        "answer": "Load logs into Google Cloud SQL",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Import logs into Google Stackdriver",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Insert logs into Google Cloud Bigtable",
+        "correct": false,
+        "why": ""
+      },
+      "E": {
+        "answer": "Upload log files into Google Cloud Storage",
+        "correct": true,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "You created a pipeline that can deploy your source code changes to your infrastructure in instance groups for self-healing. One of the changes negatively affects your key performance indicator. You are not sure how to fix it, and investigation could take up to a week. What should you do?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Log in to a server, and iterate on the fox locally",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Revert the source code change, and rerun the deployment pipeline",
+        "correct": true,
+        "why": ""
+      },
+      "C": {
+        "answer": "Log into the servers with the bad code change, and swap in the previous code",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Change the instance group template to the previous one, and delete all instances",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "Your organization wants to control IAM policies for different departments independently, but centrally. Which approach should you take?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Multiple Organizations with multiple Folders",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Multiple Organizations, one for each department",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "A single Organization with Folders for each department",
+        "correct": true,
+        "why": ""
+      },
+      "D": {
+        "answer": "A single Organization with multiple projects, each with a central owner",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "You are designing a mobile chat application. You want to ensure people cannot spoof chat messages, by providing a message were sent by a specific user. What should you do?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Tag messages client side with the originating user identifier and the destination user.",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Encrypt the message client side using block-based encryption with a shared key.",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Use public key infrastructure (PKI) to encrypt the message client side using the originating user's private key.",
+        "correct": true,
+        "why": ""
+      },
+      "D": {
+        "answer": "Use a trusted certificate authority to enable SSL connectivity between the client application and the server.",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "As part of implementing their disaster recovery plan, your company is trying to replicate their production MySQL database from their private data center to theirGCP project using a Google Cloud VPN connection. They are experiencing latency issues and a small amount of packet loss that is disrupting the replication. What should they do?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Configure their replication to use UDP.",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Configure a Google Cloud Dedicated Interconnect.",
+        "correct": true,
+        "why": ""
+      },
+      "C": {
+        "answer": "Restore their database daily using Google Cloud SQL.",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Add additional VPN connections and load balance them.",
+        "correct": false,
+        "why": ""
+      },
+      "E": {
+        "answer": "Send the replicated transaction to Google Cloud Pub/Sub.",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "Your customer support tool logs all email and chat conversations to Cloud Bigtable for retention and analysis. What is the recommended approach for sanitizing this data of personally identifiable information or payment card information before initial storage?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Hash all data using SHA256",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Encrypt all data using elliptic curve cryptography",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "De-identify the data with the Cloud Data Loss Prevention API",
+        "correct": true,
+        "why": ""
+      },
+      "D": {
+        "answer": "Use regular expressions to find and redact phone numbers, email addresses, and credit card numbers",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "You are using Cloud Shell and need to install a custom utility for use in a few weeks. Where can you store the file so it is in the default execution path and persists across sessions?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "~/bin",
+        "correct": true,
+        "why": ""
+      },
+      "B": {
+        "answer": "Cloud Storage",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "/google/scripts",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "/usr/local/bin",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "You want to create a private connection between your instances on Compute Engine and your on-premises data center. You require a connection of at least 20Gbps. You want to follow Google-recommended practices. How should you set up the connection?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Create a VPC and connect it to your on-premises data center using Dedicated Interconnect.",
+        "correct": true,
+        "why": ""
+      },
+      "B": {
+        "answer": "Create a VPC and connect it to your on-premises data center using a single Cloud VPN.",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Create a Cloud Content Delivery Network (Cloud CDN) and connect it to your on-premises data center using Dedicated Interconnect.",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Create a Cloud Content Delivery Network (Cloud CDN) and connect it to your on-premises datacenter using a single Cloud VPN.",
+        "correct": false,
+        "why": ""
+      }
+    }
+  }
+]

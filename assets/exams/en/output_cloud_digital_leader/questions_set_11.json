@@ -1,0 +1,262 @@
+[
+  {
+    "question": "Which technology allows organization to run multiple computer operating systems on a single piece of physical hardware?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Hypervisor",
+        "correct": true,
+        "why": ""
+      },
+      "B": {
+        "answer": "Containers",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Serverless computing",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Open source",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "An organization is making a strategic change to customer support in response to feedback. They plan to extend their helpline availability hours. Why is the organization making this change?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Users expect professional expertise",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Users require personalization",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Users expect always-on services",
+        "correct": true,
+        "why": ""
+      },
+      "D": {
+        "answer": "Users require regional access",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "An organization is migrating it's business application from on-premises to the cloud. How cloud this impact their operations and personnel costs?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Reduced on-premises infrastructure management costs",
+        "correct": true,
+        "why": ""
+      },
+      "B": {
+        "answer": "Increased on-premises hardware maintenance costs",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Reduced cloud software licensing costs",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "increased cloud hardware management costs",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "A retail company stores their product inventory in a legacy system. Often, customers find products on the company's website and want to purchase them in-store. However, when they arrive, they discover that the products are out of stock. How cloud the company benefit from using an aplication programming interface (API)?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "To create personalized product recommendations for customers",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "To optimize their on-premises legacy system stability",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "By manually liking each inventory system to the website on a case-by-case basis",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "By programmatically connecting the inventory system to their website",
+        "correct": true,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "An organization is training a machine learning model to predict extreme weather events in their country. How should they collect data to maximize prediction accuracy?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Collect all weather data evenly across all cities",
+        "correct": true,
+        "why": ""
+      },
+      "B": {
+        "answer": "Collect all weather data primarily from at-risk cities",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Collect extreme weather data evenly across all cities",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Collect extreme weather data primarily from at-risk cities",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "An organization needs to search an application's source code to identity a potential issue. The application is distributed across multiple containers. Which Google Cloud product should the organization use?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Google Cloud Console",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Cloud Trace",
+        "correct": true,
+        "why": ""
+      },
+      "C": {
+        "answer": "Cloud Monitoring",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Cloud Logging",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "An organization's web developers and operations personnel use different systems. How will increasing communication between the teams reduce issues caused by silos?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "By assigning blame for failure and establishing consequences",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "By combining job role responsibilities to ensure that everyone has shared access",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "By increasing data encryption to strengthen workflows",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "By emphasizing shared ownership of business outcomes",
+        "correct": true,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "How does a large hotel chain benefit from storing it's customer reservation data in the cloud?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "On-premises hardware access to transaction data",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Real-time data transformation at scale within an on-premises database",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Real-time business transaction accuracy at scale",
+        "correct": true,
+        "why": ""
+      },
+      "D": {
+        "answer": "Physical hardware access during peak demand",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "An organization wants to migrate legacy applications currently hosted in their data center to the cloud. The current architecture dictates that each application needs it's own operating system (OS) instead of sharing an OS. Which infrastructure solution should they choose?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Virtual machines",
+        "correct": true,
+        "why": ""
+      },
+      "B": {
+        "answer": "Open source",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Serverless computing",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Containers",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "An organization operates it's entire IT infrastructure from Google Cloud. What should they do to prepare for data breaches?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Reduce reliance on multi-factor authentication",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Data security is Google's responsibility, so preparation is minimal",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Create an incident plan to mitigate the impacts",
+        "correct": true,
+        "why": ""
+      },
+      "D": {
+        "answer": "Strengthen their data center perimeter security",
+        "correct": false,
+        "why": ""
+      }
+    }
+  }
+]

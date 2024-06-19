@@ -1,0 +1,267 @@
+[
+  {
+    "question": "Every employee of your company has a Google account. Your operational team needs to manage a large number of instances on Compute Engine. Each member of this team needs only administrative access to the servers. Your security team wants to ensure that the deployment of credentials is operationally efficient and must be able to determine who accessed a given instance. What should you do?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Generate a new SSH key pair. Give the private key to each member of your team. Configure the public key in the metadata of each instance.",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Ask each member of the team to generate a new SSH key pair and to send you their public key. Use a configuration management tool to deploy those keys on each instance.",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Ask each member of the team to generate a new SSH key pair and to add the public key to their Google account. Grant the ג€compute.osAdminLoginג€ role to the Google group corresponding to this team.",
+        "correct": true,
+        "why": ""
+      },
+      "D": {
+        "answer": "Generate a new SSH key pair. Give the private key to each member of your team. Configure the public key as a project-wide public SSH key in your Cloud Platform project and allow project-wide public SSH keys on each instance.",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "You need to create a custom VPC with a single subnet. The subnet's range must be as large as possible. Which range should you use?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "0.0.0.0/0",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "10.0.0.0/8",
+        "correct": true,
+        "why": ""
+      },
+      "C": {
+        "answer": "172.16.0.0/12",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "192.168.0.0/16",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "You want to select and configure a cost-effective solution for relational data on Google Cloud Platform. You are working with a small set of operational data in one geographic location. You need to support point-in-time recovery. What should you do?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Select Cloud SQL (MySQL). Verify that the enable binary logging option is selected.",
+        "correct": true,
+        "why": ""
+      },
+      "B": {
+        "answer": "Select Cloud SQL (MySQL). Select the create failover replicas option.",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Select Cloud Spanner. Set up your instance with 2 nodes.",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Select Cloud Spanner. Set up your instance as multi-regional.",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "You want to configure autohealing for network load balancing for a group of Compute Engine instances that run in multiple zones, using the fewest possible steps.You need to configure re-creation of VMs if they are unresponsive after 3 attempts of 10 seconds each. What should you do?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Create an HTTP load balancer with a backend configuration that references an existing instance group. Set the health check to healthy (HTTP)",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Create an HTTP load balancer with a backend configuration that references an existing instance group. Define a balancing mode and set the maximum RPS to 10.",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Create a managed instance group. Set the Autohealing health check to healthy (HTTP)",
+        "correct": true,
+        "why": ""
+      },
+      "D": {
+        "answer": "Create a managed instance group. Verify that the autoscaling setting is on.",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "You are using multiple configurations for gcloud. You want to review the configured Kubernetes Engine cluster of an inactive configuration using the fewest possible steps. What should you do?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Use gcloud config configurations describe to review the output.",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Use gcloud config configurations activate and gcloud config list to review the output.",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Use kubectl config get-contexts to review the output.",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Use kubectl config use-context and kubectl config view to review the output.",
+        "correct": true,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "Your company uses Cloud Storage to store application backup files for disaster recovery purposes. You want to follow Google's recommended practices. Which storage option should you use?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Multi-Regional Storage",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Regional Storage",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Nearline Storage",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Coldline Storage",
+        "correct": true,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "Several employees at your company have been creating projects with Cloud Platform and paying for it with their personal credit cards, which the company reimburses. The company wants to centralize all these projects under a single, new billing account. What should you do?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Contact cloud-billing@google.com with your bank account details and request a corporate billing account for your company.",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Create a ticket with Google Support and wait for their call to share your credit card details over the phone.",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "In the Google Platform Console, go to the Resource Manage and move all projects to the root Organizarion.",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "In the Google Cloud Platform Console, create a new billing account and set up a payment method.",
+        "correct": true,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "You have an application that looks for its licensing server on the IP 10.0.3.21. You need to deploy the licensing server on Compute Engine. You do not want to change the configuration of the application and want the application to be able to reach the licensing server. What should you do?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Reserve the IP 10.0.3.21 as a static internal IP address using gcloud and assign it to the licensing server.",
+        "correct": true,
+        "why": ""
+      },
+      "B": {
+        "answer": "Reserve the IP 10.0.3.21 as a static public IP address using gcloud and assign it to the licensing server.",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Use the IP 10.0.3.21 as a custom ephemeral IP address and assign it to the licensing server.",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Start the licensing server with an automatic ephemeral IP address, and then promote it to a static internal IP address.",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "You are deploying an application to App Engine. You want the number of instances to scale based on request rate. You need at least 3 unoccupied instances at all times. Which scaling type should you use?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Manual Scaling with 3 instances.",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Basic Scaling with min_instances set to 3.",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Basic Scaling with max_instances set to 3.",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Automatic Scaling with min_idle_instances set to 3.",
+        "correct": true,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "You have a development project with appropriate IAM roles defined. You are creating a production project and want to have the same IAM roles on the new project, using the fewest possible steps. What should you do?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Use gcloud iam roles copy and specify the production project as the destination project",
+        "correct": true,
+        "why": ""
+      },
+      ".": {
+        "answer": "",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Use gcloud iam roles copy and specify your organization as the destination organization.",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "In the Google Cloud Platform Console, use the 'create role from role' functionality.",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "In the Google Cloud Platform Console, use the 'create role' functionality and select all applicable permissions.",
+        "correct": false,
+        "why": ""
+      }
+    }
+  }
+]

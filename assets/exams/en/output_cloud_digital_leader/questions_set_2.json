@@ -1,0 +1,262 @@
+[
+  {
+    "question": "An organization wants to add a new function to their application. They want to write the code and let the public cloud provider handle the infrastructure. Which infrastructure solution should they use?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Virtual machines",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Bare Metal Solution",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Serverless computing",
+        "correct": true,
+        "why": ""
+      },
+      "D": {
+        "answer": "Container Registry",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "An organization wants to leverage tooling and automation as part of its new DevOps philosophy. Which operational challenge will this resolve?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Repetitive manual tasks that hinder workflows",
+        "correct": true,
+        "why": ""
+      },
+      "B": {
+        "answer": "Time-consuming supervision of creative tasks",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Distribution and supply-chain issues",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Defective technical equipment that limits innovation",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "An organization needs to store structured, semi-structured and unstructured data in its raw, native format in the same repository. Which cloud data management solution should the organization use?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Data field",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Data lake",
+        "correct": true,
+        "why": ""
+      },
+      "C": {
+        "answer": "Database",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Data warehouse",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "An organization  wants its users to validate a series of new features for their app. Why should they use App Engine?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Because their app is containerized and enable by microservices",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Because the updated app will only include new features",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "To run different versions of the app for different users",
+        "correct": true,
+        "why": ""
+      },
+      "D": {
+        "answer": "To run different versions of the app for the same user",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "How would an organization benefit from using Looker?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Optimal identify and access management",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Leading serverless warehousing technology",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Robust data roll-back accuracy",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Advanced business intelligence and analytic",
+        "correct": true,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "An organization delivers a proactive healthcare service. They want to efficiently and automatically collect pacient data. What should the organization encourage the pacients to do?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "User at-home health screening devices and then upload their health data daily",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Wear Internet of Things (IoT) devices that upload their health data in real time",
+        "correct": true,
+        "why": ""
+      },
+      "C": {
+        "answer": "Self-assess their health data and then document and upload it in real time",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Visit a nurse who will use the Internet of Things (IoT) devices to collect and upload their health data",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "How would a global organization benefit frmo managing their data with Cloud Spanner?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Cloud Spanner is optmized for cold storage",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Cloud Spanner replicates data across regions in real time",
+        "correct": true,
+        "why": ""
+      },
+      "C": {
+        "answer": "Cloud Spanner is optmized to ingest unstructured data",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Cloud Spanner visualizes and analyzes data in real time",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "An employee receives an email from their internet service provider asking for their bank account number and password. What cybersecurity threat is this?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Ransomware",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Distributed Denial of Service",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Spamming",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Phishing",
+        "correct": true,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "An organization wants to move from a tactical cloud adoption approach to a transformational approach. How should they adapt the way they lead the organization?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Increase top-down visibility and foaster a culture of blamelessness",
+        "correct": true,
+        "why": ""
+      },
+      "B": {
+        "answer": "Shift an operational expenditure model to capital expenditure",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Drive cloud adoption with an individual contributor focus",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Invest in on-premises infrastructure to redesign relationships between IT and employees",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "Why is data stored in Google Cloud secure and private?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Data is encrypted by the Security Command Center",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Data is encrypted by Cloud Data Loss Prevention",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Data is encrypted by default",
+        "correct": true,
+        "why": ""
+      },
+      "D": {
+        "answer": "Data is encrypted when an appropriate tag is applied",
+        "correct": false,
+        "why": ""
+      }
+    }
+  }
+]

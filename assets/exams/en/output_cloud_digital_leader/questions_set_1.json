@@ -1,0 +1,262 @@
+[
+  {
+    "question": "An organization needs to migrate specialized workloads to the cloud while maintaining their existing complex licensing and architecture. What Google Cloud solution should the organization use?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Compute Engine",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Bare Metal Solution",
+        "correct": true,
+        "why": ""
+      },
+      "C": {
+        "answer": "Cloud Run",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Cloud Function",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "A travel agency wants to seamlessy share their social media content with partners. What should the organization use?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "A NoSQL database",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Anthos Config Management",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "The App Engine standart environment",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "An application programming interface (API)",
+        "correct": true,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "An organization wants to transform multiple types of structured and unstructured data in the cloud from various sources. The data must be readily accessible for analysis and insights. Which Cloud data storage system should the organization use?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Relational database",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Private data center",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Data field",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Data warehouse",
+        "correct": true,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "An organization wants to use all available data to offer predictive suggestions on their website that improve over time. Which method should the organization use?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Data automation",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Trends analysis",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Machine learning",
+        "correct": true,
+        "why": ""
+      },
+      "D": {
+        "answer": "Multiple regression",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "After rolling out new update, an organization found a minor bug in its online video game. How should the organization approach this bug while following SRE principles?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Accept and learn from the bug because failure is normal",
+        "correct": true,
+        "why": ""
+      },
+      "B": {
+        "answer": "Accept and ignore the bug because it is only minor",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Hold a postmortem to reprimand the employere responsible for the bug",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Document bug correction to eliminate all future bugs",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "Why do organizations often struggle to scale their on-premises application infrastructure?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Scaling compute instances could breach compliance and/or regulation",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Increasing compute capacity is time-consuming and costly",
+        "correct": true,
+        "why": ""
+      },
+      "C": {
+        "answer": "Their serverless compute functions struggle to meet the demand",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Their multi-cloud architecture is complex and expensive",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "An organization wants to use Big Query data analytics to understand their website performance but wants to move only some data into the cloud. Which environment should the organization use?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Private Cloud",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "On-premises",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Multi-Cloud",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Hybrid cloud",
+        "correct": true,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "What is logging within the context of cloud technology?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Writing application and operating system events as text",
+        "correct": true,
+        "why": ""
+      },
+      "B": {
+        "answer": "Monitoring network and resource limitations",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Tracking source code across an organization",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Recording infrastructure and hardware expenditure",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "How does Cloud SQL help organizations create business insights?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Integrates with business intelligence and analytics platforms",
+        "correct": true,
+        "why": ""
+      },
+      "B": {
+        "answer": "Generates predictions using machine learning models",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Generates real-time charts and intelligent analytics",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Transform business data from unstructured to structured",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "An organization recently launched a virtual customer support agent, generating vast amounts of text and speech data. Why should they use a cloud data warehouse to interpret this data?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "To natively visualize both types of data using a dashboard in real time",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "To ingest and analyze structured and unstructured data at scale, in real time",
+        "correct": true,
+        "why": ""
+      },
+      "C": {
+        "answer": "To secure data transmission between cloud and on-premises environments",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "To transform data from structured to unstructured",
+        "correct": false,
+        "why": ""
+      }
+    }
+  }
+]

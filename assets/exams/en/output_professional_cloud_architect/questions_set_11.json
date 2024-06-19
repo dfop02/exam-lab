@@ -1,0 +1,277 @@
+[
+  {
+    "question": "You are monitoring Google Kubernetes Engine (GKE) clusters in a Cloud Monitoring workspace. As a Site Reliability Engineer (SRE), you need to triage incidents quickly. What should you do?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Navigate the predefined dashboards in the Cloud Monitoring workspace, and then add metrics and create alert policies.",
+        "correct": true,
+        "why": ""
+      },
+      "B": {
+        "answer": "Navigate the predefined dashboards in the Cloud Monitoring workspace, create custom metrics, and install alerting software on a Compute Engine instance.",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Write a shell script that gathers metrics from GKE nodes, publish these metrics to a Pub/Sub topic, export the data to BigQuery, and make a Data Studio dashboard.",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Create a custom dashboard in the Cloud Monitoring workspace for each incident, and then add metrics and create alert policies.",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "You are implementing a single Cloud SQL MySQL second-generation database that contains business-critical transaction data. You want to ensure that the minimum amount of data is lost in case of catastrophic failure. Which two features should you implement? (Choose 2)",
+    "code": "",
+    "multichoice": true,
+    "alternatives": {
+      "A": {
+        "answer": "Sharding",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Read replicas",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Binary logging",
+        "correct": true,
+        "why": ""
+      },
+      "D": {
+        "answer": "Automated backups",
+        "correct": true,
+        "why": ""
+      },
+      "E": {
+        "answer": "Semisynchronous replication",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "You are working at a sports association whose members range in age from 8 to 30. The association collects a large amount of health data, such as sustained injuries. You are storing this data in BigQuery. Current legislation requires you to delete such information upon request of the subject. You want to design a solution that can accommodate such a request. What should you do?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Use a unique identifier for each individual. Upon a deletion request, delete all rows from BigQuery with this identifier.",
+        "correct": true,
+        "why": ""
+      },
+      "B": {
+        "answer": "When ingesting new data in BigQuery, run the data through the Data Loss Prevention (DLP) API to identify any personal information. As part of the DLP scan, save the result to Data Catalog. Upon a deletion request, query Data Catalog to find the column with personal information.",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Create a BigQuery view over the table that contains all data. Upon a deletion request, exclude the rows that affect the subject's data from this view. Use this view instead of the source table for all analysis tasks.",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Use a unique identifier for each individual. Upon a deletion request, overwrite the column with the unique identifier with a salted SHA256 of its value.",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "Your company has announced that they will be outsourcing operations functions. You want to allow developers to easily stage new versions of a cloud-based application in the production environment and allow the outsourced operations team to autonomously promote staged versions to production. You want to minimize the operational overhead of the solution. Which Google Cloud product should you migrate to?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "App Engine",
+        "correct": true,
+        "why": ""
+      },
+      "B": {
+        "answer": "GKE On-Prem",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Compute Engine",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Google Kubernetes Engine",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "Your company is running its application workloads on Compute Engine. The applications have been deployed in production, acceptance, and development environments. The production environment is business-critical and is used 24/7, while the acceptance and development environments are only critical during office hours. Your CFO has asked you to optimize these environments to achieve cost savings during idle times. What should you do?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Create a shell script that uses the gcloud command to change the machine type of the development and acceptance instances to a smaller machine type outside of office hours. Schedule the shell script on one of the production instances to automate the task.",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Use Cloud Scheduler to trigger a Cloud Function that will stop the development and acceptance environments after office hours and start them just before office hours.",
+        "correct": true,
+        "why": ""
+      },
+      "C": {
+        "answer": "Deploy the development and acceptance applications on a managed instance group and enable autoscaling.",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Use regular Compute Engine instances for the production environment, and use preemptible VMs for the acceptance and development environments.",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "You are moving an application that uses MySQL from on-premises to Google Cloud. The application will run on Compute Engine and will use Cloud SQL. You want to cut over to the Compute Engine deployment of the application with minimal downtime and no data loss to your customers. You want to migrate the application with minimal modification. You also need to determine the cutover strategy. What should you do?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "1. Set up Cloud VPN to provide private network connectivity between the Compute Engine application and the on-premises MySQL server. 2. Stop the on-premises application. 3. Create a mysqldump of the on-premises MySQL server. 4. Upload the dump to a Cloud Storage bucket. 5. Import the dump into Cloud SQL. 6. Modify the source code of the application to write queries to both databases and read from its local database. 7. Start the Compute Engine application. 8. Stop the on-premises application.",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "1. Set up Cloud SQL proxy and MySQL proxy. 2. Create a mysqldump of the on-premises MySQL server. 3. Upload the dump to a Cloud Storage bucket. 4. Import the dump into Cloud SQL. 5. Stop the on-premises application. 6. Start the Compute Engine application.",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "1. Set up Cloud VPN to provide private network connectivity between the Compute Engine application and the on-premises MySQL server. 2. Stop the on-premises application. 3. Start the Compute Engine application, configured to read and write to the on-premises MySQL server. 4. Create the replication configuration in Cloud SQL. 5. Configure the source database server to accept connections from the Cloud SQL replica. 6. Finalize the Cloud SQL replica configuration. 7. When replication has been completed, stop the Compute Engine application. 8. Promote the Cloud SQL replica to a standalone instance. 9. Restart the Compute Engine application, configured to read and write to the Cloud SQL standalone instance.",
+        "correct": true,
+        "why": ""
+      },
+      "D": {
+        "answer": "1. Stop the on-premises application. 2. Create a mysqldump of the on-premises MySQL server. 3. Upload the dump to a Cloud Storage bucket. 4. Import the dump into Cloud SQL. 5. Start the application on Compute Engine.",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "Your organization has decided to restrict the use of external IP addresses on instances to only approved instances. You want to enforce this requirement across all of your Virtual Private Clouds (VPCs). What should you do?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Remove the default route on all VPCs. Move all approved instances into a new subnet that has a default route to an internet gateway.",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Create a new VPC in custom mode. Create a new subnet for the approved instances, and set a default route to the internet gateway on this new subnet.",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Implement a Cloud NAT solution to remove the need for external IP addresses entirely.",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Set an Organization Policy with a constraint on constraints/compute.vmExternalIpAccess. List the approved instances in the allowedValues list.",
+        "correct": true,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "Your company uses the Firewall Insights feature in the Google Network Intelligence Center. You have several firewall rules applied to Compute Engine instances.You need to evaluate the efficiency of the applied firewall ruleset. When you bring up the Firewall Insights page in the Google Cloud Console, you notice that there are no log rows to display. What should you do to troubleshoot the issue?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Enable Virtual Private Cloud (VPC) flow logging.",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Enable Firewall Rules Logging for the firewall rules you want to monitor.",
+        "correct": true,
+        "why": ""
+      },
+      "C": {
+        "answer": "Verify that your user account is assigned the compute.networkAdmin Identity and Access Management (IAM) role.",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Install the Google Cloud SDK, and verify that there are no Firewall logs in the command line output.",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "Your company has sensitive data in Cloud Storage buckets. Data analysts have Identity Access Management (IAM) permissions to read the buckets. You want to prevent data analysts from retrieving the data in the buckets from outside the office network. What should you do?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "1. Create a VPC Service Controls perimeter that includes the projects with the buckets. 2. Create an access level with the CIDR of the office network.",
+        "correct": true,
+        "why": ""
+      },
+      "B": {
+        "answer": "1. Create a firewall rule for all instances in the Virtual Private Cloud (VPC) network for source range. 2. Use the Classless Inter-domain Routing (CIDR) of the office network.",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "1. Create a Cloud Function to remove IAM permissions from the buckets, and another Cloud Function to add IAM permissions to the buckets. 2. Schedule the Cloud Functions with Cloud Scheduler to add permissions at the start of business and remove permissions at the end of business.",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "1. Create a Cloud VPN to the office network. 2. Configure Private Google Access for on-premises hosts.",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "You have developed a non-critical update to your application that is running in a managed instance group, and have created a new instance template with the update that you want to release. To prevent any possible impact to the application, you don't want to update any running instances. You want any new instances that are created by the managed instance group to contain the new update. What should you do?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Start a new rolling restart operation.",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Start a new rolling replace operation.",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Start a new rolling update. Select the Proactive update mode.",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Start a new rolling update. Select the Opportunistic update mode.",
+        "correct": true,
+        "why": ""
+      }
+    }
+  }
+]

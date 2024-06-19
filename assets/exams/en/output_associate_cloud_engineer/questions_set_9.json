@@ -1,0 +1,262 @@
+[
+  {
+    "question": "You have a large 5-TB AVRO file stored in a Cloud Storage bucket. Your analysts are proficient only in SQL and need access to the data stored in this file. You want to find a cost-effective way to complete their request as soon as possible. What should you do?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Load data in Cloud Datastore and run a SQL query against it.",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Create a BigQuery table and load data in BigQuery. Run a SQL query on this table and drop this table after you complete your request.",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Create external tables in BigQuery that point to Cloud Storage buckets and run a SQL query on these external tables to complete your request.",
+        "correct": true,
+        "why": ""
+      },
+      "D": {
+        "answer": "Create a Hadoop cluster and copy the AVRO file to NDFS by compressing it. Load the file in a hive table and provide access to your analysts so that they can run SQL queries.",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "You need to verify that a Google Cloud Platform service account was created at a particular time. What should you do?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Filter the Activity log to view the Configuration category. Filter the Resource type to Service Account.",
+        "correct": true,
+        "why": ""
+      },
+      "B": {
+        "answer": "Filter the Activity log to view the Configuration category. Filter the Resource type to Google Project.",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Filter the Activity log to view the Data Access category. Filter the Resource type to Service Account.",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Filter the Activity log to view the Data Access category. Filter the Resource type to Google Project.",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "You deployed an LDAP server on Compute Engine that is reachable via TLS through port 636 using UDP. You want to make sure it is reachable by clients over that port. What should you do?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Add the network tag allow-udp-636 to the VM instance running the LDAP server.",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Create a route called allow-udp-636 and set the next hop to be the VM instance running the LDAP server.",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Add a network tag of your choice to the instance. Create a firewall rule to allow ingress on UDP port 636 for that network tag.",
+        "correct": true,
+        "why": ""
+      },
+      "D": {
+        "answer": "Add a network tag of your choice to the instance running the LDAP server. Create a firewall rule to allow egress on UDP port 636 for that network tag.",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "You need to set a budget alert for use of Compute Engineer services on one of the three Google Cloud Platform projects that you manage. All three projects are linked to a single billing account. What should you do?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Verify that you are the project billing administrator. Select the associated billing account and create a budget and alert for the appropriate project.",
+        "correct": true,
+        "why": ""
+      },
+      "B": {
+        "answer": "Verify that you are the project billing administrator. Select the associated billing account and create a budget and a custom alert.",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Verify that you are the project administrator. Select the associated billing account and create a budget for the appropriate project.",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Verify that you are project administrator. Select the associated billing account and create a budget and a custom alert.",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "You are migrating a production-critical on-premises application that requires 96 vCPUs to perform its task. You want to make sure the application runs in a similar environment on GCP. What should you do?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "When creating the VM, use machine type n1-standard-96.",
+        "correct": true,
+        "why": ""
+      },
+      "B": {
+        "answer": "When creating the VM, use Intel Skylake as the CPU platform.",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Create the VM using Compute Engine default settings. Use gcloud to modify the running instance to have 96 vCPUs.",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Start the VM using Compute Engine default settings, and adjust as you go based on Rightsizing Recommendations.",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "You want to configure a solution for archiving data in a Cloud Storage bucket. The solution must be cost-effective. Data with multiple versions should be archived after 30 days. Previous versions are accessed once a month for reporting. This archive data is also occasionally updated at month-end. What should you do?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Add a bucket lifecycle rule that archives data with newer versions after 30 days to Coldline Storage.",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Add a bucket lifecycle rule that archives data with newer versions after 30 days to Nearline Storage.",
+        "correct": true,
+        "why": ""
+      },
+      "C": {
+        "answer": "Add a bucket lifecycle rule that archives data from regional storage after 30 days to Coldline Storage.",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Add a bucket lifecycle rule that archives data from regional storage after 30 days to Nearline Storage.",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "Your company's infrastructure is on-premises, but all machines are running at maximum capacity. You want to burst to Google Cloud. The workloads on GoogleCloud must be able to directly communicate to the workloads on-premises using a private IP range. What should you do?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "In Google Cloud, configure the VPC as a host for Shared VPC.",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "In Google Cloud, configure the VPC for VPC Network Peering.",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Create bastion hosts both in your on-premises environment and on Google Cloud. Configure both as proxy servers using their public IP addresses.",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Set up Cloud VPN between the infrastructure on-premises and Google Cloud.",
+        "correct": true,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "You want to select and configure a solution for storing and archiving data on Google Cloud Platform. You need to support compliance objectives for data from one geographic location. This data is archived after 30 days and needs to be accessed annually. What should you do?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Select Multi-Regional Storage. Add a bucket lifecycle rule that archives data after 30 days to Coldline Storage.",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Select Multi-Regional Storage. Add a bucket lifecycle rule that archives data after 30 days to Nearline Storage.",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Select Regional Storage. Add a bucket lifecycle rule that archives data after 30 days to Nearline Storage.",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Select Regional Storage. Add a bucket lifecycle rule that archives data after 30 days to Coldline Storage.",
+        "correct": true,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "Your company uses BigQuery for data warehousing. Over time, many different business units in your company have created 1000+ datasets across hundreds of projects. Your CIO wants you to examine all datasets to find tables that contain an employee_ssn column. You want to minimize effort in performing this task.What should you do?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Go to Data Catalog and search for employee_ssn in the search box.",
+        "correct": true,
+        "why": ""
+      },
+      "B": {
+        "answer": "Write a shell script that uses the bq command line tool to loop through all the projects in your organization.",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Write a script that loops through all the projects in your organization and runs a query on INFORMATION_SCHEMA.COLUMNS view to find the employee_ssn column.",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Write a Cloud Dataflow job that loops through all the projects in your organization and runs a query on INFORMATION_SCHEMA.COLUMNS view to find employee_ssn column.",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "You want to find out when users were added to Cloud Spanner Identity Access Management (IAM) roles on your Google Cloud Platform (GCP) project. What should you do in the GCP Console?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Open the Cloud Spanner console to review configurations.",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Open the IAM & admin console to review IAM policies for Cloud Spanner roles.",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Go to the Stackdriver Monitoring console and review information for Cloud Spanner.",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Go to the Stackdriver Logging console, review admin activity logs, and filter them for Cloud Spanner IAM roles.",
+        "correct": true,
+        "why": ""
+      }
+    }
+  }
+]

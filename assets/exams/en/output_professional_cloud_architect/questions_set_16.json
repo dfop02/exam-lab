@@ -1,0 +1,287 @@
+[
+  {
+    "question": "Your company's test suite is a custom C++ application that runs tests throughout each day on Linux virtual machines. The full test suite takes several hours to complete, running on a limited number of on-premises servers reserved for testing. Your company wants to move the testing infrastructure to the cloud, to reduce the amount of time it takes to fully test a change to the system, while changing the tests as little as possible. Which cloud infrastructure should you recommend?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Google Compute Engine unmanaged instance groups and Network Load Balancer",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Google Compute Engine managed instance groups with auto-scaling",
+        "correct": true,
+        "why": ""
+      },
+      "C": {
+        "answer": "Google Cloud Dataproc to run Apache Hadoop jobs to process each test",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Google App Engine with Google StackDriver for logging",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "A lead software engineer tells you that his new application design uses websockets and HTTP sessions that are not distributed across the web servers. You want to help him ensure his application will run properly on Google Cloud Platform. What should you do?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Help the engineer to convert his websocket code to use HTTP streaming",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Review the encryption requirements for websocket connections with the security team",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Meet with the cloud operations team and the engineer to discuss load balancer options",
+        "correct": true,
+        "why": ""
+      },
+      "D": {
+        "answer": "Help the engineer redesign the application to use a distributed user session service that does not rely on websockets and HTTP sessions.",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "The application reliability team at your company this added a debug feature to their backend service to send all server events to Google Cloud Storage for eventual analysis. The event records are at least 50 KB and at most 15 MB and are expected to peak at 3,000 events per second. You want to minimize data loss. Which process should you implement?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "¢ Append metadata to file body ¢ Compress individual files ¢ Name files with serverName \" Timestamp ¢ Create a new bucket if bucket is older than 1 hour and save individual files to the new bucket. Otherwise, save files to existing bucket.",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "¢ Batch every 10,000 events with a single manifest file for metadata ¢ Compress event files and manifest file into a single archive file ¢ Name files using serverName \" EventSequence ¢ Create a new bucket if bucket is older than 1 day and save the single archive file to the new bucket. Otherwise, save the single archive file to existing bucket.",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "¢ Compress individual files ¢ Name files with serverName \" EventSequence ¢ Save files to one bucket ¢ Set custom metadata headers for each object after saving",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "¢ Append metadata to file body ¢ Compress individual files ¢ Name files with a random prefix pattern ¢ Save files to one bucket",
+        "correct": true,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "A recent audit revealed that a new network was created in your GCP project. In this network, a GCE instance has an SSH port open to the world. You want to discover this network's origin. What should you do?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Search for Create VM entry in the Stackdriver alerting console",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Navigate to the Activity page in the Home section. Set category to Data Access and search for Create VM entry",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "In the Logging section of the console, specify GCE Network as the logging section. Search for the Create Insert entry",
+        "correct": true,
+        "why": ""
+      },
+      "D": {
+        "answer": "Connect to the GCE instance using project SSH keys. Identify previous logins in system logs, and match these with the project owners list",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "You want to make a copy of a production Linux virtual machine in the US-Central region. You want to manage and replace the copy easily if there are changes on the production virtual machine. You will deploy the copy as a new instance in a different project in the US-East region. What steps must you take?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Use the Linux dd and netcat commands to copy and stream the root disk contents to a new virtual machine instance in the US-East region.",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Create a snapshot of the root disk and select the snapshot as the root disk when you create a new virtual machine instance in the US-East region.",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Create an image file from the root disk with Linux dd command, create a new virtual machine instance in the US-East region",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Create a snapshot of the root disk, create an image file in Google Cloud Storage from the snapshot, and create a new virtual machine instance in the US-East region using the image file the root disk.",
+        "correct": true,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "Your company runs several databases on a single MySQL instance. They need to take backups of a specific database at regular intervals. The backup activity needs to complete as quickly as possible and cannot be allowed to impact disk performance. How should you configure the storage?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Configure a cron job to use the gcloud tool to take regular backups using persistent disk snapshots.",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Mount a Local SSD volume as the backup location. After the backup is complete, use gsutil to move the backup to Google Cloud Storage.",
+        "correct": true,
+        "why": ""
+      },
+      "C": {
+        "answer": "Use gcsfise to mount a Google Cloud Storage bucket as a volume directly on the instance and write backups to the mounted location using mysqldump.",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Mount additional persistent disk volumes onto each virtual machine (VM) instance in a RAID10 array and use LVM to create snapshots to send to Cloud Storage",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "You are helping the QA team to roll out a new load-testing tool to test the scalability of your primary cloud services that run on Google Compute Engine with CloudBigtable. Which three requirements should they include? (Choose 3)",
+    "code": "",
+    "multichoice": true,
+    "alternatives": {
+      "A": {
+        "answer": "Ensure that the load tests validate the performance of Cloud Bigtable",
+        "correct": true,
+        "why": ""
+      },
+      "B": {
+        "answer": "Create a separate Google Cloud project to use for the load-testing environment",
+        "correct": true,
+        "why": ""
+      },
+      "C": {
+        "answer": "Schedule the load-testing tool to regularly run against the production environment",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Ensure all third-party systems your services use is capable of handling high load",
+        "correct": false,
+        "why": ""
+      },
+      "E": {
+        "answer": "Instrument the production services to record every transaction for replay by the load-testing tool",
+        "correct": false,
+        "why": ""
+      },
+      "F": {
+        "answer": "Instrument the load-testing tool and the target services with detailed logging and metrics collection",
+        "correct": true,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "Your customer is moving their corporate applications to Google Cloud Platform. The security team wants detailed visibility of all projects in the organization. You provision the Google Cloud Resource Manager and set up yourself as the org admin. What Google Cloud Identity and Access Management (Cloud IAM) roles should you give to the security team?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Org viewer, project owner",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Org viewer, project viewer",
+        "correct": true,
+        "why": ""
+      },
+      "C": {
+        "answer": "Org admin, project browser",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Project owner, network admin",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "Your company places a high value on being responsive and meeting customer needs quickly. Their primary business objectives are release speed and agility. You want to reduce the chance of security errors being accidentally introduced. Which two actions can you take? (Choose 2)",
+    "code": "",
+    "multichoice": true,
+    "alternatives": {
+      "A": {
+        "answer": "Ensure every code check-in is peer reviewed by a security SME",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Use source code security analyzers as part of the CI/CD pipeline",
+        "correct": true,
+        "why": ""
+      },
+      "C": {
+        "answer": "Ensure you have stubs to unit test all interfaces between components",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Enable code signing and a trusted binary repository integrated with your CI/CD pipeline",
+        "correct": false,
+        "why": ""
+      },
+      "E": {
+        "answer": "Run a vulnerability security scanner as part of your continuous-integration /continuous-delivery (CI/CD) pipeline",
+        "correct": true,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "You want to enable your running Google Kubernetes Engine cluster to scale as demand for your application changes. What should you do?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Add additional nodes to your Kubernetes Engine cluster using the following command: gcloud container clusters resize CLUSTER_Name \" -size 10",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Add a tag to the instances in the cluster with the following command: gcloud compute instances add-tags INSTANCE - -tags enable- autoscaling max-nodes-10",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Update the existing Kubernetes Engine cluster with the following command: gcloud alpha container clusters update mycluster - -enable- autoscaling - -min-nodes=1 - -max-nodes=10",
+        "correct": true,
+        "why": ""
+      },
+      "D": {
+        "answer": "Create a new Kubernetes Engine cluster with the following command: gcloud alpha container clusters create mycluster - -enable- autoscaling - -min-nodes=1 - -max-nodes=10 and redeploy your application",
+        "correct": false,
+        "why": ""
+      }
+    }
+  }
+]

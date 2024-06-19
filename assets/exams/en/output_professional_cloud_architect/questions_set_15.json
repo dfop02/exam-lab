@@ -1,0 +1,272 @@
+[
+  {
+    "question": "You are designing a Data Warehouse on Google Cloud and want to store sensitive data in BigQuery. Your company requires you to generate the encryption keys outside of Google Cloud. You need to implement a solution. What should you do?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Generate a new key in Cloud Key Management Service (Cloud KMS). Store all data in Cloud Storage using the customer-managed key option and select the created key. Set up a Dataflow pipeline to decrypt the data and to store it in a new BigQuery dataset.",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Generate a new key in Cloud KMS. Create a dataset in BigQuery using the customer-managed key option and select the created key.",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Import a key in Cloud KMS. Store all data in Cloud Storage using the customer-managed key option and select the created key. Set up a Dataflow pipeline to decrypt the data and to store it in a new BigQuery dataset.",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Import a key in Cloud KMS. Create a dataset in BigQuery using the customer-supplied key option and select the created key.",
+        "correct": true,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "Your organization has stored sensitive data in a Cloud Storage bucket. For regulatory reasons, your company must be able to rotate the encryption key used to encrypt the data in the bucket. The data will be processed in Dataproc. You want to follow Google-recommended practices for security. What should you do?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Create a key with Cloud Key Management Service (KMS). Encrypt the data using the encrypt method of Cloud KMS.",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Create a key with Cloud Key Management Service (KMS). Set the encryption key on the bucket to the Cloud KMS key.",
+        "correct": true,
+        "why": ""
+      },
+      "C": {
+        "answer": "Generate a GPG key pair. Encrypt the data using the GPG key. Upload the encrypted data to the bucket.",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Generate an AES-256 encryption key. Encrypt the data in the bucket using the customer-supplied encryption keys feature.",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "Your team needs to create a Google Kubernetes Engine (GKE) cluster to host a newly built application that requires access to third-party services on the internet.Your company does not allow any Compute Engine instance to have a public IP address on Google Cloud. You need to create a deployment strategy that adheres to these guidelines. What should you do?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Configure the GKE cluster as a private cluster, and configure Cloud NAT Gateway for the cluster subnet.",
+        "correct": true,
+        "why": ""
+      },
+      "B": {
+        "answer": "Configure the GKE cluster as a private cluster. Configure Private Google Access on the Virtual Private Cloud (VPC).",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Configure the GKE cluster as a route-based cluster. Configure Private Google Access on the Virtual Private Cloud (VPC).",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Create a Compute Engine instance, and install a NAT Proxy on the instance. Configure all workloads on GKE to pass through this proxy to access third-party services on the Internet.",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "Your company has a support ticketing solution that uses App Engine Standard. The project that contains the App Engine application already has a Virtual PrivateCloud (VPC) network fully connected to the company's on-premises environment through a Cloud VPN tunnel. You want to enable the App Engine application to communicate with a database that is running in the company's on-premises environment. What should you do?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Configure private Google access for on-premises hosts only.",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Configure private Google access.",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Configure private services access.",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Configure serverless VPC access.",
+        "correct": true,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "Your company is planning to upload several important files to Cloud Storage. After the upload is completed, they want to verify that the uploaded content is identical to what they have on-premises. You want to minimize the cost and effort of performing this check. What should you do?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "1. Use Linux shasum to compute a digest of files you want to upload. 2. Use gsutil -m to upload all the files to Cloud Storage. 3. Use gsutil cp to download the uploaded files. 4. Use Linux shasum to compute a digest of the downloaded files. 5. Compare the hashes.",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "1. Use gsutil -m to upload the files to Cloud Storage. 2. Develop a custom Java application that computes CRC32C hashes. 3. Use gsutil ls -L gs://[YOUR_BUCKET_NAME] to collect CRC32C hashes of the uploaded files. 4. Compare the hashes.",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "1. Use gsutil -m to upload all the files to Cloud Storage. 2. Use gsutil cp to download the uploaded files. 3. Use Linux diff to compare the content of the files.",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "1. Use gsutil -m to upload the files to Cloud Storage. 2. Use gsutil hash -c FILE_NAME to generate CRC32C hashes of all on-premises files. 3. Use gsutil ls -L gs://[YOUR_BUCKET_NAME] to collect CRC32C hashes of the uploaded files. 4. Compare the hashes.",
+        "correct": true,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "You have deployed an application on Anthos clusters (formerly Anthos GKE). According to the SRE practices at your company, you need to be alerted if request latency is above a certain threshold for a specified amount of time. What should you do?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Install Anthos Service Mesh on your cluster. Use the Google Cloud Console to define a Service Level Objective (SLO), and create an alerting policy based on this SLO.",
+        "correct": true,
+        "why": ""
+      },
+      "B": {
+        "answer": "Enable the Cloud Trace API on your project, and use Cloud Monitoring Alerts to send an alert based on the Cloud Trace metrics.",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Use Cloud Profiler to follow up the request latency. Create a custom metric in Cloud Monitoring based on the results of Cloud Profiler, and create an Alerting policy in case this metric exceeds the threshold.",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Configure Anthos Config Management on your cluster, and create a yaml file that defines the SLO and alerting policy you want to deploy in your cluster.",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "Your company has a stateless web API that performs scientific calculations. The web API runs on a single Google Kubernetes Engine (GKE) cluster. The cluster is currently deployed in us-central1. Your company has expanded to offer your API to customers in Asia. You want to reduce the latency for users in Asia. What should you do?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Create a second GKE cluster in asia-southeast1, and expose both APIs using a Service of type LoadBalancer. Add the public IPs to the Cloud DNS zone.",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Use a global HTTP(s) load balancer with Cloud CDN enabled.",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Create a second GKE cluster in asia-southeast1, and use kubemci to create a global HTTP(s) load balancer.",
+        "correct": true,
+        "why": ""
+      },
+      "D": {
+        "answer": "Increase the memory and CPU allocated to the application in the cluster.",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "You are migrating third-party applications from optimized on-premises virtual machines to Google Cloud. You are unsure about the optimum CPU and memory options. The applications have a consistent usage pattern across multiple weeks. You want to optimize resource usage for the lowest cost. What should you do?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Create an instance template with the smallest available machine type, and use an image of the third-party application taken from a current on-premises virtual machine. Create a managed instance group that uses average CPU utilization to autoscale the number of instances in the group. Modify the average CPU utilization threshold to optimize the number of instances running.",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Create an App Engine flexible environment, and deploy the third-party application using a Dockerfile and a custom runtime. Set CPU and memory options similar to your application's current on-premises virtual machine in the app.yaml file.",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Create multiple Compute Engine instances with varying CPU and memory options. Install the Cloud Monitoring agent, and deploy the third-party application on each of them. Run a load test with high traffic levels on the application, and use the results to determine the optimal settings.",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Create a Compute Engine instance with CPU and memory options similar to your application's current on-premises virtual machine. Install the Cloud Monitoring agent, and deploy the third-party application. Run a load test with normal traffic levels on the application, and follow the Rightsizing Recommendations in the Cloud Console.",
+        "correct": true,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "Your company has a Google Cloud project that uses BigQuery for data warehousing. They have a VPN tunnel between the on-premises environment and GoogleCloud that is configured with Cloud VPN. The security team wants to avoid data exfiltration by malicious insiders, compromised code, and accidental oversharing. What should they do?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Configure Private Google Access for on-premises only.",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Perform the following tasks: 1. Create a service account. 2. Give the BigQuery JobUser role and Storage Reader role to the service account. 3. Remove all other IAM access from the project.",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Configure VPC Service Controls and configure Private Google Access.",
+        "correct": true,
+        "why": ""
+      },
+      "D": {
+        "answer": "Configure Private Google Access.",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "You are working at an institution that processes medical data. You are migrating several workloads onto Google Cloud. Company policies require all workloads to run on physically separated hardware, and workloads from different clients must also be separated. You created a sole-tenant node group and added a node for each client. You need to deploy the workloads on these dedicated hosts. What should you do?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Add the node group name as a network tag when creating Compute Engine instances in order to host each workload on the correct node group.",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Add the node name as a network tag when creating Compute Engine instances in order to host each workload on the correct node.",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Use node affinity labels based on the node group name when creating Compute Engine instances in order to host each workload on the correct node group.",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Use node affinity labels based on the node name when creating Compute Engine instances in order to host each workload on the correct node.",
+        "correct": true,
+        "why": ""
+      }
+    }
+  }
+]

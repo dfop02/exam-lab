@@ -1,0 +1,262 @@
+[
+  {
+    "question": "You need to monitor resources that are distributed over different projects in Google Cloud Platform. You want to consolidate reporting under the same StackdriverMonitoring dashboard. What should you do?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Use Shared VPC to connect all projects, and link Stackdriver to one of the projects.",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "For each project, create a Stackdriver account. In each project, create a service account for that project and grant it the role of Stackdriver Account Editor in all other projects.",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Configure a single Stackdriver account, and link all projects to the same account.",
+        "correct": true,
+        "why": ""
+      },
+      "D": {
+        "answer": "Configure a single Stackdriver account for one of the projects. In Stackdriver, create a Group and add the other project names as criteria for that Group.",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "You are deploying an application to a Compute Engine VM in a managed instance group. The application must be running at all times, but only a single instance of the VM should run per GCP project. How should you configure the instance group?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Set autoscaling to On, set the minimum number of instances to 1, and then set the maximum number of instances to 1.",
+        "correct": true,
+        "why": ""
+      },
+      "B": {
+        "answer": "Set autoscaling to Off, set the minimum number of instances to 1, and then set the maximum number of instances to 1.",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Set autoscaling to On, set the minimum number of instances to 1, and then set the maximum number of instances to 2.",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Set autoscaling to Off, set the minimum number of instances to 1, and then set the maximum number of instances to 2.",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "You want to verify the IAM users and roles assigned within a GCP project named my-project. What should you do?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Run gcloud iam roles list. Review the output section.",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Run gcloud iam service-accounts list. Review the output section.",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Navigate to the project and then to the IAM section in the GCP Console. Review the members and roles.",
+        "correct": true,
+        "why": ""
+      },
+      "D": {
+        "answer": "Navigate to the project and then to the Roles section in the GCP Console. Review the roles and status.",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "You need to create a new billing account and then link it with an existing Google Cloud Platform project. What should you do?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Verify that you are Project Billing Manager for the GCP project. Update the existing project to link it to the existing billing account.",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Verify that you are Project Billing Manager for the GCP project. Create a new billing account and link the new billing account to the existing project.",
+        "correct": true,
+        "why": ""
+      },
+      "C": {
+        "answer": "Verify that you are Billing Administrator for the billing account. Create a new project and link the new project to the existing billing account.",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Verify that you are Billing Administrator for the billing account. Update the existing project to link it to the existing billing account.",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "You have one project called proj-sa where you manage all your service accounts. You want to be able to use a service account from this project to take snapshots of VMs running in another project called proj-vm. What should you do?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Download the private key from the service account, and add it to each VMs custom metadata.",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Download the private key from the service account, and add the private key to each VM's SSH keys.",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Grant the service account the IAM Role of Compute Storage Admin in the project called proj-vm.",
+        "correct": true,
+        "why": ""
+      },
+      "D": {
+        "answer": "When creating the VMs, set the service account's API scope for Compute Engine to read/write.",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "You created a Google Cloud Platform project with an App Engine application inside the project. You initially configured the application to be served from the us- central region. Now you want the application to be served from the asia-northeast1 region. What should you do?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Change the default region property setting in the existing GCP project to asia-northeast1.",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Change the region property setting in the existing App Engine application from us-central to asia-northeast1.",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Create a second App Engine application in the existing GCP project and specify asia-northeast1 as the region to serve your application.",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Create a new GCP project and create an App Engine application inside this new project. Specify asia-northeast1 as the region to serve your application.",
+        "correct": true,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "You need to grant access for three users so that they can view and edit table data on a Cloud Spanner instance. What should you do?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Run gcloud iam roles describe roles/spanner.databaseUser. Add the users to the role.",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Run gcloud iam roles describe roles/spanner.databaseUser. Add the users to a new group. Add the group to the role.",
+        "correct": true,
+        "why": ""
+      },
+      "C": {
+        "answer": "Run gcloud iam roles describe roles/spanner.viewer - -project my-project. Add the users to the role.",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Run gcloud iam roles describe roles/spanner.viewer - -project my-project. Add the users to a new group. Add the group to the role.",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "You create a new Google Kubernetes Engine (GKE) cluster and want to make sure that it always runs a supported and stable version of Kubernetes. What should you do?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Enable the Node Auto-Repair feature for your GKE cluster.",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Enable the Node Auto-Upgrades feature for your GKE cluster.",
+        "correct": true,
+        "why": ""
+      },
+      "C": {
+        "answer": "Select the latest available cluster version for your GKE cluster.",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Select ג€Container-Optimized OS (cos)ג€ as a node image for your GKE cluster.",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "You have an instance group that you want to load balance. You want the load balancer to terminate the client SSL session. The instance group is used to serve a public web application over HTTPS. You want to follow Google-recommended practices. What should you do?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Configure an HTTP(S) load balancer.",
+        "correct": true,
+        "why": ""
+      },
+      "B": {
+        "answer": "Configure an internal TCP load balancer.",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Configure an external SSL proxy load balancer.",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Configure an external TCP proxy load balancer.",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "You have 32 GB of data in a single file that you need to upload to a Nearline Storage bucket. The WAN connection you are using is rated at 1 Gbps, and you are the only one on the connection. You want to use as much of the rated 1 Gbps as possible to transfer the file rapidly. How should you upload the file?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Use the GCP Console to transfer the file instead of gsutil.",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Enable parallel composite uploads using gsutil on the file transfer.",
+        "correct": true,
+        "why": ""
+      },
+      "C": {
+        "answer": "Decrease the TCP window size on the machine initiating the transfer.",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Change the storage class of the bucket from Nearline to Multi-Regional.",
+        "correct": false,
+        "why": ""
+      }
+    }
+  }
+]

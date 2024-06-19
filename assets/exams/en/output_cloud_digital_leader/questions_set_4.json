@@ -1,0 +1,267 @@
+[
+  {
+    "question": "Your organization has customer data on-premise but wants to take advantage of the cloud’s storage security and durability. The data contains Personally Identifiable Information (PII) and the organization wants to ensure PIIs are de-identified via masking to keep this information safe. What service would offer this protection?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "BeyondCorp",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "HIPAA Compliance Program",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Cloud Storage",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Cloud Data Loss Prevention",
+        "correct": true,
+        "why": "Cloud Data Loss Prevention allows you to protect sensitive data as you migrate to the cloud, it unblocks more workloads as you migrate to the cloud. Cloud DLP enables you to inspect and classify your sensitive data in structured and unstructured workloads. De-identification techniques like tokenization (pseudonymization) let you preserve the utility of your data for joining or analytics while reducing the risk of handling the data by obfuscating the raw sensitive identifiers."
+      }
+    }
+  },
+  {
+    "question": "Employees of your firm pay for GCP projects with personal credit cards, which are refunded at the end of each month by the finance department. Your management team has made the decision to merge all projects under a single billing account. Which of the following approaches is the best solution?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Navigate to the Resource Manage section of the GCP Console and move all projects to the root Organization.",
+        "correct": true,
+        "why": ""
+      },
+      "B": {
+        "answer": "No change is needed, this method is the best approach",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Create a new billing account and link all the projects together",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Create a support ticket with Google Support to handle the credit card information",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "Your organization has migrated a workload from their on-premises environment to Google Cloud Compute Engine. They have been running the workload for nine months and there has been no change in capacity usage and the capacity is unlikely to increase for the foreseeable future. What would be the cheapest pricing solution?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Committed use discounts",
+        "correct": true,
+        "why": ""
+      },
+      "B": {
+        "answer": "On-demand pricing",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Sustained use discounts",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Preemptive VMs",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "You are a mobile gaming company that is currently building a mobile gaming application. You need to store 3KB of unnested structured data that represents a player’s profile. This data is real-time and is frequently accessed. Which storage solution will meet this requirement?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "BigQuery",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Cloud Storage",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Cloud BigTable",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Firestore",
+        "correct": true,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "Your organization has virtual machines running on-premise that they want to migrate to the cloud. During the migration process, they would like to also containerize their workloads. Which of the following choices would be suited for this migration?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Database Migration Service",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Migrate for Anthos",
+        "correct": true,
+        "why": ""
+      },
+      "C": {
+        "answer": "Cloud Sprint",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Migrate for Compute Engine",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "You are the team leader assigned to the development of an application. You must optimize the efficient workflow of multiple developers working on the development project while ensuring great flexibility for the entire process. Which of the following cloud computing services is best suited for the task?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Software as a Service (SaaS)",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Platform as a Service (PaaS)",
+        "correct": true,
+        "why": ""
+      },
+      "C": {
+        "answer": "Infrastructure as a Service (IaaS)",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Function as a Service (FaaS)",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "You've been given the responsibility of managing your department's APIs and establishing security policies for identity verification, authentication, and access control. Which Google Cloud service is the best fit to accomplish this task?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Apigee",
+        "correct": true,
+        "why": ""
+      },
+      "B": {
+        "answer": "BigQuery",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Google Kubernetes Engine",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Cloud Functions",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "An organization is reviewing its monthly operational expenditure on the Google Cloud platform and breaking down spending per region. Which built-in cloud billing report would be ideal for visualization regional spending?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Cost Table Reports",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Billing Reports",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Cost Breakdown Report",
+        "correct": true,
+        "why": ""
+      },
+      "D": {
+        "answer": "Committed use discounts reports",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "A company is currently developing an application that will run on Google Cloud. They want to ensure that if the application has any issues, it will be tolerant of any downtime. What is the described requirement?",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Resiliency",
+        "correct": true,
+        "why": ""
+      },
+      "B": {
+        "answer": "Orchestration",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Dataflow",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Redundancy",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "Which of the following are advantages of adopting a cloud service such as Google Cloud Platform? (Choose 3)",
+    "multichoice": true,
+    "alternatives": {
+      "A": {
+        "answer": "Near-unlimited scalability",
+        "correct": true,
+        "why": ""
+      },
+      "B": {
+        "answer": "Utilization of Low-Cost Services",
+        "correct": true,
+        "why": ""
+      },
+      "C": {
+        "answer": "High reliability",
+        "correct": true,
+        "why": ""
+      },
+      "D": {
+        "answer": "Every service is supported by Open APIs",
+        "correct": false,
+        "why": ""
+      },
+      "E": {
+        "answer": "The services are completely managed",
+        "correct": false,
+        "why": ""
+      }
+    }
+  }
+]

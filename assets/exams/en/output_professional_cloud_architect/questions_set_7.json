@@ -1,0 +1,272 @@
+[
+  {
+    "question": "Your customer wants to capture multiple GBs of aggregate real-time key performance indicators (KPIs) from their game servers running on Google Cloud Platform and monitor the KPIs with low latency. How should they capture the KPIs?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Store time-series data from the game servers in Google Bigtable, and view it using Google Data Studio.",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Output custom metrics to Stackdriver from the game servers, and create a Dashboard in Stackdriver Monitoring Console to view them.",
+        "correct": true,
+        "why": ""
+      },
+      "C": {
+        "answer": "Schedule BigQuery load jobs to ingest analytics files uploaded to Cloud Storage every ten minutes, and visualize the results in Google Data Studio.",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Insert the KPIs into Cloud Datastore entities, and run ad hoc analysis and visualizations of them in Cloud Datalab.",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "You have a Python web application with many dependencies that requires 0.1 CPU cores and 128 MB of memory to operate in production. You want to monitor and maximize machine utilization. You also want to reliably deploy new versions of the application. Which set of steps should you take?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Perform the following: 1. Create a managed instance group with f1-micro type machines. 2. Use a startup script to clone the repository, check out the production branch, install the dependencies, and start the Python app. 3. Restart the instances to automatically deploy new production releases.",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Perform the following: 1. Create a managed instance group with n1-standard-1 type machines. 2. Build a Compute Engine image from the production branch that contains all of the dependencies and automatically starts the Python app. 3. Rebuild the Compute Engine image, and update the instance template to deploy new production releases.",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Perform the following: 1. Create a Google Kubernetes Engine (GKE) cluster with n1-standard-1 type machines. 2. Build a Docker image from the production branch with all of the dependencies, and tag it with the version number. 3. Create a Kubernetes Deployment with the imagePullPolicy set to 'IfNotPresent' in the staging namespace, and then promote it to the production namespace after testing.",
+        "correct": true,
+        "why": ""
+      },
+      "D": {
+        "answer": "Perform the following: 1. Create a GKE cluster with n1-standard-4 type machines. 2. Build a Docker image from the master branch with all of the dependencies, and tag it with 'latest'. 3. Create a Kubernetes Deployment in the default namespace with the imagePullPolicy set to 'Always'. Restart the pods to automatically deploy new production releases.",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "Your company wants to start using Google Cloud resources but wants to retain their on-premises Active Directory domain controller for identity management. What should you do?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Use the Admin Directory API to authenticate against the Active Directory domain controller.",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Use Google Cloud Directory Sync to synchronize Active Directory usernames with cloud identities and configure SAML SSO.",
+        "correct": true,
+        "why": ""
+      },
+      "C": {
+        "answer": "Use Cloud Identity-Aware Proxy configured to use the on-premises Active Directory domain controller as an identity provider.",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Use Compute Engine to create an Active Directory (AD) domain controller that is a replica of the on-premises AD domain controller using Google Cloud Directory Sync.",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "You are running a cluster on Kubernetes Engine (GKE) to serve a web application. Users are reporting that a specific part of the application is not responding anymore. You notice that all pods of your deployment keep restarting after 2 seconds. The application writes logs to standard output. You want to inspect the logs to find the cause of the issue. Which approach can you take?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Review the Stackdriver logs for each Compute Engine instance that is serving as a node in the cluster.",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Review the Stackdriver logs for the specific GKE container that is serving the unresponsive part of the application.",
+        "correct": true,
+        "why": ""
+      },
+      "C": {
+        "answer": "Connect to the cluster using gcloud credentials and connect to a container in one of the pods to read the logs.",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Review the Serial Port logs for each Compute Engine instance that is serving as a node in the cluster.",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "You are using a single Cloud SQL instance to serve your application from a specific zone. You want to introduce high availability. What should you do?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Create a read replica instance in a different region",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Create a failover replica instance in a different region",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Create a read replica instance in the same region, but in a different zone",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Create a failover replica instance in the same region, but in a different zone",
+        "correct": true,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "Your company is running a stateless application on a Compute Engine instance. The application is used heavily during regular business hours and lightly outside of business hours. Users are reporting that the application is slow during peak hours. You need to optimize the application's performance. What should you do?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Create a snapshot of the existing disk. Create an instance template from the snapshot. Create an autoscaled managed instance group from the instance template.",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Create a snapshot of the existing disk. Create a custom image from the snapshot. Create an autoscaled managed instance group from the custom image.",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Create a custom image from the existing disk. Create an instance template from the custom image. Create an autoscaled managed instance group from the instance template.",
+        "correct": true,
+        "why": ""
+      },
+      "D": {
+        "answer": "Create an instance template from the existing disk. Create a custom image from the instance template. Create an autoscaled managed instance group from the custom image.",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "Your web application has several VM instances running within a VPC. You want to restrict communications between instances to only the paths and ports you authorize, but you don't want to rely on static IP addresses or subnets because the app can autoscale. How should you restrict communications?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Use separate VPCs to restrict traffic",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Use firewall rules based on network tags attached to the compute instances",
+        "correct": true,
+        "why": ""
+      },
+      "C": {
+        "answer": "Use Cloud DNS and only allow connections from authorized hostnames",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Use service accounts and configure the web application to authorize particular service accounts to have access",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "You are using Cloud SQL as the database backend for a large CRM deployment. You want to scale as usage increases and ensure that you don't run out of storage, maintain 75% CPU usage cores, and keep replication lag below 60 seconds. What are the correct steps to meet your requirements?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "1. Enable automatic storage increase for the instance. 2. Create a Stackdriver alert when CPU usage exceeds 75%, and change the instance type to reduce CPU usage. 3. Create a Stackdriver alert for replication lag, and shard the database to reduce replication time.",
+        "correct": true,
+        "why": ""
+      },
+      "B": {
+        "answer": "1. Enable automatic storage increase for the instance. 2. Change the instance type to a 32-core machine type to keep CPU usage below 75%. 3. Create a Stackdriver alert for replication lag, and deploy memcache to reduce load on the master.",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "1. Create a Stackdriver alert when storage exceeds 75%, and increase the available storage on the instance to create more space. 2. Deploy memcached to reduce CPU load. 3. Change the instance type to a 32-core machine type to reduce replication lag.",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "1. Create a Stackdriver alert when storage exceeds 75%, and increase the available storage on the instance to create more space. 2. Deploy memcached to reduce CPU load. 3. Create a Stackdriver alert for replication lag, and change the instance type to a 32-core machine type to reduce replication lag.",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "You are tasked with building an online analytical processing (OLAP) marketing analytics and reporting tool. This requires a relational database that can operate on hundreds of terabytes of data. What is the Google-recommended tool for such applications?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Cloud Spanner, because it is globally distributed",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Cloud SQL, because it is a fully managed relational database",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Cloud Firestore, because it offers real-time synchronization across devices",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "BigQuery, because it is designed for large-scale processing of tabular data",
+        "correct": true,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "You have deployed an application to Google Kubernetes Engine (GKE), and are using the Cloud SQL proxy container to make the Cloud SQL database available to the services running on Kubernetes. You are notified that the application is reporting database connection issues. Your company policies require a post- mortem. What should you do?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Use gcloud sql instances restart.",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Validate that the Service Account used by the Cloud SQL proxy container still has the Cloud Build Editor role.",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "In the GCP Console, navigate to Stackdriver Logging. Consult logs for (GKE) and Cloud SQL.",
+        "correct": true,
+        "why": ""
+      },
+      "D": {
+        "answer": "In the GCP Console, navigate to Cloud SQL. Restore the latest backup. Use kubectl to restart all pods.",
+        "correct": false,
+        "why": ""
+      }
+    }
+  }
+]

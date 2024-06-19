@@ -1,0 +1,272 @@
+[
+  {
+    "question": "You have an application deployed on Google Kubernetes Engine using a Deployment named echo-deployment. The deployment is exposed using a Service called echo-service. You need to perform an update to the application with minimal downtime to the application. What should you do?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Use kubectl set image deployment/echo-deployment <new-image>",
+        "correct": true,
+        "why": ""
+      },
+      "B": {
+        "answer": "Use the rolling update functionality of the Instance Group behind the Kubernetes cluster",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Update the deployment yaml file with the new container image. Use kubectl delete deployment/echo-deployment and kubectl create \"f <yaml-file>",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Update the service yaml file which the new container image. Use kubectl delete service/echo-service and kubectl create \"f <yaml-file>",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "Your company is using BigQuery as its enterprise data warehouse. Data is distributed over several Google Cloud projects. All queries on BigQuery need to be billed on a single project. You want to make sure that no query costs are incurred on the projects that contain the data. Users should be able to query the datasets, but not edit them. How should you configure users' access roles?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Add all users to a group. Grant the group the role of BigQuery user on the billing project and BigQuery dataViewer on the projects that contain the data.",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Add all users to a group. Grant the group the roles of BigQuery dataViewer on the billing project and BigQuery user on the projects that contain the data.",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Add all users to a group. Grant the group the roles of BigQuery jobUser on the billing project and BigQuery dataViewer on the projects that contain the data.",
+        "correct": true,
+        "why": ""
+      },
+      "D": {
+        "answer": "Add all users to a group. Grant the group the roles of BigQuery dataViewer on the billing project and BigQuery jobUser on the projects that contain the data.",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "You have developed an application using Cloud ML Engine that recognizes famous paintings from uploaded images. You want to test the application and allow specific people to upload images for the next 24 hours. Not all users have a Google Account. How should you have users upload images?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Have users upload the images to Cloud Storage. Protect the bucket with a password that expires after 24 hours.",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Have users upload the images to Cloud Storage using a signed URL that expires after 24 hours.",
+        "correct": true,
+        "why": ""
+      },
+      "C": {
+        "answer": "Create an App Engine web application where users can upload images. Configure App Engine to disable the application after 24 hours. Authenticate users via Cloud Identity.",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Create an App Engine web application where users can upload images for the next 24 hours. Authenticate users via Cloud Identity.",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "Your web application must comply with the requirements of the European Union's General Data Protection Regulation (GDPR). You are responsible for the technical architecture of your web application. What should you do?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Ensure that your web application only uses native features and services of Google Cloud Platform, because Google already has various certifications and provides pass-on compliance when you use native features.",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Enable the relevant GDPR compliance setting within the GCPConsole for each of the services in use within your application.",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Ensure that Cloud Security Scanner is part of your test planning strategy in order to pick up any compliance gaps.",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Define a design for the security of data in your web application that meets GDPR requirements.",
+        "correct": true,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "You need to set up Microsoft SQL Server on GCP. Management requires that there's no downtime in case of a data center outage in any of the zones within aGCP region. What should you do?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Configure a Cloud SQL instance with high availability enabled.",
+        "correct": true,
+        "why": ""
+      },
+      "B": {
+        "answer": "Configure a Cloud Spanner instance with a regional instance configuration.",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Set up SQL Server on Compute Engine, using Always On Availability Groups using Windows Failover Clustering. Place nodes in different subnets.",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Set up SQL Server Always On Availability Groups using Windows Failover Clustering. Place nodes in different zones.",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "The development team has provided you with a Kubernetes Deployment file. You have no infrastructure yet and need to deploy the application. What should you do?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Use gcloud to create a Kubernetes cluster. Use Deployment Manager to create the deployment.",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Use gcloud to create a Kubernetes cluster. Use kubectl to create the deployment.",
+        "correct": true,
+        "why": ""
+      },
+      "C": {
+        "answer": "Use kubectl to create a Kubernetes cluster. Use Deployment Manager to create the deployment.",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Use kubectl to create a Kubernetes cluster. Use kubectl to create the deployment.",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "You need to evaluate your team readiness for a new GCP project. You must perform the evaluation and create a skills gap plan which incorporates the business goal of cost optimization. Your team has deployed two GCP projects successfully to date. What should you do?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Allocate budget for team training. Set a deadline for the new GCP project.",
+        "correct": false,
+        "why": ""
+      },
+      "B": {
+        "answer": "Allocate budget for team training. Create a roadmap for your team to achieve Google Cloud certification based on job role.",
+        "correct": true,
+        "why": ""
+      },
+      "C": {
+        "answer": "Allocate budget to hire skilled external consultants. Set a deadline for the new GCP project.",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Allocate budget to hire skilled external consultants. Create a roadmap for your team to achieve Google Cloud certification based on job role.",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "You are designing an application for use only during business hours. For the minimum viable product release, you'd like to use a managed product that automatically `scales to zero` so you don't incur costs when there is no activity. Which primary compute resource should you choose?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Cloud Functions",
+        "correct": true,
+        "why": ""
+      },
+      "B": {
+        "answer": "Compute Engine",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Google Kubernetes Engine",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "AppEngine flexible environment",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "You are creating an App Engine application that uses Cloud Datastore as its persistence layer. You need to retrieve several root entities for which you have the identifiers. You want to minimize the overhead in operations performed by Cloud Datastore. What should you do?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Create the Key object for each Entity and run a batch get operation",
+        "correct": true,
+        "why": ""
+      },
+      "B": {
+        "answer": "Create the Key object for each Entity and run multiple get operations, one operation for each entity",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Use the identifiers to create a query filter and run a batch query operation",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Use the identifiers to create a query filter and run multiple query operations, one operation for each entity",
+        "correct": false,
+        "why": ""
+      }
+    }
+  },
+  {
+    "question": "You need to upload files from your on-premises environment to Cloud Storage. You want the files to be encrypted on Cloud Storage using customer-supplied encryption keys. What should you do?",
+    "code": "",
+    "multichoice": false,
+    "alternatives": {
+      "A": {
+        "answer": "Supply the encryption key in a .boto configuration file. Use gsutil to upload the files.",
+        "correct": true,
+        "why": ""
+      },
+      "B": {
+        "answer": "Supply the encryption key using gcloud config. Use gsutil to upload the files to that bucket.",
+        "correct": false,
+        "why": ""
+      },
+      "C": {
+        "answer": "Use gsutil to upload the files, and use the flag --encryption-key to supply the encryption key.",
+        "correct": false,
+        "why": ""
+      },
+      "D": {
+        "answer": "Use gsutil to create a bucket, and use the flag --encryption-key to supply the encryption key. Use gsutil to upload the files to that bucket.",
+        "correct": false,
+        "why": ""
+      }
+    }
+  }
+]
