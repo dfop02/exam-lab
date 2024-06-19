@@ -1,8 +1,6 @@
 [
   {
     "question": "Your customer wants to capture multiple GBs of aggregate real-time key performance indicators (KPIs) from their game servers running on Google Cloud Platform and monitor the KPIs with low latency. How should they capture the KPIs?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Store time-series data from the game servers in Google Bigtable, and view it using Google Data Studio.",
@@ -28,8 +26,6 @@
   },
   {
     "question": "You have a Python web application with many dependencies that requires 0.1 CPU cores and 128 MB of memory to operate in production. You want to monitor and maximize machine utilization. You also want to reliably deploy new versions of the application. Which set of steps should you take?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Perform the following: 1. Create a managed instance group with f1-micro type machines. 2. Use a startup script to clone the repository, check out the production branch, install the dependencies, and start the Python app. 3. Restart the instances to automatically deploy new production releases.",
@@ -55,8 +51,6 @@
   },
   {
     "question": "Your company wants to start using Google Cloud resources but wants to retain their on-premises Active Directory domain controller for identity management. What should you do?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Use the Admin Directory API to authenticate against the Active Directory domain controller.",
@@ -82,8 +76,6 @@
   },
   {
     "question": "You are running a cluster on Kubernetes Engine (GKE) to serve a web application. Users are reporting that a specific part of the application is not responding anymore. You notice that all pods of your deployment keep restarting after 2 seconds. The application writes logs to standard output. You want to inspect the logs to find the cause of the issue. Which approach can you take?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Review the Stackdriver logs for each Compute Engine instance that is serving as a node in the cluster.",
@@ -109,8 +101,6 @@
   },
   {
     "question": "You are using a single Cloud SQL instance to serve your application from a specific zone. You want to introduce high availability. What should you do?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Create a read replica instance in a different region",
@@ -136,8 +126,6 @@
   },
   {
     "question": "Your company is running a stateless application on a Compute Engine instance. The application is used heavily during regular business hours and lightly outside of business hours. Users are reporting that the application is slow during peak hours. You need to optimize the application's performance. What should you do?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Create a snapshot of the existing disk. Create an instance template from the snapshot. Create an autoscaled managed instance group from the instance template.",
@@ -163,8 +151,6 @@
   },
   {
     "question": "Your web application has several VM instances running within a VPC. You want to restrict communications between instances to only the paths and ports you authorize, but you don't want to rely on static IP addresses or subnets because the app can autoscale. How should you restrict communications?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Use separate VPCs to restrict traffic",
@@ -190,8 +176,6 @@
   },
   {
     "question": "You are using Cloud SQL as the database backend for a large CRM deployment. You want to scale as usage increases and ensure that you don't run out of storage, maintain 75% CPU usage cores, and keep replication lag below 60 seconds. What are the correct steps to meet your requirements?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "1. Enable automatic storage increase for the instance. 2. Create a Stackdriver alert when CPU usage exceeds 75%, and change the instance type to reduce CPU usage. 3. Create a Stackdriver alert for replication lag, and shard the database to reduce replication time.",
@@ -217,8 +201,6 @@
   },
   {
     "question": "You are tasked with building an online analytical processing (OLAP) marketing analytics and reporting tool. This requires a relational database that can operate on hundreds of terabytes of data. What is the Google-recommended tool for such applications?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Cloud Spanner, because it is globally distributed",
@@ -244,8 +226,6 @@
   },
   {
     "question": "You have deployed an application to Google Kubernetes Engine (GKE), and are using the Cloud SQL proxy container to make the Cloud SQL database available to the services running on Kubernetes. You are notified that the application is reporting database connection issues. Your company policies require a post- mortem. What should you do?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Use gcloud sql instances restart.",

@@ -1,8 +1,6 @@
 [
   {
     "question": "Your company has developed a monolithic, 3-tier application to allow external users to upload and share files. The solution cannot be easily enhanced and lacks reliability. The development team would like to re-architect the application to adopt microservices and a fully managed service approach, but they need to convince their leadership that the effort is worthwhile. Which advantage(s) should they highlight to leadership?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "The new approach will be significantly less costly, make it easier to manage the underlying infrastructure, and automatically manage the CI/CD pipelines.",
@@ -28,8 +26,6 @@
   },
   {
     "question": "Your team is developing a web application that will be deployed on Google Kubernetes Engine (GKE). Your CTO expects a successful launch and you need to ensure your application can handle the expected load of tens of thousands of users. You want to test the current deployment to ensure the latency of your application stays below a certain threshold. What should you do?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Use a load testing tool to simulate the expected number of concurrent users and total requests to your application, and inspect the results.",
@@ -55,8 +51,6 @@
   },
   {
     "question": "Your company has a Kubernetes application that pulls messages from Pub/Sub and stores them in Filestore. Because the application is simple, it was deployed as a single pod. The infrastructure team has analyzed Pub/Sub metrics and discovered that the application cannot process the messages in real time. Most of them wait for minutes before being processed. You need to scale the elaboration process that is I/O-intensive. What should you do?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Use kubectl autoscale deployment APP_NAME --max 6 --min 2 --cpu-percent 50 to configure Kubernetes autoscaling deployment.",
@@ -82,8 +76,6 @@
   },
   {
     "question": "Your company is developing a web-based application. You need to make sure that production deployments are linked to source code commits and are fully auditable. What should you do?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Make sure a developer is tagging the code commit with the date and time of commit.",
@@ -109,8 +101,6 @@
   },
   {
     "question": "An application development team has come to you for advice. They are planning to write and deploy an HTTP(S) API using Go 1.12. The API will have a very unpredictable workload and must remain reliable during peaks in traffic. They want to minimize operational overhead for this application. Which approach should you recommend?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Develop the application with containers, and deploy to Google Kubernetes Engine.",
@@ -136,8 +126,6 @@
   },
   {
     "question": "Your company is designing its data lake on Google Cloud and wants to develop different ingestion pipelines to collect unstructured data from different sources.After the data is stored in Google Cloud, it will be processed in several data pipelines to build a recommendation engine for end users on the website. The structure of the data retrieved from the source systems can change at any time. The data must be stored exactly as it was retrieved for reprocessing purposes in case the data structure is incompatible with the current processing pipelines. You need to design an architecture to support the use case after you retrieve the data. What should you do?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Send the data through the processing pipeline, and then store the processed data in a BigQuery table for reprocessing.",
@@ -163,8 +151,6 @@
   },
   {
     "question": "You are responsible for the Google Cloud environment in your company. Multiple departments need access to their own projects, and the members within each department will have the same project responsibilities. You want to structure your Google Cloud environment for minimal maintenance and maximum overview ofIAM permissions as each department's projects start and end. You want to follow Google-recommended practices. What should you do?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Grant all department members the required IAM permissions for their respective projects.",
@@ -190,8 +176,6 @@
   },
   {
     "question": "Your company has an application running as a Deployment in a Google Kubernetes Engine (GKE) cluster. You have separate clusters for development, staging, and production. You have discovered that the team is able to deploy a Docker image to the production cluster without first testing the deployment in development and then staging. You want to allow the team to have autonomy but want to prevent this from happening. You want a Google Cloud solution that can be implemented quickly with minimal effort. What should you do?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Configure a Kubernetes lifecycle hook to prevent the container from starting if it is not approved for usage in the given environment.",
@@ -217,8 +201,6 @@
   },
   {
     "question": "Your company wants to migrate their 10-TB on-premises database export into Cloud Storage. You want to minimize the time it takes to complete this activity, the overall cost, and database load. The bandwidth between the on-premises environment and Google Cloud is 1 Gbps. You want to follow Google-recommended practices. What should you do?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Develop a Dataflow job to read data directly from the database and write it into Cloud Storage.",
@@ -244,8 +226,6 @@
   },
   {
     "question": "Your company has an enterprise application running on Compute Engine that requires high availability and high performance. The application has been deployed on two instances in two zones in the same region in active-passive mode. The application writes data to a persistent disk. In the case of a single zone outage, that data should be immediately made available to the other instance in the other zone. You want to maximize performance while minimizing downtime and data loss. What should you do?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "1. Attach a persistent SSD disk to the first instance. 2. Create a snapshot every hour. 3. In case of a zone outage, recreate a persistent SSD disk in the second instance where data is coming from the created snapshot.",

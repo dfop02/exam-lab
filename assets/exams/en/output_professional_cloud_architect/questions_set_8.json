@@ -1,8 +1,6 @@
 [
   {
     "question": "Your company pushes batches of sensitive transaction data from its application server VMs to Cloud Pub/Sub for processing and storage. What is the Google- recommended way for your application to authenticate to the required Google Cloud services?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Ensure that VM service accounts are granted the appropriate Cloud Pub/Sub IAM roles.",
@@ -28,8 +26,6 @@
   },
   {
     "question": "You want to establish a Compute Engine application in a single VPC across two regions. The application must communicate over VPN to an on-premises network. How should you deploy the VPN?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Use VPC Network Peering between the VPC and the on-premises network.",
@@ -55,8 +51,6 @@
   },
   {
     "question": "Your applications will be writing their logs to BigQuery for analysis. Each application should have its own table. Any logs older than 45 days should be removed.You want to optimize storage and follow Google-recommended practices. What should you do?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Configure the expiration time for your tables at 45 days",
@@ -82,8 +76,6 @@
   },
   {
     "question": "You want your Google Kubernetes Engine cluster to automatically add or remove nodes based on CPU load. What should you do?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Configure a HorizontalPodAutoscaler with a target CPU usage. Enable the Cluster Autoscaler from the GCP Console.",
@@ -109,8 +101,6 @@
   },
   {
     "question": "You need to develop procedures to verify resilience of disaster recovery for remote recovery using GCP. Your production environment is hosted on-premises. You need to establish a secure, redundant connection between your on-premises network and the GCP network. What should you do?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Verify that Dedicated Interconnect can replicate files to GCP. Verify that direct peering can establish a secure connection between your networks if Dedicated Interconnect fails.",
@@ -136,8 +126,6 @@
   },
   {
     "question": "Your company operates nationally and plans to use GCP for multiple batch workloads, including some that are not time-critical. You also need to use GCP services that are HIPAA-certified and manage service costs. How should you design to meet Google best practices?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Provision preemptible VMs to reduce cost. Discontinue use of all GCP services and APIs that are not HIPAA-compliant.",
@@ -163,8 +151,6 @@
   },
   {
     "question": "Your customer wants to do resilience testing of their authentication layer. This consists of a regional managed instance group serving a public REST API that reads from and writes to a Cloud SQL instance. What should you do?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Engage with a security company to run web scrapers that look your for users' authentication data om malicious websites and notify you if any is found.",
@@ -190,8 +176,6 @@
   },
   {
     "question": "Your BigQuery project has several users. For audit purposes, you need to see how many queries each user ran in the last month. What should you do?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Connect Google Data Studio to BigQuery. Create a dimension for the users and a metric for the amount of queries per user.",
@@ -217,8 +201,6 @@
   },
   {
     "question": "You want to automate the creation of a managed instance group. The VMs have many OS package dependencies. You want to minimize the startup time for newVMs in the instance group. What should you do?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Use Terraform to create the managed instance group and a startup script to install the OS package dependencies.",
@@ -244,8 +226,6 @@
   },
   {
     "question": "Your company captures all web traffic data in Google Analytics 360 and stores it in BigQuery. Each country has its own dataset. Each dataset has multiple tables.You want analysts from each country to be able to see and query only the data for their respective countries. How should you configure the access rights?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Create a group per country. Add analysts to their respective country-groups. Create a single group 'all_analysts', and add all country-groups as members. Grant the 'all_analysts' group the IAM role of BigQuery jobUser. Share the appropriate dataset with view access with each respective analyst country-group.",

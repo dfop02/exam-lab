@@ -1,8 +1,6 @@
 [
   {
     "question": "Your solution is producing performance bugs in production that you did not see in staging and test environments. You want to adjust your test and deployment procedures to avoid this problem in the future. What should you do?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Deploy fewer changes to production",
@@ -28,8 +26,6 @@
   },
   {
     "question": "A small number of API requests to your microservices-based application take a very long time. You know that each request to the API can traverse many services.You want to know which service takes the longest in those cases. What should you do?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Set timeouts on your application so that you can fail requests faster",
@@ -55,8 +51,6 @@
   },
   {
     "question": "During a high traffic portion of the day, one of your relational databases crashes, but the replica is never promoted to a master. You want to avoid this in the future. What should you do?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Use a different database",
@@ -82,8 +76,6 @@
   },
   {
     "question": "Your organization requires that metrics from all applications be retained for 5 years for future analysis in possible legal proceedings. Which approach should you use?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Grant the security team access to the logs in each Project",
@@ -109,8 +101,6 @@
   },
   {
     "question": "Your company has decided to build a backup replica of their on-premises user authentication PostgreSQL database on Google Cloud Platform. The database is 4TB, and large updates are frequent. Replication requires private address space communication. Which networking approach should you use?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Google Cloud Dedicated Interconnect",
@@ -136,8 +126,6 @@
   },
   {
     "question": "Auditors visit your teams every 12 months and ask to review all the Google Cloud Identity and Access Management (Cloud IAM) policy changes in the previous 12 months. You want to streamline and expedite the analysis and audit process. What should you do?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Create custom Google Stackdriver alerts and send them to the auditor",
@@ -163,8 +151,6 @@
   },
   {
     "question": "You are designing a large distributed application with 30 microservices. Each of your distributed microservices needs to connect to a database back-end. You want to store the credentials securely.Where should you store the credentials?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "In the source code",
@@ -190,8 +176,6 @@
   },
   {
     "question": "A lead engineer wrote a custom tool that deploys virtual machines in the legacy data center. He wants to migrate the custom tool to the new cloud environment.You want to advocate for the adoption of Google Cloud Deployment Manager. What are two business risks of migrating to Cloud Deployment Manager? (Choose 2)",
-    "code": "",
-    "multichoice": true,
     "alternatives": {
       "A": {
         "answer": "Cloud Deployment Manager uses Python",
@@ -212,23 +196,11 @@
         "answer": "Cloud Deployment Manager requires a Google APIs service account to run",
         "correct": false,
         "why": ""
-      },
-      "E": {
-        "answer": "Cloud Deployment Manager can be used to permanently delete cloud resources",
-        "correct": false,
-        "why": ""
-      },
-      "F": {
-        "answer": "Cloud Deployment Manager only supports automation of Google Cloud resources",
-        "correct": true,
-        "why": ""
       }
     }
   },
   {
     "question": "A development manager is building a new application. He asks you to review his requirements and identify what cloud technologies he can use to meet them. The application must:1. Be based on open-source technology for cloud portability2. Dynamically scale compute capacity based on demand3. Support continuous software delivery4. Run multiple segregated copies of the same application stack5. Deploy application bundles using dynamic templates6. Route network traffic to specific services based on URLWhich combination of technologies will meet all of his requirements?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Google Kubernetes Engine, Jenkins, and Helm",
@@ -254,8 +226,6 @@
   },
   {
     "question": "You have created several pre-emptible Linux virtual machine instances using Google Compute Engine. You want to properly shut down your application before the virtual machines are preempted. What should you do?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Create a shutdown script named k99.shutdown in the /etc/rc.6.d/ directory",

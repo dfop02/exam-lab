@@ -1,8 +1,6 @@
 [
   {
     "question": "Your company and one of its partners each have a Google Cloud project in separate organizations. Your company's project (prj-a) runs in Virtual Private Cloud(vpc-a). The partner's project (prj-b) runs in vpc-b. There are two instances running on vpc-a and one instance running on vpc-b. Subnets defined in both VPCs are not overlapping. You need to ensure that all instances communicate with each other via internal IPs, minimizing latency and maximizing throughput. What should you do?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Set up a network peering between vpc-a and vpc-b.",
@@ -28,8 +26,6 @@
   },
   {
     "question": "You want to store critical business information in Cloud Storage buckets. The information is regularly changed, but previous versions need to be referenced on a regular basis. You want to ensure that there is a record of all changes to any information in these buckets. You want to ensure that accidental edits or deletions can be easily rolled back. Which feature should you enable?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Bucket Lock",
@@ -55,8 +51,6 @@
   },
   {
     "question": "You have a Compute Engine application that you want to autoscale when total memory usage exceeds 80%. You have installed the Cloud Monitoring agent and configured the autoscaling policy as follows:✑ Metric identifier: agent.googleapis.com/memory/percent_used\n✑ Filter: metric.label.state = 'used'\n✑ Target utilization level: 80\n✑ Target type: GAUGE\nYou observe that the application does not scale under high load. You want to resolve this. What should you do?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Change the Target type to DELTA_PER_MINUTE.",
@@ -82,8 +76,6 @@
   },
   {
     "question": "You are deploying an application to Google Cloud. The application is part of a system. The application in Google Cloud must communicate over a private network with applications in a non-Google Cloud environment. The expected average throughput is 200 kbps. The business requires:\n✑ as close to 100% system availability as possible\n✑ cost optimization\nYou need to design the connectivity between the locations to meet the business requirements. What should you provision?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "An HA Cloud VPN gateway connected with two tunnels to an on-premises VPN gateway",

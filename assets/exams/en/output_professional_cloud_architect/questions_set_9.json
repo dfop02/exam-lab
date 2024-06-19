@@ -1,8 +1,6 @@
 [
   {
     "question": "You have been engaged by your client to lead the migration of their application infrastructure to GCP. One of their current problems is that the on-premises high performance SAN is requiring frequent and expensive upgrades to keep up with the variety of workloads that are identified as follows: 20 TB of log archives retained for legal reasons; 500 GB of VM boot/data volumes and templates; 500 GB of image thumbnails; 200 GB of customer session state data that allows customers to restart sessions even if off-line for several days. Which of the following best reflects your recommendations for a cost-effective storage allocation?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Local SSD for customer session state data. Lifecycle-managed Cloud Storage for log archives, thumbnails, and VM boot/data volumes.",
@@ -28,8 +26,6 @@
   },
   {
     "question": "Your web application uses Google Kubernetes Engine to manage several workloads. One workload requires a consistent set of hostnames even after pod scaling and relaunches. Which feature of Kubernetes should you use to accomplish this?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "StatefulSets",
@@ -55,8 +51,6 @@
   },
   {
     "question": "You are using Cloud CDN to deliver static HTTP(S) website content hosted on a Compute Engine instance group. You want to improve the cache hit ratio. What should you do?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Customize the cache keys to omit the protocol from the key.",
@@ -82,8 +76,6 @@
   },
   {
     "question": "Your architecture calls for the centralized collection of all admin activity and VM system logs within your project. How should you collect these logs from both VMs and services?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "All admin and VM system logs are automatically collected by Stackdriver.",
@@ -109,8 +101,6 @@
   },
   {
     "question": "You have an App Engine application that needs to be updated. You want to test the update with production traffic before replacing the current application version. What should you do?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Deploy the update using the Instance Group Updater to create a partial rollout, which allows for canary testing.",
@@ -136,8 +126,6 @@
   },
   {
     "question": "All Compute Engine instances in your VPC should be able to connect to an Active Directory server on specific ports. Any other traffic emerging from your instances is not allowed. You want to enforce this using VPC firewall rules. How should you configure the firewall rules?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Create an egress rule with priority 1000 to deny all traffic for all instances. Create another egress rule with priority 100 to allow the Active Directory traffic for all instances.",
@@ -163,8 +151,6 @@
   },
   {
     "question": "Your customer runs a web service used by e-commerce sites to offer product recommendations to users. The company has begun experimenting with a machine learning model on Google Cloud Platform to improve the quality of results. What should the customer do to improve their model's results over time?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Export Cloud Machine Learning Engine performance metrics from Stackdriver to BigQuery, to be used to analyze the efficiency of the model.",
@@ -190,8 +176,6 @@
   },
   {
     "question": "A development team at your company has created a dockerized HTTPS web application. You need to deploy the application on Google Kubernetes Engine (GKE) and make sure that the application scales automatically. How should you deploy to GKE?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Use the Horizontal Pod Autoscaler and enable cluster autoscaling. Use an Ingress resource to load-balance the HTTPS traffic.",
@@ -217,8 +201,6 @@
   },
   {
     "question": "You need to design a solution for global load balancing based on the URL path being requested. You need to ensure operations reliability and end-to-end in- transit encryption based on Google best practices. What should you do?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Create a cross-region load balancer with URL Maps.",
@@ -244,8 +226,6 @@
   },
   {
     "question": "You have an application that makes HTTP requests to Cloud Storage. Occasionally the requests fail with HTTP status codes of 5xx and 429. How should you handle these types of errors?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Use gRPC instead of HTTP for better performance.",

@@ -1,8 +1,6 @@
 [
   {
     "question": "Your company's test suite is a custom C++ application that runs tests throughout each day on Linux virtual machines. The full test suite takes several hours to complete, running on a limited number of on-premises servers reserved for testing. Your company wants to move the testing infrastructure to the cloud, to reduce the amount of time it takes to fully test a change to the system, while changing the tests as little as possible. Which cloud infrastructure should you recommend?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Google Compute Engine unmanaged instance groups and Network Load Balancer",
@@ -28,8 +26,6 @@
   },
   {
     "question": "A lead software engineer tells you that his new application design uses websockets and HTTP sessions that are not distributed across the web servers. You want to help him ensure his application will run properly on Google Cloud Platform. What should you do?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Help the engineer to convert his websocket code to use HTTP streaming",
@@ -55,8 +51,6 @@
   },
   {
     "question": "The application reliability team at your company this added a debug feature to their backend service to send all server events to Google Cloud Storage for eventual analysis. The event records are at least 50 KB and at most 15 MB and are expected to peak at 3,000 events per second. You want to minimize data loss. Which process should you implement?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "¢ Append metadata to file body ¢ Compress individual files ¢ Name files with serverName \" Timestamp ¢ Create a new bucket if bucket is older than 1 hour and save individual files to the new bucket. Otherwise, save files to existing bucket.",
@@ -82,8 +76,6 @@
   },
   {
     "question": "A recent audit revealed that a new network was created in your GCP project. In this network, a GCE instance has an SSH port open to the world. You want to discover this network's origin. What should you do?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Search for Create VM entry in the Stackdriver alerting console",
@@ -109,8 +101,6 @@
   },
   {
     "question": "You want to make a copy of a production Linux virtual machine in the US-Central region. You want to manage and replace the copy easily if there are changes on the production virtual machine. You will deploy the copy as a new instance in a different project in the US-East region. What steps must you take?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Use the Linux dd and netcat commands to copy and stream the root disk contents to a new virtual machine instance in the US-East region.",
@@ -136,8 +126,6 @@
   },
   {
     "question": "Your company runs several databases on a single MySQL instance. They need to take backups of a specific database at regular intervals. The backup activity needs to complete as quickly as possible and cannot be allowed to impact disk performance. How should you configure the storage?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Configure a cron job to use the gcloud tool to take regular backups using persistent disk snapshots.",
@@ -163,8 +151,6 @@
   },
   {
     "question": "You are helping the QA team to roll out a new load-testing tool to test the scalability of your primary cloud services that run on Google Compute Engine with CloudBigtable. Which three requirements should they include? (Choose 3)",
-    "code": "",
-    "multichoice": true,
     "alternatives": {
       "A": {
         "answer": "Ensure that the load tests validate the performance of Cloud Bigtable",
@@ -185,23 +171,11 @@
         "answer": "Ensure all third-party systems your services use is capable of handling high load",
         "correct": false,
         "why": ""
-      },
-      "E": {
-        "answer": "Instrument the production services to record every transaction for replay by the load-testing tool",
-        "correct": false,
-        "why": ""
-      },
-      "F": {
-        "answer": "Instrument the load-testing tool and the target services with detailed logging and metrics collection",
-        "correct": true,
-        "why": ""
       }
     }
   },
   {
     "question": "Your customer is moving their corporate applications to Google Cloud Platform. The security team wants detailed visibility of all projects in the organization. You provision the Google Cloud Resource Manager and set up yourself as the org admin. What Google Cloud Identity and Access Management (Cloud IAM) roles should you give to the security team?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Org viewer, project owner",
@@ -227,8 +201,6 @@
   },
   {
     "question": "Your company places a high value on being responsive and meeting customer needs quickly. Their primary business objectives are release speed and agility. You want to reduce the chance of security errors being accidentally introduced. Which two actions can you take? (Choose 2)",
-    "code": "",
-    "multichoice": true,
     "alternatives": {
       "A": {
         "answer": "Ensure every code check-in is peer reviewed by a security SME",
@@ -249,18 +221,11 @@
         "answer": "Enable code signing and a trusted binary repository integrated with your CI/CD pipeline",
         "correct": false,
         "why": ""
-      },
-      "E": {
-        "answer": "Run a vulnerability security scanner as part of your continuous-integration /continuous-delivery (CI/CD) pipeline",
-        "correct": true,
-        "why": ""
       }
     }
   },
   {
     "question": "You want to enable your running Google Kubernetes Engine cluster to scale as demand for your application changes. What should you do?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Add additional nodes to your Kubernetes Engine cluster using the following command: gcloud container clusters resize CLUSTER_Name \" -size 10",

@@ -24,8 +24,17 @@ fs.readFile(path.join(folderPath), "utf-8", (err, data) => {
     // Itera sobre cada objeto de pergunta dentro do array 'exam'
     exams.exam.forEach((exam) => {
       // Adiciona cada pergunta ao array 'questions'
-      questions.push(exam);
-
+      // pege somente o valor da question e a awser de cada alternativa
+      console.log(exam.alternatives.A.answer);
+      questions.push({
+        question: exam.question,
+        alternatives: {
+          A: exam.alternatives.A.answer,
+          B: exam.alternatives.B.answer,
+          C: exam.alternatives.C.answer,
+          D: exam.alternatives.D.answer,
+        },
+      });
       // Se 'questions' atingir 10 perguntas, cria um novo arquivo
       if (questions.length === 10) {
         const fileName = `${outputFilePrefix}_${setIndex}.json`;

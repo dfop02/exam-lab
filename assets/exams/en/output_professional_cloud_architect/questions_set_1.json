@@ -1,8 +1,6 @@
 [
   {
     "question": "Your company has decided to make a major revision of their API in order to create better experiences for their developers. They need to keep the old version of the API available and deployable, while allowing new customers and testers to try out the new API. They want to keep the same SSL and DNS records in place to serve both APIs. What should they do?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Configure a new load balancer for the new version of the API",
@@ -28,8 +26,6 @@
   },
   {
     "question": "Your company plans to migrate a multi-petabyte data set to the cloud. The data set must be available 24hrs a day. Your business analysts have experience only with using a SQL interface. How should you store the data to optimize it for ease of analysis?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Load data into Google BigQuery",
@@ -55,8 +51,6 @@
   },
   {
     "question": "The operations manager asks you for a list of recommended practices that she should consider when migrating a J2EE application to the cloud. Which three practices should you recommend? (Choose 3)",
-    "code": "",
-    "multichoice": true,
     "alternatives": {
       "B": {
         "answer": "Integrate Cloud Dataflow into the application to capture real-time metrics",
@@ -72,23 +66,11 @@
         "answer": "Select an automation framework to reliably provision the cloud infrastructure",
         "correct": true,
         "why": ""
-      },
-      "E": {
-        "answer": "Deploy a continuous integration tool with automated testing in a staging environment",
-        "correct": true,
-        "why": ""
-      },
-      "F": {
-        "answer": "Migrate from MySQL to a managed NoSQL database like Google Cloud Datastore or Bigtable",
-        "correct": false,
-        "why": ""
       }
     }
   },
   {
     "question": "An application development team believes their current logging tool will not meet their needs for their new cloud-based product. They want a better tool to capture errors and help them analyze their historical log data. You want to help them find a solution that meets their needs. What should you do?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Direct them to download and install the Google StackDriver logging agent",
@@ -114,8 +96,6 @@
   },
   {
     "question": "You need to reduce the number of unplanned rollbacks of erroneous production deployments in your company's web hosting platform. Improvement to the QA/Test processes accomplished an 80% reduction. Which additional two approaches can you take to further reduce the rollbacks? (Choose 2)",
-    "code": "",
-    "multichoice": true,
     "alternatives": {
       "A": {
         "answer": "Introduce a green-blue deployment model",
@@ -136,18 +116,11 @@
         "answer": "Reduce the platform's dependency on relational database systems",
         "correct": false,
         "why": ""
-      },
-      "E": {
-        "answer": "Replace the platform's relational database systems with a NoSQL database",
-        "correct": false,
-        "why": ""
       }
     }
   },
   {
     "question": "To reduce costs, the Director of Engineering has required all developers to move their development infrastructure resources from on-premises virtual machines(VMs) to Google Cloud Platform. These resources go through multiple start/stop events during the day and require state to persist. You have been asked to design the process of running a development environment in Google Cloud while providing cost visibility to the finance department. Which two steps should you take? (Choose 2)",
-    "code": "",
-    "multichoice": true,
     "alternatives": {
       "A": {
         "answer": "Use the - -no-auto-delete flag on all persistent disks and stop the VM",
@@ -168,23 +141,11 @@
         "answer": "Use Google BigQuery billing export and labels to associate cost to groups",
         "correct": true,
         "why": ""
-      },
-      "E": {
-        "answer": "Store all state into local SSD, snapshot the persistent disks, and terminate the VM",
-        "correct": false,
-        "why": ""
-      },
-      "F": {
-        "answer": "Store all state in Google Cloud Storage, snapshot the persistent disks, and terminate the VM",
-        "correct": false,
-        "why": ""
       }
     }
   },
   {
     "question": "Your company wants to track whether someone is present in a meeting room reserved for a scheduled meeting. There are 1000 meeting rooms across 5 offices on 3 continents. Each room is equipped with a motion sensor that reports its status every second. The data from the motion detector includes only a sensor ID and several different discrete items of information. Analysts will use this data, together with information about account owners and office locations. Which database type should you use?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Flat file",
@@ -210,8 +171,6 @@
   },
   {
     "question": "You set up an autoscaling instance group to serve web traffic for an upcoming launch. After configuring the instance group as a backend service to an HTTP(S) load balancer, you notice that virtual machine (VM) instances are being terminated and re-launched every minute. The instances do not have a public IP address.You have verified the appropriate web response is coming from each instance using the curl command. You want to ensure the backend is configured correctly. What should you do?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Ensure that a firewall rules exists to allow source traffic on HTTP/HTTPS to reach the load balancer.",
@@ -237,8 +196,6 @@
   },
   {
     "question": "You write a Python script to connect to Google BigQuery from a Google Compute Engine virtual machine. The script is printing errors that it cannot connect toBigQuery. What should you do to fix the script?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Install the latest BigQuery API client library for Python",
@@ -264,8 +221,6 @@
   },
   {
     "question": "Your customer is moving an existing corporate application to Google Cloud Platform from an on-premises data center. The business owners require minimal user disruption. There are strict security team requirements for storing passwords. What authentication strategy should they use?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Use G Suite Password Sync to replicate passwords into Google",

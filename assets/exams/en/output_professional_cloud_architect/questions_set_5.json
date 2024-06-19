@@ -1,8 +1,6 @@
 [
   {
     "question": "You are analyzing and defining business processes to support your startup's trial usage of GCP, and you don't yet know what consumer demand for your product will be. Your manager requires you to minimize GCP service costs and adhere to Google best practices. What should you do?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Utilize free tier and sustained use discounts. Provision a staff position for service cost management.",
@@ -28,8 +26,6 @@
   },
   {
     "question": "You are building a continuous deployment pipeline for a project stored in a Git source repository and want to ensure that code changes can be verified before deploying to production. What should you do?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Use Spinnaker to deploy builds to production using the red/black deployment strategy so that changes can easily be rolled back.",
@@ -55,8 +51,6 @@
   },
   {
     "question": "You have an outage in your Compute Engine managed instance group: all instances keep restarting after 5 seconds. You have a health check configured, but autoscaling is disabled. Your colleague, who is a Linux expert, offered to look into the issue. You need to make sure that he can access the VMs. What should you do?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Grant your colleague the IAM role of project Viewer",
@@ -82,8 +76,6 @@
   },
   {
     "question": "Your company is migrating its on-premises data center into the cloud. As part of the migration, you want to integrate Google Kubernetes Engine (GKE) for workload orchestration. Parts of your architecture must also be PCI DSS-compliant. Which of the following is most accurate?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "App Engine is the only compute platform on GCP that is certified for PCI DSS hosting.",
@@ -109,8 +101,6 @@
   },
   {
     "question": "Your company has multiple on-premises systems that serve as sources for reporting. The data has not been maintained well and has become degraded over time.You want to use Google-recommended practices to detect anomalies in your company data. What should you do?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Upload your files into Cloud Storage. Use Cloud Datalab to explore and clean your data.",
@@ -136,8 +126,6 @@
   },
   {
     "question": "Google Cloud Platform resources are managed hierarchically using organization, folders, and projects. When Cloud Identity and Access Management (IAM) policies exist at these different levels, what is the effective policy at a particular node of the hierarchy?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "The effective policy is determined only by the policy set at the node",
@@ -163,8 +151,6 @@
   },
   {
     "question": "You are migrating your on-premises solution to Google Cloud in several phases. You will use Cloud VPN to maintain a connection between your on-premises systems and Google Cloud until the migration is completed. You want to make sure all your on-premise systems remain reachable during this period. How should you organize your networking in Google Cloud?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Use the same IP range on Google Cloud as you use on-premises",
@@ -190,8 +176,6 @@
   },
   {
     "question": "You have found an error in your App Engine application caused by missing Cloud Datastore indexes. You have created a YAML file with the required indexes and want to deploy these new indexes to Cloud Datastore. What should you do?You have an application that will run on Compute Engine. You need to design an architecture that takes into account a disaster recovery plan that requires your application to fail over to another region in case of a regional outage. What should you do?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Deploy the application on two Compute Engine instances in the same project but in a different region. Use the first instance to serve traffic, and use the HTTP load balancing service to fail over to the standby instance in case of a disaster.",
@@ -217,8 +201,6 @@
   },
   {
     "question": "You are working in a highly secured environment where public Internet access from the Compute Engine VMs is not allowed. You do not yet have a VPN connection to access an on-premises file server. You need to install specific software on a Compute Engine instance. How should you install the software?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Upload the required installation files to Cloud Storage. Configure the VM on a subnet with a Private Google Access subnet. Assign only an internal IP address to the VM. Download the installation files to the VM using gsutil.",
@@ -244,8 +226,6 @@
   },
   {
     "question": "Your company is moving 75 TB of data into Google Cloud. You want to use Cloud Storage and follow Google-recommended practices. What should you do?",
-    "code": "",
-    "multichoice": false,
     "alternatives": {
       "A": {
         "answer": "Move your data onto a Transfer Appliance. Use a Transfer Appliance Rehydrator to decrypt the data into Cloud Storage.",
