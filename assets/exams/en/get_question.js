@@ -21,20 +21,19 @@ fs.readFile(path.join(folderPath), "utf-8", (err, data) => {
     let questions = [];
     let setIndex = 1;
 
-    // Itera sobre cada objeto de pergunta dentro do array 'exam'
     exams.exam.forEach((exam) => {
-      // Adiciona cada pergunta ao array 'questions'
-      // pege somente o valor da question e a awser de cada alternativa
-      console.log(exam.alternatives.A.answer);
+      let alternatives = {};
+      
+      // Itera sobre as alternativas (A, B, C, D)
+      for (let key in exam.alternatives) {
+        alternatives[key] = exam.alternatives[key].answer;
+      }
+
       questions.push({
         question: exam.question,
-        alternatives: {
-          A: exam.alternatives.A.answer,
-          B: exam.alternatives.B.answer,
-          C: exam.alternatives.C.answer,
-          D: exam.alternatives.D.answer,
-        },
+        alternatives: alternatives,
       });
+
       // Se 'questions' atingir 10 perguntas, cria um novo arquivo
       if (questions.length === 10) {
         const fileName = `${outputFilePrefix}_${setIndex}.json`;
@@ -46,7 +45,7 @@ fs.readFile(path.join(folderPath), "utf-8", (err, data) => {
         // Limpa o array 'questions' para a próxima série de 10 perguntas
         questions = [];
         setIndex++;
-      }
+      } 
     });
 
     // Se sobrarem perguntas não agrupadas em um arquivo
@@ -58,7 +57,7 @@ fs.readFile(path.join(folderPath), "utf-8", (err, data) => {
       console.log(`Criado arquivo: ${fileName}`);
     }
 
-    console.log("All question sets created successfully:", questionSets);
+    console.log("Todos os conjuntos de perguntas foram criados com sucesso.");
   } catch (error) {
     console.error("Erro ao processar o arquivo JSON:", error);
   }
