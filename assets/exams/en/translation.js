@@ -3,7 +3,8 @@ const path = require('path');
 const TextTransform = require('./textTransform'); 
 const inputFilePath = './google_professional_cloud_architect.json';
 
-const outputFolder = './output_professional_cloud_architect';
+const outputFolder = './output_professional_cloud_architect_translate';
+
 
 async function translateQuestions() {
   try {
