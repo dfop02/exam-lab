@@ -24,7 +24,6 @@ fs.readFile(path.join(folderPath), "utf-8", (err, data) => {
     exams.exam.forEach((exam) => {
       let alternatives = {};
       
-      // Itera sobre as alternativas (A, B, C, D)
       for (let key in exam.alternatives) {
         alternatives[key] = exam.alternatives[key].answer;
       }
@@ -34,7 +33,6 @@ fs.readFile(path.join(folderPath), "utf-8", (err, data) => {
         alternatives: alternatives,
       });
 
-      // Se 'questions' atingir 10 perguntas, cria um novo arquivo
       if (questions.length === 10) {
         const fileName = `${outputFilePrefix}_${setIndex}.json`;
         const filePath = path.join(outputFolder, fileName);
@@ -42,13 +40,11 @@ fs.readFile(path.join(folderPath), "utf-8", (err, data) => {
         fs.writeFileSync(filePath, JSON.stringify(questions, null, 2), "utf-8");
         console.log(`Criado arquivo: ${fileName}`);
 
-        // Limpa o array 'questions' para a próxima série de 10 perguntas
         questions = [];
         setIndex++;
       } 
     });
 
-    // Se sobrarem perguntas não agrupadas em um arquivo
     if (questions.length > 0) {
       const fileName = `${outputFilePrefix}_${setIndex}.json`;
       const filePath = path.join(outputFolder, fileName);
