@@ -20,7 +20,7 @@ $(document).ready(function () {
 
 function getExams(language) {
   let exams_path =
-    "https://api.github.com/repos/MatthewAraujo/exam-lab/git/trees/main?recursive=1";
+    "https://api.github.com/repos/dfop02/exam-lab/git/trees/main?recursive=1";
   let exams_available = [];
 
   let path = "assets/exams/";

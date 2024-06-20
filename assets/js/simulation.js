@@ -16,7 +16,7 @@ $(document).ready(function () {
   const examLang = exam_filename.split(".")[0].split("-");
   console.log(examLang);
   let exams_path =
-    "https://raw.githubusercontent.com/MatthewAraujo/exam-lab/main/assets/exams/";
+    "https://raw.githubusercontent.com/dfop02/exam-lab/main/assets/exams/";
 
   if (examLang.length > 1) {
     exams_path += examLang[1] + "-" + examLang[2] + "/";
