@@ -21,7 +21,7 @@ $(document).ready(function () {
   if (examLang.length > 1) {
     exams_path += examLang[1] + "-" + examLang[2] + "/";
   } else {
-    exams_path += examLang[1] + "/";
+    exams_path += "en/";
   }
 
   console.log(exams_path);
