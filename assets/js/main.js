@@ -15,8 +15,6 @@ $(document).ready(function () {
     $(".overlay").addClass("hidden");
   });
 
-  countQuestions("google_associate_cloud_engineer.json");
-
   setLocale();
 });
 
