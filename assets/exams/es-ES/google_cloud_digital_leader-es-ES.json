@@ -1,0 +1,2884 @@
+{
+  "exam": [
+    {
+      "question": "Una organización necesita migrar cargas de trabajo especializadas a la nube y al mismo tiempo mantener su arquitectura y licencias complejas existentes. ¿Qué solución de Google Cloud debería utilizar la organización?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Motor de Computación",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Solución de metal desnudo",
+          "correct": true,
+          "why": ""
+        },
+        "C": {
+          "answer": "Ejecutar en la nube",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Función de nube",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Una agencia de viajes quiere compartir fácilmente su contenido de redes sociales con sus socios. ¿Qué debería utilizar la organización?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Una base de datos NoSQL",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Gestión de configuración de Anthos",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "El entorno estándar de App Engine",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Una interfaz de programación de aplicaciones (API)",
+          "correct": true,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Una organización quiere transformar múltiples tipos de datos estructurados y no estructurados en la nube desde diversas fuentes. Los datos deben ser fácilmente accesibles para análisis y conocimientos. ¿Qué sistema de almacenamiento de datos en la nube debería utilizar la organización?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Base de datos relacional",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "centro de datos privado",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Campo de datos",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Almacén de datos",
+          "correct": true,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Una organización quiere utilizar todos los datos disponibles para ofrecer sugerencias predictivas en su sitio web que mejoren con el tiempo. ¿Qué método debería utilizar la organización?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Automatización de datos",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Análisis de tendencias",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Aprendizaje automático",
+          "correct": true,
+          "why": ""
+        },
+        "D": {
+          "answer": "Regresión múltiple",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Después de implementar una nueva actualización, una organización encontró un error menor en su videojuego en línea. ¿Cómo debería la organización abordar este error siguiendo los principios de SRE?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Aceptar y aprender del error porque fallar es normal",
+          "correct": true,
+          "why": ""
+        },
+        "B": {
+          "answer": "Acepte e ignore el error porque es menor.",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Realizar una autopsia para reprender al empleador responsable del error.",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Corrección de errores de documentos para eliminar todos los errores futuros.",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "¿Por qué las organizaciones suelen tener dificultades para escalar su infraestructura de aplicaciones locales?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "El escalado de instancias informáticas podría violar el cumplimiento y/o la regulación",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Aumentar la capacidad informática requiere mucho tiempo y es costoso",
+          "correct": true,
+          "why": ""
+        },
+        "C": {
+          "answer": "Sus funciones informáticas sin servidor luchan por satisfacer la demanda",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Su arquitectura multinube es compleja y costosa.",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Una organización quiere utilizar el análisis de datos de Big Query para comprender el rendimiento de su sitio web, pero solo quiere mover algunos datos a la nube. ¿Qué entorno debería utilizar la organización?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Nube privada",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "En las instalaciones",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Nube múltiple",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Nube híbrida",
+          "correct": true,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "¿Qué es el registro en el contexto de la tecnología en la nube?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Escribir eventos de aplicaciones y sistemas operativos como texto",
+          "correct": true,
+          "why": ""
+        },
+        "B": {
+          "answer": "Monitoreo de limitaciones de recursos y redes",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Seguimiento del código fuente en una organización",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Registro de gastos en infraestructura y hardware",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "¿Cómo ayuda Cloud SQL a las organizaciones a crear información empresarial?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Se integra con plataformas de análisis e inteligencia empresarial",
+          "correct": true,
+          "why": ""
+        },
+        "B": {
+          "answer": "Genera predicciones utilizando modelos de aprendizaje automático.",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Genera gráficos en tiempo real y análisis inteligentes.",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Transforme los datos empresariales de no estructurados a estructurados",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Una organización lanzó recientemente un agente virtual de atención al cliente, que genera grandes cantidades de datos de texto y voz. ¿Por qué deberían utilizar un almacén de datos en la nube para interpretar estos datos?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Visualizar de forma nativa ambos tipos de datos mediante un panel en tiempo real",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Para ingerir y analizar datos estructurados y no estructurados a escala, en tiempo real",
+          "correct": true,
+          "why": ""
+        },
+        "C": {
+          "answer": "Para asegurar la transmisión de datos entre entornos locales y en la nube",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Para transformar datos de estructurados a no estructurados",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Una organización quiere agregar una nueva función a su aplicación. Quieren escribir el código y dejar que el proveedor de la nube pública se encargue de la infraestructura. ¿Qué solución de infraestructura deberían utilizar?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Maquinas virtuales",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Solución de metal desnudo",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Computación sin servidor",
+          "correct": true,
+          "why": ""
+        },
+        "D": {
+          "answer": "Registro de contenedores",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Una organización quiere aprovechar las herramientas y la automatización como parte de su nueva filosofía DevOps. ¿Qué desafío operativo resolverá esto?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Tareas manuales repetitivas que dificultan los flujos de trabajo",
+          "correct": true,
+          "why": ""
+        },
+        "B": {
+          "answer": "Supervisión de tareas creativas que requiere mucho tiempo",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Problemas de distribución y cadena de suministro",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Equipos técnicos defectuosos que limitan la innovación",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Una organización necesita almacenar datos estructurados, semiestructurados y no estructurados en su formato nativo sin procesar en el mismo repositorio. ¿Qué solución de gestión de datos en la nube debería utilizar la organización?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Campo de datos",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "lago de datos",
+          "correct": true,
+          "why": ""
+        },
+        "C": {
+          "answer": "Base de datos",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Almacén de datos",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Una organización quiere que sus usuarios validen una serie de nuevas funciones para su aplicación. ¿Por qué deberían utilizar App Engine?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Porque su aplicación está en contenedores y habilitada mediante microservicios.",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Porque la aplicación actualizada solo incluirá nuevas funciones",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Para ejecutar diferentes versiones de la aplicación para diferentes usuarios",
+          "correct": true,
+          "why": ""
+        },
+        "D": {
+          "answer": "Para ejecutar diferentes versiones de la aplicación para el mismo usuario",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "¿Cómo se beneficiaría una organización al utilizar Looker?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Gestión óptima de identificación y acceso",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Tecnología líder en almacenamiento sin servidor",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Sólida precisión de reversión de datos",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Inteligencia y análisis de negocios avanzados",
+          "correct": true,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Una organización ofrece un servicio de atención médica proactivo. Quieren recopilar datos de pacientes de forma eficiente y automática. ¿Qué debería la organización animar a los pacientes a hacer?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Utilice dispositivos de detección de salud en el hogar y luego cargue sus datos de salud diariamente",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Utilice dispositivos de Internet de las cosas (IoT) que carguen sus datos de salud en tiempo real",
+          "correct": true,
+          "why": ""
+        },
+        "C": {
+          "answer": "Autoevaluar sus datos de salud para luego documentarlos y cargarlos en tiempo real",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Visite a una enfermera que utilizará dispositivos de Internet de las cosas (IoT) para recopilar y cargar sus datos de salud.",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "¿Cómo se beneficiaría una organización global al administrar sus datos con Cloud Spanner?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Cloud Spanner está optimizado para almacenamiento en frío",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Cloud Spanner replica datos entre regiones en tiempo real",
+          "correct": true,
+          "why": ""
+        },
+        "C": {
+          "answer": "Cloud Spanner está optimizado para ingerir datos no estructurados",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Cloud Spanner visualiza y analiza datos en tiempo real",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Un empleado recibe un correo electrónico de su proveedor de servicios de Internet solicitándole su número de cuenta bancaria y su contraseña. ¿Qué amenaza de ciberseguridad es esta?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Secuestro de datos",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Denegación de servicio distribuida",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Enviar spam",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Suplantación de identidad",
+          "correct": true,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Una organización quiere pasar de un enfoque táctico de adopción de la nube a un enfoque transformacional. ¿Cómo deberían adaptar la forma en que lideran la organización?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Aumentar la visibilidad de arriba hacia abajo y fomentar una cultura de inocencia",
+          "correct": true,
+          "why": ""
+        },
+        "B": {
+          "answer": "Cambiar un modelo de gastos operativos a gastos de capital",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Impulsar la adopción de la nube con un enfoque en el colaborador individual",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Invierta en infraestructura local para rediseñar las relaciones entre TI y los empleados",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "¿Por qué los datos almacenados en Google Cloud son seguros y privados?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Los datos están cifrados por el Centro de comando de seguridad",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Los datos están cifrados mediante Cloud Data Loss Prevention",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Los datos están cifrados de forma predeterminada.",
+          "correct": true,
+          "why": ""
+        },
+        "D": {
+          "answer": "Los datos se cifran cuando se aplica una etiqueta adecuada",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Una organización quiere utilizar múltiples conjuntos de datos de marketing para pronosticar la adquisición de usuarios. ¿Cómo deberían utilizar la tecnología de la nube para obtener nuevos conocimientos a partir de los datos?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Importe los conjuntos de datos a un almacén de datos personalizado y luego archive los datos antiguos.",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Importe y archive selectivamente los conjuntos de datos en un lago de datos personalizado",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Separe los conjuntos de datos y haga predicciones utilizando el aprendizaje automático",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Combine los conjuntos de datos y haga predicciones utilizando el aprendizaje automático",
+          "correct": true,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Una organización quiere recopilar métricas y metadatos de sus aplicaciones en la nube y colocarlos en paneles. ¿Qué herramienta de Google Cloud deberían utilizar?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Monitoreo de la nube",
+          "correct": true,
+          "why": ""
+        },
+        "B": {
+          "answer": "Seguimiento de la nube",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Registro en la nube",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Depurador de la nube",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Un gerente quiere revisar el acceso a los datos de Google Cloud entre sus empleados. ¿Quién es responsable de definir las políticas de acceso a los datos?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Identificar la nube",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Equipo de atención al cliente de Google Cloud",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "El equipo de TI de su organización.",
+          "correct": true,
+          "why": ""
+        },
+        "D": {
+          "answer": "Los usuarios finales de su organización.",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Una organización ha decidido modernizar sus aplicaciones en la nube para mantenerse al día con las necesidades de sus clientes. ¿Qué pudo haber motivado esta decisión comercial?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Sus aplicaciones locales solo se escalan automáticamente para satisfacer la demanda.",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Quieren pasar del modelo de reparto al modelo de gasto de capital",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Su código fuente cambia erróneamente sin la interacción del desarrollador.",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Sus aplicaciones locales tardan meses en actualizarse e implementarse",
+          "correct": true,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Una organización necesita categorizar un gran grupo de fotografías utilizando aprendizaje automático previamente entrenado. ¿Qué producto o servicio de Google Cloud debería utilizar la organización?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "API de visión",
+          "correct": true,
+          "why": ""
+        },
+        "B": {
+          "answer": "Aprendizaje automático de BigQuery",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Visión AutoML",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "espectador",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Una organización ofrece un programa de fidelización para sus clientes. Recientemente se asoció con otras empresas para que los clientes puedan obtener puntos de fidelidad en otras tiendas. ¿Por qué la organización debería utilizar interfaces de programación de aplicaciones (API)?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Para migrar todos los datos de los socios para la recuperación ante desastres",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Para analizar y publicar estadísticas del programa de fidelización en un panel",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Personalizar recomendaciones para usuarios de tarjetas de fidelización",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Para conectar sistemas de terceros para garantizar información actualizada",
+          "correct": true,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "¿Cómo las API listas para usar hacen que la inteligencia artificial y el aprendizaje automático sean más accesibles para todos los clientes de Google Cloud?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "No requieren especialistas técnicos",
+          "correct": true,
+          "why": ""
+        },
+        "B": {
+          "answer": "No requieren entrada ni validación de datos.",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Requieren menos permisos de seguridad",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Todos requieren modelos de entrenamiento personalizados",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Una organización descubre que la cantidad de efectivo en sus máquinas expendedoras no coincide con el valor de los artículos vendidos. Han decidido actualizar sus máquinas expendedoras con sistemas de pago móvil basados ​​en la nube. ¿Cómo podría beneficiarse la organización de esta actualización?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Podrían relajar los permisos de acceso a datos",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Podrían reducir el gasto excesivo en su presupuesto de errores",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Podrían mejorar su seguridad perimetral",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Podrían ver el historial de datos para ver las transacciones.",
+          "correct": true,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Un servicio de entrega de alimentos necesita acceso a información del menú en tiempo real de todos los restaurantes asociados. También necesitan compartir información de los pedidos de los clientes con los restaurantes en tiempo real. ¿Qué debería utilizar la organización?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Ingeniería de confiabilidad del sitio (SRE)",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Una interfaz de programación de aplicaciones (API)",
+          "correct": true,
+          "why": ""
+        },
+        "C": {
+          "answer": "Un modelo personalizado de aprendizaje automático",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Una base de datos multirregional",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Una organización planea crear muchas aplicaciones nuevas y necesita un sistema para administrar y orquestar sus contenedores. ¿Por qué deberían utilizar Google Kubernets Engine?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Permite una rápida implementación y prueba de aplicaciones.",
+          "correct": true,
+          "why": ""
+        },
+        "B": {
+          "answer": "Optimiza el rendimiento de la máquina virtual.",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Conecta sistemas heredados a una aplicación.",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Proporciona código fuente preescrito para el desarrollo de aplicaciones.",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Su organización tiene datos de clientes en sus instalaciones pero quiere aprovechar la seguridad y durabilidad del almacenamiento en la nube. Los datos contienen información de identificación personal (PII) y la organización quiere garantizar que la PII no se identifique mediante enmascaramiento para mantener esta información segura. ¿Qué servicio ofrecería esta protección?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Más allá de Corp",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Programa de cumplimiento de HIPAA",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Almacenamiento en la nube",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Prevención de pérdida de datos en la nube",
+          "correct": true,
+          "why": "Cloud Data Loss Prevention allows you to protect sensitive data as you migrate to the cloud, it unblocks more workloads as you migrate to the cloud. Cloud DLP enables you to inspect and classify your sensitive data in structured and unstructured workloads. De-identification techniques like tokenization (pseudonymization) let you preserve the utility of your data for joining or analytics while reducing the risk of handling the data by obfuscating the raw sensitive identifiers."
+        }
+      }
+    },
+    {
+      "question": "Los empleados de su empresa pagan los proyectos de GCP con tarjetas de crédito personales, que el departamento de finanzas reembolsa al final de cada mes. Su equipo de gestión ha tomado la decisión de fusionar todos los proyectos en una única cuenta de facturación. ¿Cuál de los siguientes enfoques es la mejor solución?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Navegue a la sección Administración de recursos de GCP Console y mueva todos los proyectos a la organización raíz.",
+          "correct": true,
+          "why": ""
+        },
+        "B": {
+          "answer": "No es necesario ningún cambio, este método es el mejor enfoque.",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Crea una nueva cuenta de facturación y vincula todos los proyectos.",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Cree un ticket de soporte con Google Support para manejar la información de la tarjeta de crédito.",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Su organización ha migrado una carga de trabajo desde su entorno local a Google Cloud Compute Engine. Han estado ejecutando la carga de trabajo durante nueve meses y no ha habido cambios en el uso de la capacidad y es poco probable que la capacidad aumente en el futuro previsible. ¿Cuál sería la solución de precios más barata?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Descuentos por uso comprometido",
+          "correct": true,
+          "why": ""
+        },
+        "B": {
+          "answer": "Precios bajo demanda",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Descuentos por uso sostenido",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Máquinas virtuales preventivas",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Usted es una empresa de juegos móviles que actualmente está creando una aplicación de juegos móviles. Necesita almacenar 3 KB de datos estructurados no anidados que representen el perfil de un jugador. Estos datos son en tiempo real y se accede a ellos con frecuencia. ¿Qué solución de almacenamiento cumplirá con este requisito?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Gran consulta",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Almacenamiento en la nube",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Nube BigTable",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Tienda de fuego",
+          "correct": true,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Su organización tiene máquinas virtuales que se ejecutan localmente y desea migrar a la nube. Durante el proceso de migración, también les gustaría contener sus cargas de trabajo. ¿Cuál de las siguientes opciones sería adecuada para esta migración?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Servicio de migración de bases de datos",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Migrar para Anthos",
+          "correct": true,
+          "why": ""
+        },
+        "C": {
+          "answer": "Carrera en la nube",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Migrar para Compute Engine",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Eres el líder del equipo asignado al desarrollo de una aplicación. Debe optimizar el flujo de trabajo eficiente de varios desarrolladores que trabajan en el proyecto de desarrollo y al mismo tiempo garantizar una gran flexibilidad para todo el proceso. ¿Cuál de los siguientes servicios de computación en la nube es el más adecuado para la tarea?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Software como servicio (SaaS)",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Plataforma como servicio (PaaS)",
+          "correct": true,
+          "why": ""
+        },
+        "C": {
+          "answer": "Infraestructura como servicio (IaaS)",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Función como servicio (FaaS)",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Se le ha asignado la responsabilidad de administrar las API de su departamento y establecer políticas de seguridad para la verificación de identidad, autenticación y control de acceso. ¿Qué servicio de Google Cloud es el más adecuado para realizar esta tarea?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "apigeo",
+          "correct": true,
+          "why": ""
+        },
+        "B": {
+          "answer": "Gran consulta",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Motor de Google Kubernetes",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Funciones de la nube",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Una organización está revisando su gasto operativo mensual en la plataforma Google Cloud y desglosando el gasto por región. ¿Qué informe de facturación integrado en la nube sería ideal para visualizar el gasto regional?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Informes de tablas de costos",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Informes de facturación",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Informe de desglose de costos",
+          "correct": true,
+          "why": ""
+        },
+        "D": {
+          "answer": "Informes de descuentos por uso comprometido",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Actualmente, una empresa está desarrollando una aplicación que se ejecutará en Google Cloud. Quieren asegurarse de que, si la aplicación tiene algún problema, tolerará cualquier tiempo de inactividad. ¿Cuál es el requisito descrito?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Resistencia",
+          "correct": true,
+          "why": ""
+        },
+        "B": {
+          "answer": "Orquestación",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Flujo de datos",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Redundancia",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "¿Cuáles de las siguientes son ventajas de adoptar un servicio en la nube como Google Cloud Platform? (Elija 3)",
+      "multichoice": true,
+      "alternatives": {
+        "A": {
+          "answer": "Escalabilidad casi ilimitada",
+          "correct": true,
+          "why": ""
+        },
+        "B": {
+          "answer": "Utilización de servicios de bajo costo",
+          "correct": true,
+          "why": ""
+        },
+        "C": {
+          "answer": "Alta fiabilidad",
+          "correct": true,
+          "why": ""
+        },
+        "D": {
+          "answer": "Cada servicio está respaldado por API abiertas",
+          "correct": false,
+          "why": ""
+        },
+        "E": {
+          "answer": "Los servicios están completamente gestionados.",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Su organización ha recopilado una gran cantidad de datos científicos sobre los ciclos de reproducción de los moluscos, que la comunidad científica le ha solicitado que esté disponible para su descarga. Su organización está dispuesta a compartir estos datos científicos siempre que no incurran en ningún costo de salida cuando se descarguen. ¿Qué servicio en la nube cumplirá con este requisito?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Almacenamiento en la nube Almacenamiento nearline",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "El solicitante de almacenamiento en la nube paga",
+          "correct": true,
+          "why": ""
+        },
+        "C": {
+          "answer": "Almacenamiento en la nube Almacenamiento en línea fría",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "URL firmadas de almacenamiento en la nube",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Su startup es una plataforma de comercio social que intermedia artículos usados ​​entre compradores y vendedores. La plataforma podría describirse como venta de garaje como servicio. La plataforma permite a los compradores tomar fotografías de artículos individuales o de un grupo de artículos y clasificará estos productos. ¿Cuál de las siguientes soluciones sería ideal para la categorización de productos?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Plataforma de IA",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "TensorFlow",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "IA de vértice",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Visión IA",
+          "correct": true,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Una organización está migrando a Google Cloud y tiene una aplicación PHP heredada ejecutándose en un servidor Windows 2012. Esta aplicación heredada está diseñada para fines comerciales internos y no se utiliza mucho, pero no se puede eliminar debido a su función comercial crítica. La organización quiere eliminar el costo de una licencia de Windows e idealmente tener un costo casi nulo y al mismo tiempo estar lo más completamente administrado posible. ¿Qué servicio informático sería el más ideal para su caso de uso?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Funciones de la nube",
+          "correct": true,
+          "why": ""
+        },
+        "B": {
+          "answer": "Ejecutar en la nube",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Motor de Computación",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Motores de Google Kubernetes (GKE)",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Una organización está utilizando Google Cloud y necesita agregar una persona de contabilidad para poder descargar todas las facturas posibles a efectos fiscales de fin de año. ¿Qué función de facturación utiliza la empresa para proporcionar la funcionalidad necesaria?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Perfil de pagos comerciales",
+          "correct": true,
+          "why": ""
+        },
+        "B": {
+          "answer": "Cuenta de facturación en la nube facturada",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Cuenta de facturación en la nube de autoservicio",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Perfil de pagos individuales",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Una empresa está diseñando una aplicación y quiere ahorrar en la compra de máquinas nuevas, en tener máquinas infrautilizadas y en la planificación de la capacidad. No quieren comprar hardware ni software y el proveedor de servicios debe proporcionar el mantenimiento. El método debe ser rentable. ¿Cuál de las siguientes opciones cumpliría con este requisito?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Nube privada",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Nube pública",
+          "correct": true,
+          "why": ""
+        },
+        "C": {
+          "answer": "Microservicios",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Contenedores",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Una organización migró su carga de trabajo local crítica para el negocio a Compute Engine. Cada vez que implementan una implementación, tienen que esperar a que se inicie el sistema operativo de una máquina virtual. La organización necesita reducir este tiempo de arranque para que sea el mínimo posible. ¿Qué servicio en la nube cumplirá con sus requisitos?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Motor de Google Kubernetes",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Funciones de la nube",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Ejecutar en la nube",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "SO optimizado para contenedores",
+          "correct": true,
+          "why": ""
+        },
+        "E": {
+          "answer": "Motor de aplicaciones",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "El vicepresidente de una gran empresa está tratando de convencer a los ejecutivos de los beneficios de ahorro de costos que supone trasladar sus cargas de trabajo locales a la nube. ¿Cuáles de las siguientes son características del OPEX? (Elija 2)",
+      "multichoice": true,
+      "alternatives": {
+        "A": {
+          "answer": "Pagas según el uso",
+          "correct": true,
+          "why": ""
+        },
+        "B": {
+          "answer": "Puede dejar de pagar por licencias locales",
+          "correct": true,
+          "why": ""
+        },
+        "C": {
+          "answer": "Usted paga un costo único por el hardware",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "El proveedor de servicios en la nube es responsable de todo.",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Eres el líder del equipo de un proyecto de desarrollo. Un nuevo recluta se une y requiere el rol de un usuario que abarca múltiples proyectos. ¿En qué nivel de la jerarquía de recursos de Google debería asignar ese rol?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Carpeta",
+          "correct": true,
+          "why": ""
+        },
+        "B": {
+          "answer": "Proyecto",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Organización",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Recurso",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Su empresa quiere administrar sus aplicaciones ejecutando contenedores y otras cargas de trabajo de manera consistente en centros de datos locales y múltiples nubes públicas. ¿Qué servicio en la nube de Google le ayudará a lograr este objetivo?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "anthos",
+          "correct": true,
+          "why": ""
+        },
+        "B": {
+          "answer": "Servicio de transferencia de electrodomésticos",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Motor de Computación",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "VPN en la nube",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Su organización es una empresa de juegos móviles y está creando una continuación de su popular juego Snappy Fish. El equipo de desarrollo quiere evitar los problemas de escala que experimentaron con el título original, pero también quiere seguir usando una base de datos similar a SQL para garantizar que puedan entregar el segundo título en el próximo trimestre a nivel mundial. El impulso de marketing planificado estimó que las lecturas y escrituras pueden superar las 100.000 por segundo. ¿Qué solución de base de datos sería la más adecuada para su caso de uso?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Tienda de fuego",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Llave de nube",
+          "correct": true,
+          "why": "Cloud Spanner is a fully managed relational database with unlimited scale, strong consistency, and up to 99.999% availability for multi-regional instances. Spanner never needs to be paused for patches, backups, failovers, or even schema updates. Cloud Spanner optimizes performance by automatically sharding the data based on request load and size of the data. As a result, you can spend less time worrying about how to scale your database and instead focus on scaling your business making it an excellent solution for scaling issues while continuing to use a company's SQL-like database."
+        },
+        "C": {
+          "answer": "SQL en la nube",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Gran consulta",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Una organización tiene grandes cantidades de datos que residen en Amazon S3 y quiere migrarlos a Google Cloud para poder visualizarlos usando Looker. ¿Qué servicio de Google Cloud cumplirá con sus requisitos?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Gran consulta",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Almacenamiento en la nube",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Servicio de transferencia de electrodomésticos",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Servicio de transferencia de almacenamiento",
+          "correct": true,
+          "why": "Storage Transfer Service allows you to quickly import online data into Cloud Storage. You can also set up a repeating schedule for transferring data, as well as transfer data within Cloud Storage, from one bucket to another. Transferring data from Amazon S3 to Cloud Storage using VPC Service Controls and Storage Transfer Service: Configure AWS access, Create VPC Service Controls perimeter, Create an access policy and access level by using Access Context Manager, Use Storage Transfer Service to move data between Amazon S3 and Cloud Storage, Schedule Storage Transfer Service to retrieve data on a schedule."
+        }
+      }
+    },
+    {
+      "question": "Ha creado un canal de entrega continua que producirá una imagen de contenedor para la última versión de su aplicación web. Debe almacenar esta imagen en Google Cloud y debe admitir repositorios regionales o multirregionales. ¿Qué servicio usarías?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Contenedores en Compute Engine",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Registro de artefactos",
+          "correct": true,
+          "why": ""
+        },
+        "C": {
+          "answer": "Registro de contenedores",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Almacenamiento en la nube",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Su organización está considerando adoptar un servicio en la nube, pero le preocupa que Google Cloud cumpla con las normas. Debe descargar documentos de auditoría realizados por proveedores externos para demostrarlos a las partes interesadas clave. ¿Qué opción satisfará este requisito?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Gerente de Informes de Cumplimiento",
+          "correct": true,
+          "why": ""
+        },
+        "B": {
+          "answer": "Centro de comando de seguridad",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Cargas de trabajo aseguradas",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Más allá de Corp",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Su organización le ha pedido que se asegure de que cualquier máquina virtual actual y futura no tenga acceso externo a Internet. Al configurar la política de su organización, ¿cómo debe configurarla para cumplir con este requisito?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Aplicar al nodo raíz",
+          "correct": true,
+          "why": "An Organization is the root node of the Google Cloud hierarchy of resources. When you apply the Root Node to the organization policy, you can define settings, permissions, and policies for all projects, folders, resources, and Cloud Billing accounts it parents, etc to ensure that any current or future Virtual Machine has no external internet access. You can set an IAM policy at the organization level, the folder level, the project level, or (in some cases) the resource level. Resources inherit the policies of the parent node. If you set a policy at the Organization level, it is inherited by all its child folders and projects, and if you set a policy at the project level, it is inherited by all its child resources."
+        },
+        "B": {
+          "answer": "Aplicar a todas las instancias de Cloud Compute",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Aplicar a todos los proyectos",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Aplicar a todas las carpetas",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Está migrando máquinas virtuales desde su entorno local a Google Cloud. En caso de error, querrá poder experimentar y probar las máquinas virtuales migradas antes de ponerlas en producción. ¿Qué opción cumplirá con este requisito?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Migrar para Anthos",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Ejecutar en la nube",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Migrar para clones de prueba de Compute Engine",
+          "correct": true,
+          "why": ""
+        },
+        "D": {
+          "answer": "Runbook sobre olas migratorias",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Una empresa está considerando utilizar servicios de computación en la nube para aprovechar sus ventas. La empresa quiere utilizar una aplicación administrada por un proveedor externo para no tener que preocuparse por las configuraciones del servidor y las actualizaciones manuales. ¿Cuál de los siguientes servicios de computación en la nube es el más adecuado en este escenario?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Plataforma como servicio (PaaS)",
+          "correct": true,
+          "why": ""
+        },
+        "B": {
+          "answer": "Función como servicio (FaaS)",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Infraestructura como servicio (IaaS)",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Software como servicio (SaaS)",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Su organización tiene una gran cantidad de datos confidenciales que desea analizar mediante servicios en la nube. Están buscando una solución de red en la nube para establecer una conexión segura a su nube privada virtual (VPC). El método debe ser rentable y la conexión no requiere baja latencia ni alta disponibilidad. ¿Qué solución de red en la nube cumplirá con los requisitos para establecer una conexión segura a su Nube Privada Virtual (VPC)?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "VPN en la nube",
+          "correct": true,
+          "why": ""
+        },
+        "B": {
+          "answer": "Interconexión de socios",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "anthos",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Interconexión dedicada",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "¿De cuál de los siguientes es responsable el proveedor de servicios en la nube según el modelo de responsabilidad compartida? (Elija 2)",
+      "multichoice": true,
+      "alternatives": {
+        "A": {
+          "answer": "Centro de datos físico",
+          "correct": true,
+          "why": ""
+        },
+        "B": {
+          "answer": "Parcheo de hardware",
+          "correct": true,
+          "why": ""
+        },
+        "C": {
+          "answer": "Parcheo de aplicaciones",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Arquitectura de infraestructura",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Su empresa tiene tres proyectos de GCP. Se le ha encomendado la tarea de garantizar que todos compartan políticas. ¿Cuál de los siguientes métodos proporcionaría la menor cantidad de error al configurar esto?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Cree una política para cada proyecto individual",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Agregue los tres proyectos a un proyecto y defina las políticas sobre los recursos.",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Agregue los tres proyectos a una carpeta y defina las políticas en la carpeta",
+          "correct": true,
+          "why": "Folders are a grouping mechanism and can contain projects, other folders, or a combination of both. Folders can be used to group resources that share common IAM policies."
+        },
+        "D": {
+          "answer": "Agregue los tres proyectos a un recurso y defina las políticas sobre los recursos.",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Usted es una empresa de juegos móviles y necesita procesar métricas de juegos en tiempo real para analizarlas con fines de inteligencia empresarial. Las métricas de los registros se almacenan en depósitos de Cloud Storage recopilados de Cloud Logging. Quiere un servicio que pueda procesar los datos para poder analizarlos en BigQuery. ¿Qué servicio es más adecuado para procesar los registros y generar métricas agregadas para analizar?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "SQL en la nube",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "preparación de datos",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Proc de datos",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Flujo de datos",
+          "correct": true,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Tiene varias máquinas virtuales que residen en un grupo de recursos. Los recursos necesitan permiso para acceder a BigQuery. ¿Cómo podemos otorgar permisos a los recursos para acceder a BigQuery?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Cree una cuenta de servicio y otorgue permisos a los recursos (por ejemplo, máquinas virtuales)",
+          "correct": true,
+          "why": "The approach is to create a Service Account and grant it the permissions the resources (e g. the VMs) need. Then you create the VMs to use the Service Account as their identity. Resources have a single identity, usually a Service Account. You should create Service Accounts for each functionally|security equivalent resource. Identities are bound to one or more roles. Roles correspond to one of our more service|API methods. Try to use predefined roles but you can create custom roles."
+        },
+        "B": {
+          "answer": "Cree un grupo de recursos y agregue las máquinas virtuales",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Crear recurso de Compute Engine",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Agregar la política de BigQuery",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Una empresa está trabajando en un proyecto que requiere la incorporación de la interacción del usuario desde aplicaciones de usuario final y eventos de servidor de muchos clientes simultáneamente. ¿Qué servicio se adapta mejor al requisito?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Flujo de datos",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Tienda de fuego",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Pub/Sub",
+          "correct": true,
+          "why": "Ingestion user interaction and server events: To make use of user interaction events from end-user apps or server events from your system, you may forward them to Pub/Sub and then use a stream processing tool such as Dataflow, which delivers them to BigQuery, Bigtable, Cloud Storage and other databases. Pub/Sub allows you to gather events from many clients simultaneously. Therefore, Pub/Sub is the correct choice among others."
+        },
+        "D": {
+          "answer": "base de fuego",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "¿Qué principio de seguridad obtiene una organización al utilizar la gestión de acceso e identidad (IAM)?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Integridad",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Disponibilidad",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Confidencialidad",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Privilegios mínimos",
+          "correct": true,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "¿Qué oferta de nube de Google es más adecuada para las soluciones Apache Spark y Presto?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Ejecutar en la nube",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Motor de Google Kubernetes",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "procesamiento de datos",
+          "correct": true,
+          "why": ""
+        },
+        "D": {
+          "answer": "preparación de datos",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Está desarrollando una nueva plataforma social en un contenedor de Linux personalizado. La aplicación web se encuentra actualmente en versión beta privada y es necesario iterar rápidamente las funciones, por lo que la implementación es frecuente. La base de usuarios de la beta privada está distribuida globalmente, por lo que la aplicación estará en uso las 24 horas. Quiere que el servicio esté completamente gestionado. ¿Qué dos servicios son opciones viables para completar esta tarea? (Elija 2)",
+      "multichoice": true,
+      "alternatives": {
+        "A": {
+          "answer": "Estándar del motor de aplicaciones",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Motor de Google Kubernetes",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Motor de aplicaciones flexible",
+          "correct": true,
+          "why": ""
+        },
+        "D": {
+          "answer": "Ejecutar en la nube",
+          "correct": true,
+          "why": ""
+        },
+        "E": {
+          "answer": "Ejecución en la nube para Anthos",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Su organización tiene máquinas virtuales que se ejecutan localmente y desea migrar a la nube. ¿Qué opción sería la adecuada para esta migración?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Migrar para Anthos",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Olas migratorias",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Migrar para Compute Engine",
+          "correct": true,
+          "why": ""
+        },
+        "D": {
+          "answer": "Motor VMWare de Google Cloud",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Usted es una startup desarrolladora que desarrolla un nuevo servicio de entrega de alimentos para restaurantes populares de comida rápida y para cenar. Un componente importante del diseño es tener actualizaciones en tiempo real reflejadas tan pronto como se agregan o modifican a la base de datos, asegurando que los clientes y conductores sepan cuándo los alimentos están listos para ser recogidos y cuándo los alimentos están en tránsito hacia su destino final. ¿Qué oferta de Google cumple mejor con estos requisitos?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Pub/Sub",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Almacenamiento en la nube",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Tienda de fuego",
+          "correct": true,
+          "why": ""
+        },
+        "D": {
+          "answer": "Flujo de datos",
+          "correct": false,
+          "why": ""
+        },
+        "E": {
+          "answer": "Tareas en la nube",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Una organización tiene una fuerza laboral móvil que frecuentemente se reúne con los clientes en sus oficinas o en espacios públicos. Existe la preocupación dentro de su organización de que las visualizaciones de datos internos de la empresa desde Looker solo sean accesibles desde dispositivos cooperantes cuando se accede a ellas desde las oficinas corporativas. ¿Qué servicio de seguridad permite limitar el acceso en este escenario?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Identidad en la nube",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "SOY",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Servicio de política de organización",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "BeyondCorp y el proxy consciente de la identidad",
+          "correct": true,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Tienes muchos terabytes de datos que residen en BigQuery. Su organización le ha pedido que analice los datos mediante aprendizaje automático. ¿Qué opción sería ideal para este escenario?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "La fusión de datos",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "IA de vértice",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "procesamiento de datos",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Aprendizaje automático de BigQuery",
+          "correct": true,
+          "why": "BigQuery ML lets you create and execute machine learning models in BigQuery using standard SQL queries. BigQuery ML democratizes machine learning by letting SQL practitioners build models using existing SQL tools and skills. BigQuery ML increases development speed by eliminating the need to move data."
+        }
+      }
+    },
+    {
+      "question": "Una empresa de juegos lanzará su nuevo título deportivo la próxima semana y se espera que reciba una gran cantidad de tráfico durante el primer trimestre. Es importante que las lecturas tengan una latencia muy baja. ¿Qué almacén de datos es ideal para este caso de uso?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Almacenamiento en la nube",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Nube BigTable",
+          "correct": true,
+          "why": ""
+        },
+        "C": {
+          "answer": "Tienda de fuego",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Gran consulta",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "¿Qué nivel de jerarquía de recursos de Google se requiere para utilizar recursos de nivel de servicio, como máquinas virtuales (VM) de Compute Engine, y formar la base para habilitar servicios, API y permisos de IAM?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Recursos",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Organización",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Proyectos",
+          "correct": true,
+          "why": ""
+        },
+        "D": {
+          "answer": "Carpetas",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Su organización tiene muchas fuerzas laborales móviles que utilizan dispositivos corporativos como computadoras portátiles, tabletas y teléfonos para reunirse con los clientes en sus oficinas o en espacios públicos. Existe preocupación sobre la postura general de seguridad y su departamento de TI ha preguntado cómo podemos utilizar Google Cloud para administrar estos dispositivos de forma remota utilizando el servidor Active Directory local de la empresa. ¿Qué servicio de Google Cloud sería adecuado para este escenario?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Identidad en la nube",
+          "correct": true,
+          "why": "Cloud Identity is an Identity as a Service (IDaaS) solution that centrally manages users and groups. You can configure Cloud Identity to federate identities between Google and other identity providers, such as Active Directory and Azure Active Directory. Cloud Identity also gives you more control over the accounts that are used in your organization. For example, if developers in your organization use personal accounts, such as Gmail accounts, those accounts are outside of your control. When you adopt Cloud Identity, you can manage access and compliance across all users in your domain."
+        },
+        "B": {
+          "answer": "Sincronización del directorio de Google Cloud",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Microsoft AD administrado",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Gestión de identidades y accesos (IAM)",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Una organización tiene máquinas virtuales que ejecutan aplicaciones basadas en VMware en su entorno local. La organización está planeando una migración de elevación y cambio a Google Cloud. ¿Qué opción cumplirá con este requisito?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Migrar para Anthos",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Motor VMWare de Google Cloud",
+          "correct": true,
+          "why": ""
+        },
+        "C": {
+          "answer": "Runbook sobre olas migratorias",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Servicio de importación Lift-and-Shift (LASIS)",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Una organización con una cuenta de GCP tiene 50 TB de datos en su almacenamiento local y desea transferir rápidamente los datos a Google Cloud para su análisis. ¿Qué servicio puede utilizar la organización para cumplir con este requisito?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Almacenamiento en la nube",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Servicio de transferencia de almacenamiento",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "procesamiento de datos",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Servicio de transferencia de electrodomésticos",
+          "correct": true,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Una organización tiene un servidor LDAP (Protocolo ligero de acceso a directorios) donde desea permitir que sus usuarios accedan a los recursos de Google Cloud. Cada vez que se elimina un usuario LDAP, también se debe eliminar el acceso a Google Cloud. ¿Qué servicio cumplirá con este requisito?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Proxy consciente de la identidad",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Identidad en la nube",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Más allá de Corp",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Sincronización del directorio de Google Cloud",
+          "correct": true,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Usted es un desarrollador que trabaja para una organización bien establecida que crea su primera aplicación web de empresa a consumidor (B2C). Existe incertidumbre sobre la popularidad de esta nueva aplicación web. Se le ha pedido que se asegure de que los costos operativos puedan llegar a cero. ¿Qué dos ofertas de Google son opciones viables para cumplir con los requisitos? (elige 2)",
+      "multichoice": true,
+      "alternatives": {
+        "A": {
+          "answer": "procesamiento de datos",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "base de fuego",
+          "correct": true,
+          "why": ""
+        },
+        "C": {
+          "answer": "Pub/Sub",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Ejecutar en la nube",
+          "correct": true,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Su organización está utilizando una carga de trabajo informática de código abierto que no es de confianza en Compute Engine y quiere garantizar una alta disponibilidad, pero existe una latencia requerida de alrededor de 10 ms. ¿Cuál de las siguientes arquitecturas de disponibilidad es más adecuada para este escenario?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Múltiples regiones, múltiples zonas",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Múltiples regiones, zona única",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Una región, múltiples zonas",
+          "correct": true,
+          "why": "To ensure high availability and to handling failures, you should distribute your resources across multiple zones and regions to tolerate outages. To decrease network latency, you might want to choose a region or zone that is close to your point of service. For example, if you mostly have customers on the East Coast of the US, then you might want to choose a primary region and zone that is close to that area and a backup region and zone that is also close by."
+        },
+        "D": {
+          "answer": "Región única, zona única",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Se le ha asignado la tarea de transferir datos locales desde su red a sus redes de nube privada virtual (VPC) en Google Cloud. El método de transferencia requiere que usted controle completamente la interconexión, la alta disponibilidad y una tubería de 10 Gbps. El costo no es un factor. ¿Cuál de los siguientes métodos cumple con el requisito?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "VPN en la nube",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Interconexión dedicada a la nube",
+          "correct": true,
+          "why": ""
+        },
+        "C": {
+          "answer": "Interconexión de socios en la nube",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Emparejamiento directo",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Tu organización está planeando una migración a Google Cloud. Su organización está compuesta por varios departamentos y cada departamento tiene varias cargas de trabajo que desea autogobernar dentro de Google Cloud. ¿Cuál es la estructura organizacional ideal?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Cree un proyecto por departamento, cree una carpeta por carga de trabajo",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Cree una carpeta por departamento, cree un proyecto por carga de trabajo",
+          "correct": true,
+          "why": ""
+        },
+        "C": {
+          "answer": "Crear un formulario de google, cuando se realiza una solicitud de departamento crear un proyecto por carga de trabajo",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Cree un proyecto en el nodo raíz para cada carga de trabajo",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Su organización ofrece un servicio de visualización de datos donde los usuarios pueden cargar varios archivos que contienen hojas de cálculo. Debe generar y enviar por correo electrónico un informe en PDF del acuerdo de servicio para un cliente mediante un trabajo de procesamiento de datos que tarda en promedio 1 hora en procesarse y no más de cinco horas (uso único). ¿Cuál sería la solución informática más barata?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Descuentos por uso comprometido",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Descuentos por uso sostenido",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Precios bajo demanda",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Máquinas virtuales interrumpibles",
+          "correct": true,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Su equipo está publicando resultados de investigaciones y necesita poner grandes cantidades de datos a disposición de otros investigadores dentro de la comunidad profesional y del público a un costo mínimo. ¿Cómo debería alojar los datos?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Utilice un depósito de Cloud Storage y habilite los pagos del solicitante",
+          "correct": true,
+          "why": ""
+        },
+        "B": {
+          "answer": "Utilice un depósito de Cloud Storage y proporcione URL firmadas para los archivos de datos",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Utilice un depósito de Cloud Storage y configure una conexión de Cloud Interconnect para permitir el acceso a los datos",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Aloje los datos en las instalaciones y configure una conexión de Cloud Interconnect para permitir el acceso a los datos.",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Su empresa necesita segmentar los recursos de Google Cloud utilizados por cada equipo de los demás. Los esfuerzos del equipo cambian con frecuencia y es necesario reducir el riesgo operativo y mantener la visibilidad de los costos. ¿Qué enfoque recomienda Google?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Un proyecto por equipo",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Una organización por equipo",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Un proyecto que contiene todos los recursos de cada equipo.",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Una carpeta de nivel superior por equipo",
+          "correct": true,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "¿En qué se diferencian Migrate for Compute Engine y Migrate for Anthos?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "A diferencia de Migrate for Anthos, Migrate for Compute Engine supone que el origen de la migración es VMware vSphere.",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Migrate for Compute Engine cobra por el ingreso, pero Migrate for Anthos no",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Migrate for Compute Engine es de código cerrado y Migrate to Anthos es de código abierto",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Migrate for Anthos migra a contenedores y Migrate to Compute Engine migra a máquinas virtuales",
+          "correct": true,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "La información de usuario de su organización, de gran tamaño y que cambia con frecuencia, se almacena en una base de datos LDAP local. La base de datos incluye contraseñas de usuario y membresía de grupos y organizaciones. ¿Cómo debería su organización aprovisionar cuentas y grupos de Google para acceder a los recursos de Google Cloud?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Replica la infraestructura LDAP en Compute Engine",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Utilice la API REST de autenticación de Firebase para crear usuarios",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Utilice Google Cloud Directory Sync para crear usuarios",
+          "correct": true,
+          "why": ""
+        },
+        "D": {
+          "answer": "Utilice la API REST de Identificar plataforma para crear usuarios",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Su organización migró recientemente sus cargas de trabajo informáticas a Google Cloud. Quiere que estas cargas de trabajo en Google Cloud accedan de forma privada y segura a su gran volumen de datos locales, y también quiere minimizar la latencia. ¿Qué debería hacer su organización?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Utilice el servicio de transferencia de almacenamiento para que sus datos estén disponibles de forma segura en Google Cloud",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Cree una VPC entre su centro de datos local y sus recursos de Google",
+          "correct": true,
+          "why": ""
+        },
+        "C": {
+          "answer": "Conecte su centro de datos local con Edge Network de Google",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Utilice Transfer Applicance para que sus datos estén disponibles de forma segura en Google Cloud",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Su organización consta de muchos equipos. Cada equipo tiene muchos proyectos de Google Cloud. Su organización quiere simplificar la gestión de las políticas de identificación y acceso para estos proyectos. ¿Cómo puedes agrupar estos proyectos para cumplir con este objetivo?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Agrupe los proyectos de cada equipo en un dominio separado",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Asignar etiquetas en función de las máquinas virtuales que forman parte de los proyectos de cada equipo",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Utilice carpetas para agrupar los proyectos de cada equipo.",
+          "correct": true,
+          "why": ""
+        },
+        "D": {
+          "answer": "Agrupe los proyectos de cada equipo en un nodo de organización separado",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Una organización necesita categorizar las opiniones de los clientes basadas en texto en su sitio web utilizando un modelo de aprendizaje automático previamente entrenado. ¿Qué producto o servicio de Google Cloud debería utilizar la organización?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "API de lenguaje natural en la nube",
+          "correct": true,
+          "why": ""
+        },
+        "B": {
+          "answer": "Flujo de diálogo",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Recomendaciones IA",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "TensorFlow",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Una organización está planificando su gasto en la nube. ¿Qué debe hacer la organización para controlar los costos?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Considere los costos de los recursos de la nube como gasto de capital en la planificación anual",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Utilice únicamente recursos de la nube; no tienen costos de infraestructura en la nube",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Revise los costos de los recursos de la nube con frecuencia porque los costos dependen del uso.",
+          "correct": true,
+          "why": ""
+        },
+        "D": {
+          "answer": "Evalúe los costos de los recursos de la nube solo cuando su proveedor de la nube no cumpla con el SLO",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Una organización está buscando una plataforma de aprendizaje automático de código abierto para crear e implementar sus propias aplicaciones personalizadas de aprendizaje automático mediante TPU. ¿Qué producto o servicio de Google Cloud debería utilizar la organización?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "TensorFlow",
+          "correct": true,
+          "why": ""
+        },
+        "B": {
+          "answer": "Gran consulta ML",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "API de visión",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Visión AutoML",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "¿Cuál es un ejemplo de datos no estructurados que las organizaciones pueden capturar de las redes sociales?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Publicar comentarios",
+          "correct": true,
+          "why": ""
+        },
+        "B": {
+          "answer": "Etiquetado",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Foto de perfil",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Ubicación",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Una organización depende de las ventas estacionales en línea para la mayor parte de sus ingresos anuales. ¿Por qué la organización debería utilizar App Engine para la aplicación de sus clientes?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Ajusta automáticamente el inventario físico en tiempo real",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Escala automática durante picos de demanda",
+          "correct": true,
+          "why": ""
+        },
+        "C": {
+          "answer": "Ejecuta mantenimiento arruinando las ventas estacionales.",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Recomienda los productos adecuados a los clientes.",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Una organización está utilizando el aprendizaje automático para hacer predicciones. Uno de sus conjuntos de datos incluye por error datos mal etiquetados. ¿Cómo se verá afectada la predicción?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Mayor riesgo de filtraciones de privacidad",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Mayor riesgo de inexactitud",
+          "correct": true,
+          "why": ""
+        },
+        "C": {
+          "answer": "Disminución de la compatibilidad del modelo.",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Disminución del tiempo de entrenamiento del modelo.",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Una organización global está desarrollando una aplicación para gestionar pagos y cuentas bancarias en línea en múltiples regiones. Cada transacción debe manejarse de manera consistente en su base de datos y anticipan un crecimiento casi ilimitado en la cantidad de datos almacenados. ¿Qué producto de Google Cloud debería elegir la organización?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "SQL en la nube",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Llave de nube",
+          "correct": true,
+          "why": ""
+        },
+        "C": {
+          "answer": "Almacenamiento en la nube",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Gran consulta",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Una organización tiene servidores que ejecutan cargas de trabajo de misión crítica en sus instalaciones en todo el mundo. Quieren modernizar su infraestructura con una arquitectura multinube. ¿Qué beneficio nubla la experiencia de la organización?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Capacidad para desactivar la conectividad de la red regional durante ataques cibernéticos",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Capacidad de mantener copias de seguridad de sus datos en las instalaciones en caso de falla",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Acceso total de gestión a su infraestructura regional.",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Reducción de la probabilidad de falla del sistema durante eventos de alta demanda",
+          "correct": true,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Una organización necesita ejecutar actualizaciones frecuentes para su aplicación empresarial. ¿Por qué la organización debería utilizar Google Kubernetes (GKE)?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Las expectativas del cliente se pueden ajustar sin utilizar herramientas de marketing.",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Se pueden realizar cambios fluidos sin causar ningún tiempo de inactividad de la aplicación.",
+          "correct": true,
+          "why": ""
+        },
+        "C": {
+          "answer": "GKE maneja el control de versiones sin problemas y listo para usar",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "GKE es ideal para todas las aplicaciones monolíticas",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Una organización quiere utilizar Apigee para gestionar todas sus interfaces de programación de aplicaciones (API). ¿Qué permitirá Apigee hacer a la organización?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Aumentar la privacidad de la aplicación",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Mida y realice un seguimiento del rendimiento de la API",
+          "correct": true,
+          "why": ""
+        },
+        "C": {
+          "answer": "Analizar la velocidad de desarrollo de aplicaciones",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Comercializar y vender API",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Una organización de comercio electrónico está revisando su almacenamiento de datos en la nube. ¿Qué tipo de datos sin procesar pueden almacenar en una base de datos relacional sin ningún procesamiento?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Inventario de productos",
+          "correct": true,
+          "why": ""
+        },
+        "B": {
+          "answer": "Fotografías de producto",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Vídeos instructivos",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Historial de chat del cliente",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Un hotel quiere modernizar sus sistemas heredados para que los clientes puedan realizar reservas a través de una aplicación móvil. ¿Cuál es el beneficio de utilizar una interfaz de programación de aplicaciones (API) para hacer esto?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "No tienen que desarrollar la aplicación de usuario final.",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Pueden desaprobar sus sistemas heredados",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Pueden transformar sus sistemas para que sean nativos de la nube",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "No tienen que reescribir el sistema heredado.",
+          "correct": true,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Una organización quiere digitalizar y compartir grandes volúmenes de textos e imágenes históricos. ¿Por qué una nube pública es una mejor opción que una solución local?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Gestión interna de hardware",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Proporciona clave de cifrado física",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Rentable a escala",
+          "correct": true,
+          "why": ""
+        },
+        "D": {
+          "answer": "Optimiza el gasto de capital",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Una organización quiere desarrollar una aplicación que pueda personalizarse según las preferencias del usuario durante todo el año. ¿Por qué deberían crear una aplicación nativa de la nube en lugar de modernizar su aplicación local existente?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Los desarrolladores pueden confiar en el proveedor de la nube para todo el código fuente",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Los desarrolladores pueden lanzar nuevas funciones de forma ágil",
+          "correct": true,
+          "why": ""
+        },
+        "C": {
+          "answer": "Los administradores de TI pueden migrar la arquitectura de aplicaciones existente sin necesidad de actualizaciones",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Los administradores de TI pueden acelerar la planificación del gasto de capital",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "¿Qué tecnología permite a una organización ejecutar múltiples sistemas operativos de computadora en una sola pieza de hardware físico?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Hipervisor",
+          "correct": true,
+          "why": ""
+        },
+        "B": {
+          "answer": "Contenedores",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Computación sin servidor",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Fuente abierta",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Una organización está realizando un cambio estratégico en la atención al cliente en respuesta a los comentarios. Planean ampliar el horario de disponibilidad de su línea de ayuda. ¿Por qué la organización está haciendo este cambio?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Los usuarios esperan experiencia profesional",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Los usuarios requieren personalización",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Los usuarios esperan servicios siempre disponibles",
+          "correct": true,
+          "why": ""
+        },
+        "D": {
+          "answer": "Los usuarios requieren acceso regional",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Una organización está migrando su aplicación empresarial del entorno local a la nube. ¿Cómo afecta esto a sus operaciones y costos de personal?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Costos reducidos de administración de infraestructura local",
+          "correct": true,
+          "why": ""
+        },
+        "B": {
+          "answer": "Mayores costos de mantenimiento de hardware local",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Costos reducidos de licencias de software en la nube",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "aumento de los costos de administración de hardware en la nube",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Una empresa minorista almacena su inventario de productos en un sistema heredado. A menudo, los clientes encuentran productos en el sitio web de la empresa y quieren comprarlos en la tienda. Sin embargo, cuando llegan, descubren que los productos están agotados. ¿Cómo se beneficia la nube la empresa al utilizar una interfaz de programación de aplicaciones (API)?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Crear recomendaciones de productos personalizadas para los clientes.",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Para optimizar la estabilidad de su sistema heredado local",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Al darle Me gusta manualmente a cada sistema de inventario en el sitio web, caso por caso.",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Conectando mediante programación el sistema de inventario a su sitio web",
+          "correct": true,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Una organización está entrenando un modelo de aprendizaje automático para predecir eventos climáticos extremos en su país. ¿Cómo deberían recopilar datos para maximizar la precisión de las predicciones?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Recopile todos los datos meteorológicos de manera uniforme en todas las ciudades.",
+          "correct": true,
+          "why": ""
+        },
+        "B": {
+          "answer": "Recopile todos los datos meteorológicos principalmente de ciudades en riesgo.",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Recopile datos climáticos extremos de manera uniforme en todas las ciudades.",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Recopile datos climáticos extremos principalmente de ciudades en riesgo.",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Una organización necesita buscar el código fuente de una aplicación para identificar un problema potencial. La aplicación se distribuye en varios contenedores. ¿Qué producto de Google Cloud debería utilizar la organización?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Consola de Google Cloud",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Seguimiento de la nube",
+          "correct": true,
+          "why": ""
+        },
+        "C": {
+          "answer": "Monitoreo de la nube",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Registro en la nube",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Los desarrolladores web y el personal de operaciones de una organización utilizan sistemas diferentes. ¿Cómo reducirá el aumento de la comunicación entre los equipos los problemas causados ​​por los silos?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Asignando culpas por el fracaso y estableciendo consecuencias.",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Combinando las responsabilidades de las funciones laborales para garantizar que todos tengan acceso compartido",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Aumentando el cifrado de datos para fortalecer los flujos de trabajo",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Al enfatizar la propiedad compartida de los resultados comerciales",
+          "correct": true,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "¿Cómo se beneficia una gran cadena hotelera al almacenar los datos de reservas de sus clientes en la nube?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Acceso de hardware local a los datos de transacciones",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "Transformación de datos en tiempo real a escala dentro de una base de datos local",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Precisión de transacciones comerciales en tiempo real a escala",
+          "correct": true,
+          "why": ""
+        },
+        "D": {
+          "answer": "Acceso físico al hardware durante los picos de demanda",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Una organización quiere migrar a la nube las aplicaciones heredadas actualmente alojadas en su centro de datos. La arquitectura actual dicta que cada aplicación necesita su propio sistema operativo (SO) en lugar de compartir un sistema operativo. ¿Qué solución de infraestructura deberían elegir?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Maquinas virtuales",
+          "correct": true,
+          "why": ""
+        },
+        "B": {
+          "answer": "Fuente abierta",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Computación sin servidor",
+          "correct": false,
+          "why": ""
+        },
+        "D": {
+          "answer": "Contenedores",
+          "correct": false,
+          "why": ""
+        }
+      }
+    },
+    {
+      "question": "Una organización opera toda su infraestructura de TI desde Google Cloud. ¿Qué deberían hacer para prepararse para las violaciones de datos?",
+      "multichoice": false,
+      "alternatives": {
+        "A": {
+          "answer": "Reducir la dependencia de la autenticación multifactor",
+          "correct": false,
+          "why": ""
+        },
+        "B": {
+          "answer": "La seguridad de los datos es responsabilidad de Google, por lo que la preparación es mínima",
+          "correct": false,
+          "why": ""
+        },
+        "C": {
+          "answer": "Crear un plan de incidentes para mitigar los impactos.",
+          "correct": true,
+          "why": ""
+        },
+        "D": {
+          "answer": "Fortalecer la seguridad perimetral de su centro de datos",
+          "correct": false,
+          "why": ""
+        }
+      }
+    }
+  ]
+}
