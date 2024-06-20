@@ -15,6 +15,8 @@ $(document).ready(function () {
     $(".overlay").addClass("hidden");
   });
 
+  countQuestions("google_associate_cloud_engineer.json");
+
   setLocale();
 });
 
@@ -27,7 +29,6 @@ function getExams(language) {
   if (language) {
     path += language + "/";
   }
-  console.log(path);
 
   $.ajax({
     url: exams_path,
