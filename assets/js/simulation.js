@@ -13,11 +13,18 @@ $(document).ready(function () {
   const exam_filename = searchParams.get("exam");
   examName = titleCase(exam_filename);
 
-  const examLang = exam_filename.split(".")[0].split("-")[1];
-  const exams_path =
-    "https://raw.githubusercontent.com/MatthewAraujo/exam-lab/main/assets/exams/" +
-    examLang +
-    "/";
+  const examLang = exam_filename.split(".")[0].split("-");
+  console.log(examLang);
+  let exams_path =
+    "https://raw.githubusercontent.com/MatthewAraujo/exam-lab/main/assets/exams/";
+
+  if (examLang.length > 1) {
+    exams_path += examLang[1] + "-" + examLang[2] + "/";
+  } else {
+    exams_path += examLang[1] + "/";
+  }
+
+  console.log(exams_path);
 
   // Collect exam info
   $.getJSON(exams_path + exam_filename, (json) => {
