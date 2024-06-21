@@ -25,8 +25,6 @@ $(document).ready(function () {
     $('.modal').addClass('hidden');
     $('.overlay').addClass('hidden');
   });
-
-  setLocale();
 });
 
 function removeExtension(filename) {
@@ -55,30 +53,4 @@ function updateModal(exam) {
 
   $('.modal').removeClass('hidden');
   $('.overlay').removeClass('hidden');
-}
-
-function switchLanguage(language) {
-  document.documentElement.lang = language;
-  let lang = `:lang(${language})`;
-  let show = '[lang]' + lang;
-  let hide = `[lang]:not(${lang})`;
-  document.querySelectorAll(hide).forEach(function (node) {
-    node.style.display = 'none';
-  });
-  document.querySelectorAll(show).forEach(function (node) {
-    node.style.display = 'unset';
-  });
-}
-
-function setLocale() {
-  let optionValues = $('.label-select img').map((i, o) => o.title).toArray()
-  let browser_lang = navigator.language;
-
-  // Check if browser lang is supported
-  // Else, by default the locale is en
-  if (optionValues.includes(browser_lang)) {
-    document.documentElement.lang = browser_lang;
-    selectElement.value = browser_lang;
-    switchLanguage(browser_lang);
-  }
 }

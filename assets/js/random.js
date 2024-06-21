@@ -11,7 +11,7 @@ $(document).ready(function(){
   // Collect exam info
   $.getJSON(exams_path + exam_name, (json) => {
     // Randomize the questions since we have more than exam needs
-    original_exam = shuffle(json.exam);
+    original_exam = shuffleAllAnswers(json.exam);
     // Get max questions
     max_questions = original_exam.length
     // Generate user answers card
@@ -28,11 +28,33 @@ $(document).keydown(function(event){
 });
 
 // Alert progress lose before leave page
-window.onbeforeunload = function(e){
+window.onbeforeunload = function(e) {
   e.preventDefault();
-  // TO-DO: Currently the custom message is not working
-  return event.returnValue = 'If you leave now, will lose the progress of current exam. Are you sure you want to leave?';
+  // To avoid scamming, chromium and hence chrome have decided to remove
+  // the ability to set a custom message in the onbeforeunload dialog.
+  return event.returnValue;
 };
+
+function shuffleAllAnswers(exam) {
+  // Shuffle all questions
+  let shuffledExam = shuffle(exam);
+
+  for (let question = 0; question < shuffledExam.length; question++) {
+    // Get and Shuffle all keys as an array from the question
+    let keys = shuffle(Object.keys(shuffledExam[question].alternatives));
+
+    // Create a new object with shuffled keys and original values
+    let shuffledObj = { alternatives: {} };
+    let shuffledValues = shuffle(Object.values(shuffledExam[question].alternatives));
+
+    for (const key of keys) {
+      shuffledObj.alternatives[key] = shuffledValues.pop();
+    }
+    shuffledExam[question].alternatives = shuffledObj.alternatives;
+  }
+
+  return shuffledExam;
+}
 
 function buildQuestion() {
   let question = original_exam[current_question]
@@ -61,7 +83,6 @@ function buildQuestion() {
 function buildMultichoiceAlternatives(alternatives) {
   let alts = '';
   Object.keys(alternatives).forEach((alternative) => {
-    let correct_answer = alternatives[alternative].correct;
     alts += `
       <div class="alternative" onclick="selectMultiAlternative(this)">
         <span class="alternative-choice">${alternative}</span> ${alternatives[alternative].answer}
@@ -74,7 +95,6 @@ function buildMultichoiceAlternatives(alternatives) {
 function buildAlternatives(alternatives) {
   let alts = '';
   Object.keys(alternatives).forEach((alternative) => {
-    let correct_answer = alternatives[alternative].correct;
     alts += `
       <div class="alternative" onclick="selectAlternative(this)">
         <span class="alternative-letter">${alternative}.</span> ${alternatives[alternative].answer}
