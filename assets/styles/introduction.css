@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Exo');
 
 .intro {
-  flex-direction: column;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   vertical-align: middle;
+  flex-direction: column;
+  margin: auto;
 }
 
 .intro .intro-title {
@@ -29,4 +34,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* MOBILE */
+
+@media only screen and (max-width: 600px) {
+  .intro {
+    padding-top: 3rem;
+  }
+
+  .infos {
+    margin: 1rem;
+  }
 }

@@ -14,6 +14,10 @@
   font-family: 'Exo', sans-serif;
 }
 
+.hidden {
+  display: none;
+}
+
 .question-container {
   display: flex;
   align-items: center;

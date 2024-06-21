@@ -15,6 +15,10 @@
   display: flex; 
 }
 
+.hidden {
+  display: none;
+}
+
 .exam-simulation {
   display: flex;
   margin-top: 15vh;

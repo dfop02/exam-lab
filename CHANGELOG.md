@@ -1,7 +1,18 @@
 # Change Log
 
 ## [Next](https://github.com/dfop02/exam-lab/tree/HEAD)
-[Full Changelog](https://github.com/dfop02/exam-lab/compare/0.6.0...HEAD)
+[Full Changelog](https://github.com/dfop02/exam-lab/compare/0.6.1...HEAD)
+
+## [0.6.1](https://github.com/dfop02/exam-lab/releases/tag/0.6.1)
+21 June 2024
+
+#### New Features
+
+* None
+
+#### Fixes
+
+* Fix exams not opening.
 
 ## [0.6.0](https://github.com/dfop02/exam-lab/releases/tag/0.6.0)
 21 June 2024
