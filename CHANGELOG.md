@@ -11,6 +11,7 @@
 * Add CopyRights Page.
 * Move language control to a separate file.
 * Add random answers order to both modes.
+* Add exams in pt-BR and es-ES.
 
 #### Fixes
 

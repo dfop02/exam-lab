@@ -9,7 +9,7 @@ let examName = '';
 const max_questions = 60;
 
 $(document).ready(function() {
-  const exams_path = 'https://raw.githubusercontent.com/dfop02/exam-lab/main/assets/exams/';
+  const exams_path = `https://raw.githubusercontent.com/dfop02/exam-lab/main/assets/exams/${document.documentElement.lang}/`;
   const searchParams = new URLSearchParams(window.location.search);
   const exam_filename = searchParams.get('exam');
   examName = titleCase(exam_filename);
