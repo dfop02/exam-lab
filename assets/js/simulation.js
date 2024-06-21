@@ -9,7 +9,7 @@ let examName = '';
 const max_questions = 60;
 
 $(document).ready(function() {
-  const exams_path = 'https://raw.githubusercontent.com/dfop02/exam-lab/main/assets/exams/';
+  const exams_path = `https://raw.githubusercontent.com/dfop02/exam-lab/main/assets/exams/${document.documentElement.lang}/`;
   const searchParams = new URLSearchParams(window.location.search);
   const exam_filename = searchParams.get('exam');
   examName = titleCase(exam_filename);
@@ -17,7 +17,7 @@ $(document).ready(function() {
   // Collect exam info
   $.getJSON(exams_path + exam_filename, (json) => {
     // Randomize the questions since we have more than exam needs
-    original_exam = shuffle(json.exam);
+    original_exam = shuffleAllAnswers(json.exam);
     // Generate user answers card
     user_exam = new Array(max_questions).fill('');
     // Build first question
@@ -45,6 +45,27 @@ window.onbeforeunload = function(e) {
   // the ability to set a custom message in the onbeforeunload dialog.
   return event.returnValue;
 };
+
+function shuffleAllAnswers(exam) {
+  // Shuffle all questions
+  let shuffledExam = shuffle(exam);
+
+  for (let question = 0; question < shuffledExam.length; question++) {
+    // Get and Shuffle all keys as an array from the question
+    let keys = shuffle(Object.keys(shuffledExam[question].alternatives));
+
+    // Create a new object with shuffled keys and original values
+    let shuffledObj = { alternatives: {} };
+    let shuffledValues = shuffle(Object.values(shuffledExam[question].alternatives));
+
+    for (const key of keys) {
+      shuffledObj.alternatives[key] = shuffledValues.pop();
+    }
+    shuffledExam[question].alternatives = shuffledObj.alternatives;
+  }
+
+  return shuffledExam;
+}
 
 function buildQuestion() {
   let question = original_exam[current_question]

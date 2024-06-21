@@ -31,6 +31,21 @@ Generate a simulator for de exam, selecting random 60 questions to complete in 9
 
 Please take a look on [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
 
+## Copyrights & DMCA
+
+ExamLab has the best intention of helping people study for free and eventually earn their certifications. All the content of the exams available on the website was added by contribution or by public availability on the internet, where unfortunately it is not possible to validate their origin precisely. Therefore, if any content here violates rights such as DMCA or Copyright, please inform me and I will modify or remove it as soon as possible.
+
+If you believe that your intellectual property rights have been violated by Exam Lab or by a third party who has contributed with exams to our website, please provide the following information to the designated Copyright Agent listed below:
+
+1. A description of the copyrighted work or other intellectual property that you claim has been infringed;
+2. A description of which exam and questions that you claim is infringing;
+3. Provide an email address where we can contact you;
+4. A statement that you have a good-faith belief that the use is not authorized by the copyright owner or other intellectual property rights owner, by its agent, or by law;
+5. A statement by you under penalty of perjury that the information in your notice is accurate and that you are the copyright or intellectual property owner or are authorized to act on the owner's behalf;
+6. Your electronic or physical signature.
+
+You may be required to submit additional information before removing any content.
+
 ## Author
 
 * [Diogo Fernandes](https://github.com/dfop02)

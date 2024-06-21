@@ -31,6 +31,21 @@ Genera un simulador para la prueba, selecciona 60 preguntas aleatorias y crea un
 
 Echa un vistazo a [CONTRIBUTING.md](CONTRIBUTING.md) para obtener más detalles.
 
+## Derechos de autor y DMCA
+
+ExamLab tiene la mejor intención de ayudar a las personas a estudiar de forma gratuita y, finalmente, obtener sus certificaciones. Todo el contenido de los exámenes disponibles en el sitio web fue agregado por contribución o por disponibilidad pública en Internet, donde lamentablemente no es posible validar su origen con precisión. Por lo tanto, si algún contenido aquí viola derechos como DMCA o Copyright, por favor infórmame y lo modificaré o eliminaré lo antes posible.
+
+Si cree que Exam Lab o un tercero que ha contribuido con los exámenes a nuestro sitio web han violado sus derechos de propiedad intelectual, proporcione la siguiente información al agente de derechos de autor designado que se detalla a continuación:
+
+1. Una descripción del trabajo protegido por derechos de autor u otra propiedad intelectual que usted afirma que ha sido infringida;
+2. Una descripción de qué examen y preguntas usted afirma que infringen la ley;
+3. Proporcione una dirección de correo electrónico donde podamos comunicarnos con usted;
+4. Una declaración de que cree de buena fe que el uso no está autorizado por el propietario de los derechos de autor u otro propietario de derechos de propiedad intelectual, por su agente o por la ley;
+5. Una declaración suya, bajo pena de perjurio, de que la información contenida en su aviso es precisa y que usted es el propietario de los derechos de autor o de la propiedad intelectual o está autorizado a actuar en nombre del propietario;
+6. Su firma electrónica o física.
+
+Es posible que deba enviar información adicional antes de eliminar cualquier contenido.
+
 ## Autor
 
 * [Diogo Fernandes](https://github.com/dfop02)

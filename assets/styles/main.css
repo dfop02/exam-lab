@@ -75,11 +75,16 @@ img {
   justify-content: center;
   align-items: center;
   vertical-align: middle;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 5px;
   margin: 1rem;
 }
 
-.exams .exam-title {
+.exam-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
   font-family: 'Exo', sans-serif;
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -225,11 +230,16 @@ footer {
 @media only screen and (max-width: 600px) {
   .label-select {
     right: unset;
-    top: 9%;
+    top: 10%;
   }
 
   .infos {
     margin: 3rem 1rem;
+  }
+
+  .exams {
+    flex-direction: column;
+    gap: 0;
   }
 
   .modal {
@@ -237,7 +247,7 @@ footer {
   }
 
   footer {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   footer small {
